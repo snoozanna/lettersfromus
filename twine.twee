@@ -230,6 +230,26 @@ setup.chooseStoryAudio = () => {
   
 </footer>
 
+:: footerback [nobr]{"position":"100,375","size":"100,100"}
+<footer>
+
+  <div class="nav-wrapper">
+    <div class="nav-item">
+        [img[Back|../assets/img/back-sharp-b.png][$prevpass]]
+    </div>
+  </div>
+
+
+<div class="nav-wrapper">
+   
+  </div>
+
+<div class="nav-wrapper">
+ 
+  </div>
+  
+</footer>
+
 :: footertheme [nobr]{"position":"100,375","size":"100,100"}
 <footer>
 
@@ -357,14 +377,88 @@ setup.chooseStoryAudio = () => {
 <<set $passage to "map">>
 <<set $nextpass to "">>
 <<set $source to "KingHenrysWalkAllotments">>
+
 <main>
 <span>Click on the map to bring it to life.</span>
 <h1>TBCMap</h1>
-<i>When people click on a section of the map close to the words, it gets coloured for a split moment then opens a themed section. So if you click near Places: </i>
 
-<<button "places">>
-<<goto "places">>
-<</button>>
+<div class="img-wrapper">
+
+    <!-- Base map -->
+    <img class="base-map" src="../assets/img/map/NEW-b_w+line.png">
+
+    <!-- COLOUR OVERLAYS -->
+    <img id="community" class="overlay" src="../assets/img/map/community-notext.png">
+    <img id="history" class="overlay" src="../assets/img/map/history-notext.png">
+    <img id="joy" class="overlay" src="../assets/img/map/joy-notext.png">
+    <img id="people" class="overlay" src="../assets/img/map/people-notext.png">
+    <img id="places" class="overlay" src="../assets/img/map/places-notext.png">
+    <img id="rage" class="overlay" src="../assets/img/map/rage-notext.png">
+
+    <!-- CLICKABLE HOTSPOTS -->
+    
+    <div class="hotspot community">
+        <<link "">>
+            <<removeclass ".overlay" "active">>
+            <<addclass "#community" "active">>
+            /* <<timed 0.5s>>
+                <<goto "community">>
+            <</timed>> */
+        <</link>>
+    </div>
+
+    <div class="hotspot history">
+        <<link "">>
+            <<removeclass ".overlay" "active">>
+            <<addclass "#history" "active">>
+            /* <<timed 0.5s>>
+                <<goto "history">>
+            <</timed>> */
+        <</link>>
+    </div>
+
+    <div class="hotspot joy">
+        <<link "">>
+            <<removeclass ".overlay" "active">>
+            <<addclass "#joy" "active">>
+            <<timed 0.5s>>
+                <<goto "joy">>
+            <</timed>>
+        <</link>>
+    </div>
+
+    <div class="hotspot people">
+        <<link "">>
+            <<removeclass ".overlay" "active">>
+            <<addclass "#people" "active">>
+            <<timed 0.5s>>
+                <<goto "people">>
+            <</timed>>
+        <</link>>
+    </div>
+
+    <div class="hotspot places">
+        <<link "">>
+            <<removeclass ".overlay" "active">>
+            <<addclass "#places" "active">>
+            <<timed 0.5s>>
+                <<goto "places">>
+            <</timed>>
+        <</link>>
+    </div>
+
+    <div class="hotspot rage">
+        <<link "">>
+            <<removeclass ".overlay" "active">>
+            <<addclass "#rage" "active">>
+            <<timed 0.5s>>
+                <<goto "rage">>
+            <</timed>>
+        <</link>>
+    </div>
+
+</div>
+
 </main>
 
 <<include "footermap">>
@@ -384,6 +478,109 @@ setup.chooseStoryAudio = () => {
 </div>
 <br/>
 <<button "Add a place">>
+  <<goto "prerecord">>
+  <</button>>
+</main>
+<<include "footertheme">>
+
+:: people [nobr]
+<<set $prevpass to "map">>
+<<set $passage to "people">>
+<<set $nextpass to "">>
+<main>
+<h1>People</h1>
+<p>Tell us about you - or someone in Islington that should be remembered.</p>
+<div class="audio-btn-container">
+<<button "TBCAudio">>
+  <<set $source to "TBCAudio">>
+  <<goto "listen">>
+  <</button>>
+</div>
+<br/>
+<<button "Share your story">>
+  <<goto "prerecord">>
+  <</button>>
+</main>
+<<include "footertheme">>
+
+
+:: community [nobr]
+<<set $prevpass to "map">>
+<<set $passage to "community">>
+<<set $nextpass to "">>
+<main>
+<h1>Community</h1>
+<p>When people come together...</p>
+<div class="audio-btn-container">
+<<button "TBCAudio">>
+  <<set $source to "TBCAudio">>
+  <<goto "listen">>
+  <</button>>
+</div>
+<br/>
+<<button "Share your story">>
+  <<goto "prerecord">>
+  <</button>>
+</main>
+<<include "footertheme">>
+
+:: joy [nobr]
+<<set $prevpass to "map">>
+<<set $passage to "joy">>
+<<set $nextpass to "">>
+<main>
+<h1>Joy</h1>
+<p>What brings them joy...</p>
+<div class="audio-btn-container">
+<<button "TBCAudio">>
+  <<set $source to "TBCAudio">>
+  <<goto "listen">>
+  <</button>>
+</div>
+<br/>
+<<button "Share your story">>
+  <<goto "prerecord">>
+  <</button>>
+</main>
+<<include "footertheme">>
+
+
+:: rage [nobr]
+<<set $prevpass to "map">>
+<<set $passage to "rage">>
+<<set $nextpass to "">>
+<main>
+<h1>Rage</h1>
+<p>What makes them angry...</p>
+<div class="audio-btn-container">
+<<button "TBCAudio">>
+  <<set $source to "TBCAudio">>
+  <<goto "listen">>
+  <</button>>
+</div>
+<br/>
+<<button "Share your story">>
+  <<goto "prerecord">>
+  <</button>>
+</main>
+<<include "footertheme">>
+
+
+:: history [nobr]
+<<set $prevpass to "map">>
+<<set $passage to "history">>
+<<set $nextpass to "">>
+<main>
+<h1>History</h1>
+<p>Something that’s changed, something that got lost, or just a good story about Islington...</p>
+<div class="audio-btn-container">
+<<button "TBCAudio">>
+  <<set $source to "TBCAudio">>
+  <<goto "listen">>
+  <</button>>
+</div>
+<br/>
+<<button "Share your story">>
   <<goto "prerecord">>
   <</button>>
 </main>
@@ -643,6 +840,8 @@ setup.chooseStoryAudio = () => {
 
 </main>
 
+<<include "footerback">>
+
 :: record [nobr]
 <<set $prevpass to "prerecord">>
 <<set $passage to "record">>
@@ -656,3 +855,4 @@ setup.chooseStoryAudio = () => {
   <</button>>
 
 </main>
+<<include "footerback">>

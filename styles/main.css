@@ -583,7 +583,144 @@ h3.subtitle.category {
   animation-timing-function: ease-in;
 }
 
+/* MAP  */
 
+/* Wrapper */
+.img-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Base image */
+.base-map {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Overlays */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  z-index: 2;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.overlay.active {
+  opacity: 1;
+}
+
+/* map sections  */
+img.overlay#history{
+  width: 28%;
+    top: 47%;
+    left: 24%;
+}
+
+img.overlay#community {
+  width: 83%;
+  top: 21%;
+  left: 6%;
+}
+
+img.overlay#joy {
+  width: 44.5%;
+  top: 28%;
+  left: 18%;
+}
+
+img.overlay#people {
+  width: 49%;
+  top: initial;
+  left: inherit;
+  bottom: 9%;
+  right: 12%;
+}
+
+
+
+img.overlay#places {
+  width: 51%;
+  top: 7%;
+  left: 5%;
+}
+img.overlay#rage {
+  width: 42%;
+  top: 42.5%;
+  left: 53%;
+}
+
+
+/* HOTSPOTS (click areas) */
+.hotspot {
+  position: absolute;
+  z-index: 3;
+}
+
+/* Make link fill hotspot */
+.hotspot a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* OPTIONAL: debug visibility */
+
+/* .hotspot {
+  background: rgba(255,0,0,0.2);
+
+} */
+
+
+/* --- POSITIONING (percent-based = responsive) --- */
+
+.hotspot.community {
+  width: 42%;
+  top: 31%;
+  left: 35%;
+  height: 10%;
+}
+
+.hotspot.history {
+  width: 23%;
+  top: 55%;
+  left: 32%;
+  height: 13%;
+}
+
+.hotspot.joy {
+  width: 20.5%;
+  top: 42%;
+  left: 36%;
+  height: 9%;
+}
+
+.hotspot.people {
+  width: 26%;
+  bottom: 20%;
+  right: 18%;
+  height: 16%;
+}
+
+.hotspot.places {
+  width: 36%;
+  top: 14%;
+  left: 18%;
+  height: 10%;
+}
+
+.hotspot.rage {
+  width: 28%;
+  top: 42.5%;
+  left: 62%;
+  height: 9%;
+}
 
 /* LISTEN  */
 
