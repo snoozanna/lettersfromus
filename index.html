@@ -486,11 +486,14 @@ setup.chooseStoryAudio = () => {
 &lt;&lt;set $captions to true&gt;&gt;
 
 &lt;main class=&quot;landing&quot;&gt;
-&lt;h1&gt;Letters from us&lt;/h1&gt;
-&lt;span&gt;Add illustration&lt;/span&gt;
-&lt;&lt;button &quot;Start&quot;&gt;&gt;
-  &lt;&lt;goto $nextpass&gt;&gt;
-  &lt;&lt;/button&gt;&gt;
+
+  &lt;img src=&quot;assets/img/lettersfromustitle.png&quot; alt=&quot;Letters from us&quot; class=&quot;lockup&quot; /&gt;
+
+&lt;div class=&quot;btn-container &quot;&gt;
+  &lt;&lt;button &quot;Start&quot;&gt;&gt;
+    &lt;&lt;goto $nextpass&gt;&gt;
+    &lt;&lt;/button&gt;&gt;
+&lt;/div&gt;
 &lt;/main&gt;</tw-passagedata><tw-passagedata pid="12" name="intro" tags="nobr" position="225,225" size="100,100">&lt;&lt;set $prevpass to &quot;landing&quot;&gt;&gt;
 &lt;&lt;set $passage to &quot;intro&quot;&gt;&gt;
 &lt;&lt;set $nextpass to &quot;map&quot;&gt;&gt;
@@ -507,8 +510,9 @@ setup.chooseStoryAudio = () => {
   &lt;&lt;include &quot;header&quot;&gt;&gt;
 &lt;main id=&quot;main&quot;&gt; 
  &lt;div class=&quot;main-container text&quot;&gt;
+ &lt;h1&gt;Letters from us&lt;/h1&gt;
    &lt;div id=&quot;textMount&quot;&gt;&lt;/div&gt;
-  &lt;p&gt; Letters from Us is an interactive audio archive celebrating the everyday stories of the people of Islington. &lt;/p&gt;
+  &lt;p&gt; &lt;b&gt;Letters from Us&lt;/b&gt; is an interactive audio archive celebrating the everyday stories of the people of Islington. &lt;/p&gt;
 
 &lt;p&gt;It was created by &lt;a href=&quot;https://www.koro.org.uk/&quot; rel=&quot;noreferrer&quot; target=&quot;_blank&quot; class=&quot;highlighted&quot;&gt;Koro&lt;/a&gt;, in partnership with City St George’s, University of London, Highbury Roundhouse, Mildmay Community Centre and St Mary Magdalene Academy. &lt;/p&gt;
 
@@ -531,7 +535,10 @@ setup.chooseStoryAudio = () => {
 &lt;&lt;set $source to &quot;KingHenrysWalkAllotments&quot;&gt;&gt;
 
 &lt;main&gt;
-&lt;div class=&quot;map-instruction&quot;&gt;&lt;span&gt;Click on the map to bring it to life.&lt;/span&gt;&lt;/div&gt;
+&lt;br/&gt;&lt;br/&gt;
+&lt;div class=&quot;map-instruction&quot;&gt;
+&lt;h1&gt;Letters from us&lt;/h1&gt;
+&lt;span&gt;Click on the map to bring it to life.&lt;/span&gt;&lt;/div&gt;
 &lt;div class=&quot;img-wrapper&quot;&gt;
 
     &lt;!-- Base map --&gt;
@@ -553,7 +560,7 @@ setup.chooseStoryAudio = () => {
             &lt;&lt;set $theme to &quot;community&quot;&gt;&gt;
             &lt;&lt;removeclass &quot;.overlay&quot; &quot;active&quot;&gt;&gt;
             &lt;&lt;addclass &quot;#community&quot; &quot;active&quot;&gt;&gt;
-            &lt;&lt;timed 0.5s&gt;&gt;
+            &lt;&lt;timed 1s&gt;&gt;
                 &lt;&lt;goto &quot;community&quot;&gt;&gt;
             &lt;&lt;/timed&gt;&gt;
         &lt;&lt;/link&gt;&gt;
@@ -564,7 +571,7 @@ setup.chooseStoryAudio = () => {
             &lt;&lt;set $theme to &quot;history&quot;&gt;&gt;
             &lt;&lt;removeclass &quot;.overlay&quot; &quot;active&quot;&gt;&gt;
             &lt;&lt;addclass &quot;#history&quot; &quot;active&quot;&gt;&gt;
-            &lt;&lt;timed 0.5s&gt;&gt;
+            &lt;&lt;timed 1s&gt;&gt;
                 &lt;&lt;goto &quot;history&quot;&gt;&gt;
             &lt;&lt;/timed&gt;&gt;
         &lt;&lt;/link&gt;&gt;
@@ -575,7 +582,7 @@ setup.chooseStoryAudio = () => {
             &lt;&lt;set $theme to &quot;joy&quot;&gt;&gt;
             &lt;&lt;removeclass &quot;.overlay&quot; &quot;active&quot;&gt;&gt;
             &lt;&lt;addclass &quot;#joy&quot; &quot;active&quot;&gt;&gt;
-            &lt;&lt;timed 0.5s&gt;&gt;
+            &lt;&lt;timed 1s&gt;&gt;
                 &lt;&lt;goto &quot;joy&quot;&gt;&gt;
             &lt;&lt;/timed&gt;&gt;
         &lt;&lt;/link&gt;&gt;
@@ -586,7 +593,7 @@ setup.chooseStoryAudio = () => {
             &lt;&lt;set $theme to &quot;people&quot;&gt;&gt;
             &lt;&lt;removeclass &quot;.overlay&quot; &quot;active&quot;&gt;&gt;
             &lt;&lt;addclass &quot;#people&quot; &quot;active&quot;&gt;&gt;
-            &lt;&lt;timed 0.5s&gt;&gt;
+            &lt;&lt;timed 1s&gt;&gt;
                 &lt;&lt;goto &quot;people&quot;&gt;&gt;
             &lt;&lt;/timed&gt;&gt;
         &lt;&lt;/link&gt;&gt;
@@ -597,7 +604,7 @@ setup.chooseStoryAudio = () => {
             &lt;&lt;set $theme to &quot;places&quot;&gt;&gt;
             &lt;&lt;removeclass &quot;.overlay&quot; &quot;active&quot;&gt;&gt;
             &lt;&lt;addclass &quot;#places&quot; &quot;active&quot;&gt;&gt;
-            &lt;&lt;timed 0.5s&gt;&gt;
+            &lt;&lt;timed 1s&gt;&gt;
                 &lt;&lt;goto &quot;places&quot;&gt;&gt;
             &lt;&lt;/timed&gt;&gt;
         &lt;&lt;/link&gt;&gt;
@@ -608,7 +615,7 @@ setup.chooseStoryAudio = () => {
             &lt;&lt;set $theme to &quot;rage&quot;&gt;&gt;
             &lt;&lt;removeclass &quot;.overlay&quot; &quot;active&quot;&gt;&gt;
             &lt;&lt;addclass &quot;#rage&quot; &quot;active&quot;&gt;&gt;
-            &lt;&lt;timed 0.5s&gt;&gt;
+            &lt;&lt;timed 1s&gt;&gt;
                 &lt;&lt;goto &quot;rage&quot;&gt;&gt;
             &lt;&lt;/timed&gt;&gt;
         &lt;&lt;/link&gt;&gt;
@@ -788,9 +795,8 @@ setup.chooseStoryAudio = () => {
   &lt;&lt;/button&gt;&gt;
 &lt;/main&gt;</tw-passagedata><tw-passagedata pid="23" name="headerlisten" tags="nobr" position="350,350" size="100,100">&lt;header class=&quot;listen player&quot; &gt;
 
- &lt;div class=&quot;nav-item&quot;&gt;
- &lt;/div&gt;
-  &lt;div class=&quot;nav-wrapper&quot;&gt;
+&lt;div class=&quot;logo-container&quot;&gt;&lt;img src=&quot;../assets/img/title.png&quot;/&gt;&lt;/div&gt;
+  /* &lt;div class=&quot;nav-wrapper&quot;&gt;
     &lt;div class=&quot;nav-item&quot;&gt;
         &lt;&lt;link [img[../assets/img/menu.png]]&gt;&gt;
           &lt;&lt;if $menuOpen is false &gt;&gt;
@@ -808,7 +814,7 @@ setup.chooseStoryAudio = () => {
           &lt;&lt;/link&gt;&gt;
 
     &lt;/div&gt;
-  &lt;/div&gt;
+  &lt;/div&gt; */
 &lt;/header&gt;</tw-passagedata><tw-passagedata pid="24" name="listen" tags="nobr t8n.typewriter.4 t8n-dissolve" position="475,350" size="100,100">/* might need to put this in prev pass
 &lt;&lt;set $captions to false&gt;&gt;
 &lt;&lt;set $sound to true&gt;&gt;

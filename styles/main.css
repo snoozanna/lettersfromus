@@ -85,7 +85,7 @@ main.landing {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url("../assets/img/1884components-24.png");
+
   background-position: 0% 22%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -94,27 +94,15 @@ main.landing {
   gap: 4rem;
 }
 
-main.landing > .lockup {
-  max-width: 50%;
-  z-index: 1;
-}
 
-main.landing > .lockup.mem {
-  max-width: 40%;
-}
+
 
 main.landing > .wave {
   grid-area: lockup / lockup / tower / tower;
   z-index: -1;
 }
 
-main.landing > .tower {
-  position: fixed;
-  right: -3%;
-  bottom: -1rem;
-  z-index: 0;
-  height: 100vh;
-}
+
 
 main.landing > .landing-btn {
   grid-area: btn;
@@ -176,12 +164,12 @@ a.highlighted {
   text-underline-offset: 2px;
 }
 
-
+button:hover, html[data-outlines] button:focus, 
 a:active,
 a:focus,
 a:hover {
   color: #e8d7a4;
-  /* cursor: url("./../assets/img/fair.png"), pointer; */
+  background-color: var(--light-coral);
 }
 
 .hide {
@@ -203,16 +191,12 @@ a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url("../assets/img/1884components-24.png");
+
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
   }
 
-  main.landing > .lockup,
-  main.landing > .lockup.mem {
-    max-width: 80%;
-  }
 
   main.landing > .wave {
     display: none;
@@ -563,8 +547,8 @@ button > a > h2 {
 }
 
 button:hover {
-  background-color: var(--color-brown2);
-  color: white;
+  background-color: var(--light-coral);
+  color: black;
 }
 
 button > a > p:hover {
@@ -600,8 +584,16 @@ h3.subtitle.category {
 
 .map-instruction{
   font-weight: 600;
+  display:flex ;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
   width: 100%;
+}
+
+.map-instruction > h1{
+  text-align: center;
+  color: var(--dusty-rose);
 }
 
 /* Wrapper */
@@ -699,7 +691,7 @@ img.overlay#rage {
   height: 100%;
 }
 
-.hotspot a:active, a:focus, a:hover{
+.hotspot a:active, .hotspot a:focus, .hotspot a:hover{
   background-color: initial;
 }
 
@@ -874,7 +866,7 @@ header.listen {
 
 main.listen {
   max-width: inherit;
-  background-image: url("../../assets/img/soundwaveLAND.gif");
+  background-image: url("../../assets/img/greensoundwave.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -890,7 +882,7 @@ main.listen > #caption {
   z-index: 9999;
   color: black;
   font-weight: 600;
-  background: var(--color-offwhite);
+  background: var(--powder-blush);
   padding: 1rem;
   margin: 0;
   border-radius: 1rem;
