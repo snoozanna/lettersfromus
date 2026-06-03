@@ -780,7 +780,7 @@ setup.chooseStoryAudio = () => {
 :: about [nobr]
 <main>
 <h1>About</h1>
-<p>Letters from us is a community storytelling project that invites people in Islington to tell the story of their area, in their own words. Inspired by the long-running BBC radio show Letter from America, the project invites residents from different ages and backgrounds to share their stories and reflect on how they see their community.</p>
+<p>Letters from us is a community storytelling project that invites people in Islington to tell the story of their area, in their own words. Inspired by the long-running BBC radio show <a href="https://www.bbc.co.uk/programmes/b00f6hbp" rel="noreferrer" target="_blank" class="highlighted">Letter from America</a>, the project invites residents from different ages and backgrounds to share their stories and reflect on how they see their community.</p>
  
 <p>Creative team:</p>
 <ul>
@@ -1013,7 +1013,7 @@ setup.chooseStoryAudio = () => {
 
 
 :: prerecord [nobr]
-<<set $prevpass to "">>
+<<set $prevpass to "map">>
 <<set $passage to "prerecord">>
 <<set $nextpass to "record">>
 
