@@ -111,27 +111,30 @@ $(document.head).find('#style-ui-bar').remove();
 
 setup.chooseStoryAudio = () => {
 
-  const passageName = passage()
   const audio = document.getElementById("audioPlayer");
 
   if (!audio) {
-    console.error("Audio element with ID 'audioPlayer' not found.");
+    console.error("Audio element not found.");
     return;
   }
 
-  // Reset audio safely
+  const data = State.variables.currentAudio;
+
+  if (!data) {
+    console.warn("No currentAudio set.");
+    return;
+  }
+
+  // Reset audio
   audio.pause();
   audio.currentTime = 0;
-  audio.src = "";
 
-  let audioFiles = [];
+  // ✅ Make this an ARRAY (even for one file)
+  const audioFiles = [
+    `assets/audio/${data.theme}/${data.audioSrc}.mp3`
+  ];
 
-  if (passageName) {
-    let source = State.variables.source;
-    audioFiles = [`assets/audio/${source}.mp3`]; // assumes .mp3 already included
-
-    console.log("audioFiles", audioFiles)
-  }
+  console.log("audioFiles", audioFiles);
 
   let currentTrack = 0;
 
@@ -148,14 +151,134 @@ setup.chooseStoryAudio = () => {
     }
   }
 
-  audio.addEventListener("ended", playNext);
+  // ✅ Prevent stacking
+  audio.onended = playNext;
 
   if (audioFiles.length > 0) {
     playNext();
-  } else {
-    console.warn("No audio files for:", passageName);
   }
-};</script><tw-passagedata pid="1" name="StoryInit" tags="" position="100,100" size="100,100"></tw-passagedata><tw-passagedata pid="2" name="header" tags="nobr" position="225,100" size="100,100">&lt;header class=&quot;general&quot; &gt;
+};</script><tw-passagedata pid="1" name="StoryInit" tags="" position="100,100" size="100,100">&lt;&lt;set $theme to &quot;&quot;&gt;&gt;
+&lt;&lt;set $h to &quot;nks&quot;&gt;&gt;
+&lt;&lt;set $audiodata to [ 
+
+  {
+     audioName: &quot;Christmas with the Mayor&quot;, 
+    audioSrc: &quot;Christmas_with_the_Mayor&quot;, 
+    theme: &quot;community&quot;
+  }, 
+   {
+     audioName: &quot;Islington traditions&quot;, 
+    audioSrc: &quot;Islington_traditions&quot;, 
+    theme: &quot;community&quot;
+  }, 
+   {
+     audioName: &quot;Out every day&quot;, 
+    audioSrc: &quot;Out_every_day&quot;, 
+    theme: &quot;community&quot;
+  }, 
+   {
+     audioName: &quot;Talking to strangers&quot;, 
+    audioSrc: &quot;Talking_to_strangers&quot;, 
+    theme: &quot;community&quot;
+  }, 
+  {
+     audioName: &quot;Working class spirit&quot;, 
+    audioSrc: &quot;Working_class_spirit&quot;, 
+    theme: &quot;community&quot;
+  }, 
+  {
+     audioName: &quot;Camden passage&quot;, 
+    audioSrc: &quot;Camden_passage&quot;, 
+    theme: &quot;history&quot;
+  },
+  {
+     audioName: &quot;Gillespie Park&quot;, 
+    audioSrc: &quot;Gillespie_Park&quot;, 
+    theme: &quot;history&quot;
+  },
+  {
+     audioName: &quot;Memory Gardens&quot;, 
+    audioSrc: &quot;Memory_Gardens&quot;, 
+    theme: &quot;history&quot;
+  },
+  {
+     audioName: &quot;Paddling pools &amp; boating lakes&quot;, 
+    audioSrc: &quot;Paddling_pools_boating_lakes&quot;, 
+    theme: &quot;history&quot;
+  },
+  {
+     audioName: &quot;Walking down the market&quot;, 
+    audioSrc: &quot;Walking_down_the_market&quot;, 
+    theme: &quot;joy&quot;
+  }, 
+  {
+     audioName: &quot;Meeting the Sotheby Singers&quot;, 
+    audioSrc: &quot;Meeting_the_Sotheby_Singers&quot;, 
+    theme: &quot;joy&quot;
+  }, 
+  {
+     audioName: &quot;Singing in an orchard&quot;, 
+    audioSrc: &quot;Singing_in_an_orchard&quot;, 
+    theme: &quot;joy&quot;
+  },
+  {
+   audioName: &quot;Barbara&quot;, 
+    audioSrc: &quot;Barbara&quot;, 
+    theme: &quot;people&quot;
+    } ,
+  {
+   audioName: &quot;Chris&quot;, 
+    audioSrc: &quot;Chris&quot;, 
+    theme: &quot;people&quot;
+    },
+  {
+   audioName: &quot;David&quot;, 
+    audioSrc: &quot;David&quot;, 
+    theme: &quot;people&quot;
+    },
+  {
+   audioName: &quot;Eloina&quot;, 
+    audioSrc: &quot;Eloina&quot;, 
+    theme: &quot;people&quot;
+    },
+  {
+   audioName: &quot;Frank&quot;, 
+    audioSrc: &quot;Frank&quot;, 
+    theme: &quot;people&quot;
+    },
+  {
+   audioName: &quot;Linda&quot;, 
+    audioSrc: &quot;Linda&quot;, 
+    theme: &quot;people&quot;
+    }, 
+  { 
+  audioName: &quot;Muriel&quot;, 
+   audioSrc: &quot;Muriel&quot;, 
+    theme: &quot;people&quot;
+    }, 
+      {
+    audioName: &quot;King Henry&#39;s Walk Allotments&quot;, 
+    audioSrc: &quot;King_Henry_s_Walk_Allotments&quot;, 
+    theme: &quot;places&quot;
+  }, 
+  { 
+  audioName: &quot;Affording Islington&quot;, 
+   audioSrc: &quot;Affording_Islington&quot;, 
+    theme: &quot;rage&quot;
+    }, 
+
+  { 
+  audioName: &quot;Destroying a village&quot;, 
+   audioSrc: &quot;Destroying_a_village&quot;, 
+    theme: &quot;rage&quot;
+    }, 
+  
+  { 
+  audioName: &quot;Kids in the streets&quot;, 
+   audioSrc: &quot;Kids_in_the_streets&quot;, 
+    theme: &quot;rage&quot;
+    }
+]&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="header" tags="nobr" position="225,100" size="100,100">&lt;header class=&quot;general&quot; &gt;
 &lt;&lt;if $showLogo is true&gt;&gt;
 &lt;div class=&quot;logo-container&quot;&gt;&lt;img src=&quot;../assets/img/1884components-23.png&quot;/&gt;&lt;/div&gt;
  &lt;div class=&quot;nav-item&quot;&gt;
@@ -428,26 +551,29 @@ setup.chooseStoryAudio = () => {
     
     &lt;div class=&quot;hotspot community&quot;&gt;
         &lt;&lt;link &quot;&quot;&gt;&gt;
+            &lt;&lt;set $theme to &quot;community&quot;&gt;&gt;
             &lt;&lt;removeclass &quot;.overlay&quot; &quot;active&quot;&gt;&gt;
             &lt;&lt;addclass &quot;#community&quot; &quot;active&quot;&gt;&gt;
-            /* &lt;&lt;timed 0.5s&gt;&gt;
+            &lt;&lt;timed 0.5s&gt;&gt;
                 &lt;&lt;goto &quot;community&quot;&gt;&gt;
-            &lt;&lt;/timed&gt;&gt; */
+            &lt;&lt;/timed&gt;&gt;
         &lt;&lt;/link&gt;&gt;
     &lt;/div&gt;
 
     &lt;div class=&quot;hotspot history&quot;&gt;
         &lt;&lt;link &quot;&quot;&gt;&gt;
+            &lt;&lt;set $theme to &quot;history&quot;&gt;&gt;
             &lt;&lt;removeclass &quot;.overlay&quot; &quot;active&quot;&gt;&gt;
             &lt;&lt;addclass &quot;#history&quot; &quot;active&quot;&gt;&gt;
-            /* &lt;&lt;timed 0.5s&gt;&gt;
+            &lt;&lt;timed 0.5s&gt;&gt;
                 &lt;&lt;goto &quot;history&quot;&gt;&gt;
-            &lt;&lt;/timed&gt;&gt; */
+            &lt;&lt;/timed&gt;&gt;
         &lt;&lt;/link&gt;&gt;
     &lt;/div&gt;
 
     &lt;div class=&quot;hotspot joy&quot;&gt;
         &lt;&lt;link &quot;&quot;&gt;&gt;
+            &lt;&lt;set $theme to &quot;joy&quot;&gt;&gt;
             &lt;&lt;removeclass &quot;.overlay&quot; &quot;active&quot;&gt;&gt;
             &lt;&lt;addclass &quot;#joy&quot; &quot;active&quot;&gt;&gt;
             &lt;&lt;timed 0.5s&gt;&gt;
@@ -458,6 +584,7 @@ setup.chooseStoryAudio = () => {
 
     &lt;div class=&quot;hotspot people&quot;&gt;
         &lt;&lt;link &quot;&quot;&gt;&gt;
+            &lt;&lt;set $theme to &quot;people&quot;&gt;&gt;
             &lt;&lt;removeclass &quot;.overlay&quot; &quot;active&quot;&gt;&gt;
             &lt;&lt;addclass &quot;#people&quot; &quot;active&quot;&gt;&gt;
             &lt;&lt;timed 0.5s&gt;&gt;
@@ -468,6 +595,7 @@ setup.chooseStoryAudio = () => {
 
     &lt;div class=&quot;hotspot places&quot;&gt;
         &lt;&lt;link &quot;&quot;&gt;&gt;
+            &lt;&lt;set $theme to &quot;places&quot;&gt;&gt;
             &lt;&lt;removeclass &quot;.overlay&quot; &quot;active&quot;&gt;&gt;
             &lt;&lt;addclass &quot;#places&quot; &quot;active&quot;&gt;&gt;
             &lt;&lt;timed 0.5s&gt;&gt;
@@ -478,6 +606,7 @@ setup.chooseStoryAudio = () => {
 
     &lt;div class=&quot;hotspot rage&quot;&gt;
         &lt;&lt;link &quot;&quot;&gt;&gt;
+            &lt;&lt;set $theme to &quot;rage&quot;&gt;&gt;
             &lt;&lt;removeclass &quot;.overlay&quot; &quot;active&quot;&gt;&gt;
             &lt;&lt;addclass &quot;#rage&quot; &quot;active&quot;&gt;&gt;
             &lt;&lt;timed 0.5s&gt;&gt;
@@ -490,109 +619,129 @@ setup.chooseStoryAudio = () => {
 
 &lt;/main&gt;
 
-&lt;&lt;include &quot;footermap&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="15" name="places" tags="nobr" position="600,225" size="100,100">&lt;&lt;set $prevpass to &quot;map&quot;&gt;&gt;
+&lt;&lt;include &quot;footermap&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="15" name="listaudio" tags="nobr" position="600,225" size="100,100">&lt;&lt;set _list to $audiodata.filter(a =&gt; a &amp;&amp; a.theme === $theme)&gt;&gt;
+
+&lt;div class=&quot;audio-btn-container&quot;&gt;
+
+&lt;&lt;for _audio range _list&gt;&gt;
+  &lt;div class=&quot;audio-btn&quot;&gt;
+  &lt;img src=&quot;assets/img/play.png&quot;&gt;
+  &lt;&lt;button _audio.audioName&gt;&gt;
+    &lt;&lt;set $currentAudio to _audio&gt;&gt;
+    &lt;&lt;goto &quot;listen&quot;&gt;&gt;
+  &lt;&lt;/button&gt;&gt;
+  &lt;/div&gt;
+&lt;&lt;/for&gt;&gt;
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="16" name="places" tags="nobr" position="725,225" size="100,100">&lt;&lt;set $prevpass to &quot;map&quot;&gt;&gt;
 &lt;&lt;set $passage to &quot;places&quot;&gt;&gt;
 &lt;&lt;set $nextpass to &quot;&quot;&gt;&gt;
+&lt;&lt;set $theme to &quot;places&quot;&gt;&gt;
 &lt;main&gt;
-&lt;h1&gt;Places&lt;/h1&gt;
-&lt;p&gt;What places are special to you?&lt;/p&gt;
-&lt;div class=&quot;audio-btn-container&quot;&gt;
-&lt;&lt;button &quot;King Henry&#39;s Walk Allotments&quot;&gt;&gt;
-  &lt;&lt;set $source to &quot;KingHenrysWalkAllotments&quot;&gt;&gt;
-  &lt;&lt;goto &quot;listen&quot;&gt;&gt;
-  &lt;&lt;/button&gt;&gt;
+&lt;div class=&quot;upper-character-container&quot;&gt;
+&lt;img src=&quot;assets/img/characters/characters-10.png&quot;&gt;
 &lt;/div&gt;
-&lt;br/&gt;
+&lt;h1&gt;Places&lt;/h1&gt;
+
+&lt;p&gt;What places are special to you?&lt;/p&gt;
+&lt;&lt;include &quot;listaudio&quot;&gt;&gt;
+&lt;br/&gt;&lt;br/&gt;
+&lt;div class=&quot;btn-container secondary&quot;&gt;
 &lt;&lt;button &quot;Add a place&quot;&gt;&gt;
   &lt;&lt;goto &quot;prerecord&quot;&gt;&gt;
   &lt;&lt;/button&gt;&gt;
+  &lt;/div&gt;
+
+&lt;div class=&quot;lower-character-container&quot;&gt;
+&lt;img src=&quot;assets/img/characters/characters-14.png&quot;&gt;
+&lt;img src=&quot;assets/img/characters/characters-27.png&quot;&gt;
+&lt;/div&gt;
 &lt;/main&gt;
-&lt;&lt;include &quot;footertheme&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="people" tags="nobr" position="725,225" size="100,100">&lt;&lt;set $prevpass to &quot;map&quot;&gt;&gt;
+&lt;&lt;include &quot;footertheme&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="17" name="people" tags="nobr" position="850,225" size="100,100">&lt;&lt;set $prevpass to &quot;map&quot;&gt;&gt;
 &lt;&lt;set $passage to &quot;people&quot;&gt;&gt;
 &lt;&lt;set $nextpass to &quot;&quot;&gt;&gt;
+&lt;&lt;set $theme to &quot;people&quot;&gt;&gt;
 &lt;main&gt;
-&lt;h1&gt;People&lt;/h1&gt;
-&lt;p&gt;Tell us about you - or someone in Islington that should be remembered.&lt;/p&gt;
-&lt;div class=&quot;audio-btn-container&quot;&gt;
-&lt;&lt;button &quot;TBCAudio&quot;&gt;&gt;
-  &lt;&lt;set $source to &quot;TBCAudio&quot;&gt;&gt;
-  &lt;&lt;goto &quot;listen&quot;&gt;&gt;
-  &lt;&lt;/button&gt;&gt;
+&lt;div class=&quot;upper-character-container&quot;&gt;
+&lt;img src=&quot;assets/img/characters/characters-14.png&quot;&gt;
+&lt;img src=&quot;assets/img/characters/characters-27.png&quot;&gt;
+&lt;img src=&quot;assets/img/characters/characters-10.png&quot;&gt;
 &lt;/div&gt;
-&lt;br/&gt;
-&lt;&lt;button &quot;Share your story&quot;&gt;&gt;
-  &lt;&lt;goto &quot;prerecord&quot;&gt;&gt;
-  &lt;&lt;/button&gt;&gt;
+&lt;div class=&quot;content-container&quot;&gt;
+  &lt;h1&gt;People&lt;/h1&gt;
+  &lt;p&gt;Tell us about you - or someone in Islington that should be remembered.&lt;/p&gt;
+  &lt;&lt;include &quot;listaudio&quot;&gt;&gt;
+  &lt;br/&gt;&lt;br/&gt;
+  &lt;div class=&quot;btn-container secondary&quot;&gt;
+    &lt;&lt;button &quot;Share your story&quot;&gt;&gt;
+      &lt;&lt;goto &quot;prerecord&quot;&gt;&gt;
+      &lt;&lt;/button&gt;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;/main&gt;
-&lt;&lt;include &quot;footertheme&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="17" name="community" tags="nobr" position="850,225" size="100,100">&lt;&lt;set $prevpass to &quot;map&quot;&gt;&gt;
+&lt;&lt;include &quot;footertheme&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="18" name="community" tags="nobr" position="975,225" size="100,100">&lt;&lt;set $prevpass to &quot;map&quot;&gt;&gt;
 &lt;&lt;set $passage to &quot;community&quot;&gt;&gt;
 &lt;&lt;set $nextpass to &quot;&quot;&gt;&gt;
+&lt;&lt;set $theme to &quot;community&quot;&gt;&gt;
 &lt;main&gt;
 &lt;h1&gt;Community&lt;/h1&gt;
 &lt;p&gt;When people come together...&lt;/p&gt;
-&lt;div class=&quot;audio-btn-container&quot;&gt;
-&lt;&lt;button &quot;TBCAudio&quot;&gt;&gt;
-  &lt;&lt;set $source to &quot;TBCAudio&quot;&gt;&gt;
-  &lt;&lt;goto &quot;listen&quot;&gt;&gt;
-  &lt;&lt;/button&gt;&gt;
-&lt;/div&gt;
-&lt;br/&gt;
+
+&lt;&lt;include &quot;listaudio&quot;&gt;&gt;
+&lt;br/&gt;&lt;br/&gt;
+&lt;div class=&quot;btn-container secondary&quot;&gt;
 &lt;&lt;button &quot;Share your story&quot;&gt;&gt;
   &lt;&lt;goto &quot;prerecord&quot;&gt;&gt;
   &lt;&lt;/button&gt;&gt;
+  &lt;/div&gt;
 &lt;/main&gt;
-&lt;&lt;include &quot;footertheme&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="18" name="joy" tags="nobr" position="975,225" size="100,100">&lt;&lt;set $prevpass to &quot;map&quot;&gt;&gt;
+&lt;&lt;include &quot;footertheme&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="joy" tags="nobr" position="1100,225" size="100,100">&lt;&lt;set $prevpass to &quot;map&quot;&gt;&gt;
 &lt;&lt;set $passage to &quot;joy&quot;&gt;&gt;
 &lt;&lt;set $nextpass to &quot;&quot;&gt;&gt;
+&lt;&lt;set $theme to &quot;joy&quot;&gt;&gt;
 &lt;main&gt;
 &lt;h1&gt;Joy&lt;/h1&gt;
 &lt;p&gt;What brings them joy...&lt;/p&gt;
-&lt;div class=&quot;audio-btn-container&quot;&gt;
-&lt;&lt;button &quot;TBCAudio&quot;&gt;&gt;
-  &lt;&lt;set $source to &quot;TBCAudio&quot;&gt;&gt;
-  &lt;&lt;goto &quot;listen&quot;&gt;&gt;
-  &lt;&lt;/button&gt;&gt;
-&lt;/div&gt;
-&lt;br/&gt;
+&lt;&lt;include &quot;listaudio&quot;&gt;&gt;
+&lt;br/&gt;&lt;br/&gt;
+&lt;div class=&quot;btn-container secondary&quot;&gt;
 &lt;&lt;button &quot;Share your story&quot;&gt;&gt;
   &lt;&lt;goto &quot;prerecord&quot;&gt;&gt;
   &lt;&lt;/button&gt;&gt;
+  &lt;/div&gt;
 &lt;/main&gt;
-&lt;&lt;include &quot;footertheme&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="rage" tags="nobr" position="1100,225" size="100,100">&lt;&lt;set $prevpass to &quot;map&quot;&gt;&gt;
+&lt;&lt;include &quot;footertheme&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="20" name="rage" tags="nobr" position="1225,225" size="100,100">&lt;&lt;set $prevpass to &quot;map&quot;&gt;&gt;
 &lt;&lt;set $passage to &quot;rage&quot;&gt;&gt;
 &lt;&lt;set $nextpass to &quot;&quot;&gt;&gt;
+&lt;&lt;set $theme to &quot;rage&quot;&gt;&gt;
 &lt;main&gt;
 &lt;h1&gt;Rage&lt;/h1&gt;
 &lt;p&gt;What makes them angry...&lt;/p&gt;
-&lt;div class=&quot;audio-btn-container&quot;&gt;
-&lt;&lt;button &quot;TBCAudio&quot;&gt;&gt;
-  &lt;&lt;set $source to &quot;TBCAudio&quot;&gt;&gt;
-  &lt;&lt;goto &quot;listen&quot;&gt;&gt;
-  &lt;&lt;/button&gt;&gt;
-&lt;/div&gt;
-&lt;br/&gt;
+&lt;&lt;include &quot;listaudio&quot;&gt;&gt;
+&lt;br/&gt;&lt;br/&gt;
+&lt;div class=&quot;btn-container secondary&quot;&gt;
 &lt;&lt;button &quot;Share your story&quot;&gt;&gt;
   &lt;&lt;goto &quot;prerecord&quot;&gt;&gt;
   &lt;&lt;/button&gt;&gt;
+  &lt;/div&gt;
 &lt;/main&gt;
-&lt;&lt;include &quot;footertheme&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="20" name="history" tags="nobr" position="1225,225" size="100,100">&lt;&lt;set $prevpass to &quot;map&quot;&gt;&gt;
+&lt;&lt;include &quot;footertheme&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="21" name="history" tags="nobr" position="100,350" size="100,100">&lt;&lt;set $prevpass to &quot;map&quot;&gt;&gt;
 &lt;&lt;set $passage to &quot;history&quot;&gt;&gt;
 &lt;&lt;set $nextpass to &quot;&quot;&gt;&gt;
+&lt;&lt;set $theme to &quot;history&quot;&gt;&gt;
 &lt;main&gt;
 &lt;h1&gt;History&lt;/h1&gt;
 &lt;p&gt;Something that’s changed, something that got lost, or just a good story about Islington...&lt;/p&gt;
-&lt;div class=&quot;audio-btn-container&quot;&gt;
-&lt;&lt;button &quot;TBCAudio&quot;&gt;&gt;
-  &lt;&lt;set $source to &quot;TBCAudio&quot;&gt;&gt;
-  &lt;&lt;goto &quot;listen&quot;&gt;&gt;
-  &lt;&lt;/button&gt;&gt;
-&lt;/div&gt;
-&lt;br/&gt;
+&lt;&lt;include &quot;listaudio&quot;&gt;&gt;
+&lt;br/&gt;&lt;br/&gt;
+&lt;div class=&quot;btn-container secondary&quot;&gt;
 &lt;&lt;button &quot;Share your story&quot;&gt;&gt;
   &lt;&lt;goto &quot;prerecord&quot;&gt;&gt;
   &lt;&lt;/button&gt;&gt;
+  &lt;/div&gt;
 &lt;/main&gt;
-&lt;&lt;include &quot;footertheme&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="21" name="about" tags="nobr" position="100,350" size="100,100">&lt;main&gt;
+&lt;&lt;include &quot;footertheme&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="22" name="about" tags="nobr" position="225,350" size="100,100">&lt;main&gt;
 &lt;h1&gt;About&lt;/h1&gt;
 &lt;p&gt;Letters from us is a community storytelling project that invites people in Islington to tell the story of their area, in their own words. Inspired by the long-running BBC radio show Letter from America, the project invites residents from different ages and backgrounds to share their stories and reflect on how they see their community.&lt;/p&gt;
  
@@ -610,7 +759,7 @@ setup.chooseStoryAudio = () => {
 &lt;&lt;button &quot;Back to Map&quot;&gt;&gt;
   &lt;&lt;goto &quot;map&quot;&gt;&gt;
   &lt;&lt;/button&gt;&gt;
-&lt;/main&gt;</tw-passagedata><tw-passagedata pid="22" name="headerlisten" tags="nobr" position="225,350" size="100,100">&lt;header class=&quot;listen player&quot; &gt;
+&lt;/main&gt;</tw-passagedata><tw-passagedata pid="23" name="headerlisten" tags="nobr" position="350,350" size="100,100">&lt;header class=&quot;listen player&quot; &gt;
 
  &lt;div class=&quot;nav-item&quot;&gt;
  &lt;/div&gt;
@@ -633,7 +782,7 @@ setup.chooseStoryAudio = () => {
 
     &lt;/div&gt;
   &lt;/div&gt;
-&lt;/header&gt;</tw-passagedata><tw-passagedata pid="23" name="listen" tags="nobr t8n.typewriter.4 t8n-dissolve" position="350,350" size="100,100">/* might need to put this in prev pass
+&lt;/header&gt;</tw-passagedata><tw-passagedata pid="24" name="listen" tags="nobr t8n.typewriter.4 t8n-dissolve" position="475,350" size="100,100">/* might need to put this in prev pass
 &lt;&lt;set $captions to false&gt;&gt;
 &lt;&lt;set $sound to true&gt;&gt;
 &lt;&lt;set $showMenu to true&gt;&gt;
@@ -677,7 +826,7 @@ setup.chooseStoryAudio = () => {
 &lt;&lt;set $a to setup.chooseStoryAudio()&gt;&gt;
   &lt;&lt;/if&gt;&gt;
   &lt;&lt;/timed&gt;&gt;
-  &lt;&lt;/done&gt;&gt;</tw-passagedata><tw-passagedata pid="24" name="footerlisten" tags="nobr" position="475,350" size="100,100">&lt;footer&gt;
+  &lt;&lt;/done&gt;&gt;</tw-passagedata><tw-passagedata pid="25" name="footerlisten" tags="nobr" position="600,350" size="100,100">&lt;footer&gt;
 &lt;div class=&quot;nav-container&quot;&gt;
   &lt;&lt;if $showBackwards is true&gt;&gt;
     &lt;div class=&quot;nav-wrapper&quot;&gt;
@@ -744,7 +893,7 @@ setup.chooseStoryAudio = () => {
   &lt;&lt;if $sound is true&gt;&gt;
    &lt;&lt;addclass &quot;#audioContainer&quot; &quot;activeIcon&quot;&gt;&gt;
   &lt;&lt;/if&gt;&gt;
-&lt;&lt;/done&gt;&gt;</tw-passagedata><tw-passagedata pid="25" name="footerread" tags="nobr" position="600,350" size="100,100">&lt;footer&gt;
+&lt;&lt;/done&gt;&gt;</tw-passagedata><tw-passagedata pid="26" name="footerread" tags="nobr" position="725,350" size="100,100">&lt;footer&gt;
 &lt;div class=&quot;nav-container&quot;&gt;
   &lt;&lt;if $showBackwards is true&gt;&gt;
     &lt;div class=&quot;nav-wrapper&quot;&gt;
@@ -774,7 +923,7 @@ setup.chooseStoryAudio = () => {
   &lt;&lt;if $sound is true&gt;&gt;
    /* &lt;&lt;addclass &quot;#audioContainer&quot; &quot;activeIcon&quot;&gt;&gt; */
   &lt;&lt;/if&gt;&gt;
-&lt;&lt;/done&gt;&gt;</tw-passagedata><tw-passagedata pid="26" name="audio1" tags="" position="725,350" size="100,100">&lt;source  src=&quot;../assets/memorial/audio1.mp3&quot;&gt;</tw-passagedata><tw-passagedata pid="27" name="KingHenrysWalkAllotments-cap" tags="nobr" position="850,350" size="100,100">&lt;&lt;timed 1s&gt;&gt;
+&lt;&lt;/done&gt;&gt;</tw-passagedata><tw-passagedata pid="27" name="audio1" tags="" position="850,350" size="100,100">&lt;source  src=&quot;../assets/memorial/audio1.mp3&quot;&gt;</tw-passagedata><tw-passagedata pid="28" name="KingHenrysWalkAllotments-cap" tags="nobr" position="975,350" size="100,100">&lt;&lt;timed 1s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;
     &lt;&lt;type 60ms&gt;&gt;
 &lt;p&gt;captions&lt;/p&gt; 
@@ -796,7 +945,7 @@ setup.chooseStoryAudio = () => {
 &lt;p&gt;captions &lt;/p&gt;
 &lt;&lt;/type&gt;&gt;
   &lt;&lt;/append&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="28" name="prerecord" tags="nobr" position="975,350" size="100,100">&lt;&lt;set $prevpass to &quot;&quot;&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="29" name="prerecord" tags="nobr" position="1100,350" size="100,100">&lt;&lt;set $prevpass to &quot;&quot;&gt;&gt;
 &lt;&lt;set $passage to &quot;prerecord&quot;&gt;&gt;
 &lt;&lt;set $nextpass to &quot;record&quot;&gt;&gt;
 
@@ -809,7 +958,7 @@ setup.chooseStoryAudio = () => {
 
 &lt;/main&gt;
 
-&lt;&lt;include &quot;footerback&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="29" name="record" tags="nobr" position="1100,350" size="100,100">&lt;&lt;set $prevpass to &quot;prerecord&quot;&gt;&gt;
+&lt;&lt;include &quot;footerback&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="30" name="record" tags="nobr" position="1225,350" size="100,100">&lt;&lt;set $prevpass to &quot;prerecord&quot;&gt;&gt;
 &lt;&lt;set $passage to &quot;record&quot;&gt;&gt;
 
 &lt;main&gt;

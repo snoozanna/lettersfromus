@@ -26,27 +26,30 @@ $(document.head).find('#style-ui-bar').remove();
 
 setup.chooseStoryAudio = () => {
 
-  const passageName = passage()
   const audio = document.getElementById("audioPlayer");
 
   if (!audio) {
-    console.error("Audio element with ID 'audioPlayer' not found.");
+    console.error("Audio element not found.");
     return;
   }
 
-  // Reset audio safely
+  const data = State.variables.currentAudio;
+
+  if (!data) {
+    console.warn("No currentAudio set.");
+    return;
+  }
+
+  // Reset audio
   audio.pause();
   audio.currentTime = 0;
-  audio.src = "";
 
-  let audioFiles = [];
+  // ✅ Make this an ARRAY (even for one file)
+  const audioFiles = [
+    `assets/audio/${data.theme}/${data.audioSrc}.mp3`
+  ];
 
-  if (passageName) {
-    let source = State.variables.source;
-    audioFiles = [`assets/audio/${source}.mp3`]; // assumes .mp3 already included
-
-    console.log("audioFiles", audioFiles)
-  }
+  console.log("audioFiles", audioFiles);
 
   let currentTrack = 0;
 
@@ -63,12 +66,11 @@ setup.chooseStoryAudio = () => {
     }
   }
 
-  audio.addEventListener("ended", playNext);
+  // ✅ Prevent stacking
+  audio.onended = playNext;
 
   if (audioFiles.length > 0) {
     playNext();
-  } else {
-    console.warn("No audio files for:", passageName);
   }
 };
 
@@ -76,6 +78,129 @@ setup.chooseStoryAudio = () => {
 
 
 :: StoryInit {"position":"100,100","size":"100,100"}
+<<set $theme to "">>
+<<set $h to "nks">>
+<<set $audiodata to [ 
+
+  {
+     audioName: "Christmas with the Mayor", 
+    audioSrc: "Christmas_with_the_Mayor", 
+    theme: "community"
+  }, 
+   {
+     audioName: "Islington traditions", 
+    audioSrc: "Islington_traditions", 
+    theme: "community"
+  }, 
+   {
+     audioName: "Out every day", 
+    audioSrc: "Out_every_day", 
+    theme: "community"
+  }, 
+   {
+     audioName: "Talking to strangers", 
+    audioSrc: "Talking_to_strangers", 
+    theme: "community"
+  }, 
+  {
+     audioName: "Working class spirit", 
+    audioSrc: "Working_class_spirit", 
+    theme: "community"
+  }, 
+  {
+     audioName: "Camden passage", 
+    audioSrc: "Camden_passage", 
+    theme: "history"
+  },
+  {
+     audioName: "Gillespie Park", 
+    audioSrc: "Gillespie_Park", 
+    theme: "history"
+  },
+  {
+     audioName: "Memory Gardens", 
+    audioSrc: "Memory_Gardens", 
+    theme: "history"
+  },
+  {
+     audioName: "Paddling pools & boating lakes", 
+    audioSrc: "Paddling_pools_boating_lakes", 
+    theme: "history"
+  },
+  {
+     audioName: "Walking down the market", 
+    audioSrc: "Walking_down_the_market", 
+    theme: "joy"
+  }, 
+  {
+     audioName: "Meeting the Sotheby Singers", 
+    audioSrc: "Meeting_the_Sotheby_Singers", 
+    theme: "joy"
+  }, 
+  {
+     audioName: "Singing in an orchard", 
+    audioSrc: "Singing_in_an_orchard", 
+    theme: "joy"
+  },
+  {
+   audioName: "Barbara", 
+    audioSrc: "Barbara", 
+    theme: "people"
+    } ,
+  {
+   audioName: "Chris", 
+    audioSrc: "Chris", 
+    theme: "people"
+    },
+  {
+   audioName: "David", 
+    audioSrc: "David", 
+    theme: "people"
+    },
+  {
+   audioName: "Eloina", 
+    audioSrc: "Eloina", 
+    theme: "people"
+    },
+  {
+   audioName: "Frank", 
+    audioSrc: "Frank", 
+    theme: "people"
+    },
+  {
+   audioName: "Linda", 
+    audioSrc: "Linda", 
+    theme: "people"
+    }, 
+  { 
+  audioName: "Muriel", 
+   audioSrc: "Muriel", 
+    theme: "people"
+    }, 
+      {
+    audioName: "King Henry's Walk Allotments", 
+    audioSrc: "King_Henry_s_Walk_Allotments", 
+    theme: "places"
+  }, 
+  { 
+  audioName: "Affording Islington", 
+   audioSrc: "Affording_Islington", 
+    theme: "rage"
+    }, 
+
+  { 
+  audioName: "Destroying a village", 
+   audioSrc: "Destroying_a_village", 
+    theme: "rage"
+    }, 
+  
+  { 
+  audioName: "Kids in the streets", 
+   audioSrc: "Kids_in_the_streets", 
+    theme: "rage"
+    }
+]>>
+
 
 :: header [nobr]
 <header class="general" >
@@ -399,26 +524,29 @@ setup.chooseStoryAudio = () => {
     
     <div class="hotspot community">
         <<link "">>
+            <<set $theme to "community">>
             <<removeclass ".overlay" "active">>
             <<addclass "#community" "active">>
-            /* <<timed 0.5s>>
+            <<timed 0.5s>>
                 <<goto "community">>
-            <</timed>> */
+            <</timed>>
         <</link>>
     </div>
 
     <div class="hotspot history">
         <<link "">>
+            <<set $theme to "history">>
             <<removeclass ".overlay" "active">>
             <<addclass "#history" "active">>
-            /* <<timed 0.5s>>
+            <<timed 0.5s>>
                 <<goto "history">>
-            <</timed>> */
+            <</timed>>
         <</link>>
     </div>
 
     <div class="hotspot joy">
         <<link "">>
+            <<set $theme to "joy">>
             <<removeclass ".overlay" "active">>
             <<addclass "#joy" "active">>
             <<timed 0.5s>>
@@ -429,6 +557,7 @@ setup.chooseStoryAudio = () => {
 
     <div class="hotspot people">
         <<link "">>
+            <<set $theme to "people">>
             <<removeclass ".overlay" "active">>
             <<addclass "#people" "active">>
             <<timed 0.5s>>
@@ -439,6 +568,7 @@ setup.chooseStoryAudio = () => {
 
     <div class="hotspot places">
         <<link "">>
+            <<set $theme to "places">>
             <<removeclass ".overlay" "active">>
             <<addclass "#places" "active">>
             <<timed 0.5s>>
@@ -449,6 +579,7 @@ setup.chooseStoryAudio = () => {
 
     <div class="hotspot rage">
         <<link "">>
+            <<set $theme to "rage">>
             <<removeclass ".overlay" "active">>
             <<addclass "#rage" "active">>
             <<timed 0.5s>>
@@ -463,23 +594,47 @@ setup.chooseStoryAudio = () => {
 
 <<include "footermap">>
 
+:: listaudio [nobr]
+<<set _list to $audiodata.filter(a => a && a.theme === $theme)>>
+
+<div class="audio-btn-container">
+
+<<for _audio range _list>>
+  <div class="audio-btn">
+  <img src="assets/img/play.png">
+  <<button _audio.audioName>>
+    <<set $currentAudio to _audio>>
+    <<goto "listen">>
+  <</button>>
+  </div>
+<</for>>
+
+</div>
+
 :: places [nobr]
 <<set $prevpass to "map">>
 <<set $passage to "places">>
 <<set $nextpass to "">>
+<<set $theme to "places">>
 <main>
-<h1>Places</h1>
-<p>What places are special to you?</p>
-<div class="audio-btn-container">
-<<button "King Henry's Walk Allotments">>
-  <<set $source to "KingHenrysWalkAllotments">>
-  <<goto "listen">>
-  <</button>>
+<div class="upper-character-container">
+<img src="assets/img/characters/characters-10.png">
 </div>
-<br/>
+<h1>Places</h1>
+
+<p>What places are special to you?</p>
+<<include "listaudio">>
+<br/><br/>
+<div class="btn-container secondary">
 <<button "Add a place">>
   <<goto "prerecord">>
   <</button>>
+  </div>
+
+<div class="lower-character-container">
+<img src="assets/img/characters/characters-14.png">
+<img src="assets/img/characters/characters-27.png">
+</div>
 </main>
 <<include "footertheme">>
 
@@ -487,19 +642,25 @@ setup.chooseStoryAudio = () => {
 <<set $prevpass to "map">>
 <<set $passage to "people">>
 <<set $nextpass to "">>
+<<set $theme to "people">>
 <main>
-<h1>People</h1>
-<p>Tell us about you - or someone in Islington that should be remembered.</p>
-<div class="audio-btn-container">
-<<button "TBCAudio">>
-  <<set $source to "TBCAudio">>
-  <<goto "listen">>
-  <</button>>
+<div class="upper-character-container">
+<img src="assets/img/characters/characters-14.png">
+<img src="assets/img/characters/characters-27.png">
+<img src="assets/img/characters/characters-10.png">
 </div>
-<br/>
-<<button "Share your story">>
-  <<goto "prerecord">>
-  <</button>>
+<div class="content-container">
+  <h1>People</h1>
+  <p>Tell us about you - or someone in Islington that should be remembered.</p>
+  <<include "listaudio">>
+  <br/><br/>
+  <div class="btn-container secondary">
+    <<button "Share your story">>
+      <<goto "prerecord">>
+      <</button>>
+  </div>
+</div>
+
 </main>
 <<include "footertheme">>
 
@@ -508,19 +669,18 @@ setup.chooseStoryAudio = () => {
 <<set $prevpass to "map">>
 <<set $passage to "community">>
 <<set $nextpass to "">>
+<<set $theme to "community">>
 <main>
 <h1>Community</h1>
 <p>When people come together...</p>
-<div class="audio-btn-container">
-<<button "TBCAudio">>
-  <<set $source to "TBCAudio">>
-  <<goto "listen">>
-  <</button>>
-</div>
-<br/>
+
+<<include "listaudio">>
+<br/><br/>
+<div class="btn-container secondary">
 <<button "Share your story">>
   <<goto "prerecord">>
   <</button>>
+  </div>
 </main>
 <<include "footertheme">>
 
@@ -528,19 +688,17 @@ setup.chooseStoryAudio = () => {
 <<set $prevpass to "map">>
 <<set $passage to "joy">>
 <<set $nextpass to "">>
+<<set $theme to "joy">>
 <main>
 <h1>Joy</h1>
 <p>What brings them joy...</p>
-<div class="audio-btn-container">
-<<button "TBCAudio">>
-  <<set $source to "TBCAudio">>
-  <<goto "listen">>
-  <</button>>
-</div>
-<br/>
+<<include "listaudio">>
+<br/><br/>
+<div class="btn-container secondary">
 <<button "Share your story">>
   <<goto "prerecord">>
   <</button>>
+  </div>
 </main>
 <<include "footertheme">>
 
@@ -549,19 +707,17 @@ setup.chooseStoryAudio = () => {
 <<set $prevpass to "map">>
 <<set $passage to "rage">>
 <<set $nextpass to "">>
+<<set $theme to "rage">>
 <main>
 <h1>Rage</h1>
 <p>What makes them angry...</p>
-<div class="audio-btn-container">
-<<button "TBCAudio">>
-  <<set $source to "TBCAudio">>
-  <<goto "listen">>
-  <</button>>
-</div>
-<br/>
+<<include "listaudio">>
+<br/><br/>
+<div class="btn-container secondary">
 <<button "Share your story">>
   <<goto "prerecord">>
   <</button>>
+  </div>
 </main>
 <<include "footertheme">>
 
@@ -570,19 +726,17 @@ setup.chooseStoryAudio = () => {
 <<set $prevpass to "map">>
 <<set $passage to "history">>
 <<set $nextpass to "">>
+<<set $theme to "history">>
 <main>
 <h1>History</h1>
 <p>Something that’s changed, something that got lost, or just a good story about Islington...</p>
-<div class="audio-btn-container">
-<<button "TBCAudio">>
-  <<set $source to "TBCAudio">>
-  <<goto "listen">>
-  <</button>>
-</div>
-<br/>
+<<include "listaudio">>
+<br/><br/>
+<div class="btn-container secondary">
 <<button "Share your story">>
   <<goto "prerecord">>
   <</button>>
+  </div>
 </main>
 <<include "footertheme">>
 
@@ -636,7 +790,6 @@ setup.chooseStoryAudio = () => {
     </div>
   </div>
 </header>
-
 
 
 
