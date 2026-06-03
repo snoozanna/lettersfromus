@@ -504,12 +504,11 @@ setup.chooseStoryAudio = () => {
 <<set $source to "KingHenrysWalkAllotments">>
 
 <main>
-<span>Click on the map to bring it to life.</span>
-<h1>TBCMap</h1>
-
+<div class="map-instruction"><span>Click on the map to bring it to life.</span></div>
 <div class="img-wrapper">
 
     <!-- Base map -->
+    <img class="bg-map" src="../assets/img/map/isborough.png">
     <img class="base-map" src="../assets/img/map/NEW-b_w+line.png">
 
     <!-- COLOUR OVERLAYS -->
@@ -590,6 +589,7 @@ setup.chooseStoryAudio = () => {
 
 </div>
 
+
 </main>
 
 <<include "footermap">>
@@ -618,8 +618,11 @@ setup.chooseStoryAudio = () => {
 <<set $theme to "places">>
 <main>
 <div class="upper-character-container">
+<img src="assets/img/characters/characters-14.png">
+<img src="assets/img/characters/characters-27.png">
 <img src="assets/img/characters/characters-10.png">
 </div>
+<div class="content-container">
 <h1>Places</h1>
 
 <p>What places are special to you?</p>
@@ -630,10 +633,6 @@ setup.chooseStoryAudio = () => {
   <<goto "prerecord">>
   <</button>>
   </div>
-
-<div class="lower-character-container">
-<img src="assets/img/characters/characters-14.png">
-<img src="assets/img/characters/characters-27.png">
 </div>
 </main>
 <<include "footertheme">>
@@ -645,9 +644,9 @@ setup.chooseStoryAudio = () => {
 <<set $theme to "people">>
 <main>
 <div class="upper-character-container">
-<img src="assets/img/characters/characters-14.png">
-<img src="assets/img/characters/characters-27.png">
-<img src="assets/img/characters/characters-10.png">
+<img src="assets/img/characters/charactersnew-40.png">
+<img src="assets/img/characters/characters-14 (1).png">
+<img src="assets/img/characters/characters-21.png">
 </div>
 <div class="content-container">
   <h1>People</h1>
@@ -671,6 +670,12 @@ setup.chooseStoryAudio = () => {
 <<set $nextpass to "">>
 <<set $theme to "community">>
 <main>
+<div class="upper-character-container">
+<img src="assets/img/characters/charactersnew-38.png">
+<img src="assets/img/characters/characters-24.png">
+<img src="assets/img/characters/characters34-36-34.png">
+</div>
+<div class="content-container">
 <h1>Community</h1>
 <p>When people come together...</p>
 
@@ -681,6 +686,7 @@ setup.chooseStoryAudio = () => {
   <<goto "prerecord">>
   <</button>>
   </div>
+  </div>
 </main>
 <<include "footertheme">>
 
@@ -690,6 +696,12 @@ setup.chooseStoryAudio = () => {
 <<set $nextpass to "">>
 <<set $theme to "joy">>
 <main>
+<div class="upper-character-container">
+<img src="assets/img/characters/characterdog.png">
+<img src="assets/img/characters/characters-14 (1).png">
+<img src="assets/img/characters/characters-18.png">
+</div>
+<div class="content-container">
 <h1>Joy</h1>
 <p>What brings them joy...</p>
 <<include "listaudio">>
@@ -698,6 +710,7 @@ setup.chooseStoryAudio = () => {
 <<button "Share your story">>
   <<goto "prerecord">>
   <</button>>
+  </div>
   </div>
 </main>
 <<include "footertheme">>
@@ -709,6 +722,12 @@ setup.chooseStoryAudio = () => {
 <<set $nextpass to "">>
 <<set $theme to "rage">>
 <main>
+<div class="upper-character-container">
+<img src="assets/img/characters/characters-12.png">
+<img src="assets/img/characters/characters.png">
+<img src="assets/img/characters/characters-17.png">
+</div>
+<div class="content-container">
 <h1>Rage</h1>
 <p>What makes them angry...</p>
 <<include "listaudio">>
@@ -717,6 +736,7 @@ setup.chooseStoryAudio = () => {
 <<button "Share your story">>
   <<goto "prerecord">>
   <</button>>
+  </div>
   </div>
 </main>
 <<include "footertheme">>
@@ -728,6 +748,12 @@ setup.chooseStoryAudio = () => {
 <<set $nextpass to "">>
 <<set $theme to "history">>
 <main>
+<div class="upper-character-container">
+<img src="assets/img/characters/characters-15.png">
+<img src="assets/img/characters/characters-13.png">
+<img src="assets/img/characters/characters-22.png">
+</div>
+<div class="content-container">
 <h1>History</h1>
 <p>Something that’s changed, something that got lost, or just a good story about Islington...</p>
 <<include "listaudio">>
@@ -736,6 +762,7 @@ setup.chooseStoryAudio = () => {
 <<button "Share your story">>
   <<goto "prerecord">>
   <</button>>
+  </div>
   </div>
 </main>
 <<include "footertheme">>

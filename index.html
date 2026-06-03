@@ -531,12 +531,11 @@ setup.chooseStoryAudio = () => {
 &lt;&lt;set $source to &quot;KingHenrysWalkAllotments&quot;&gt;&gt;
 
 &lt;main&gt;
-&lt;span&gt;Click on the map to bring it to life.&lt;/span&gt;
-&lt;h1&gt;TBCMap&lt;/h1&gt;
-
+&lt;div class=&quot;map-instruction&quot;&gt;&lt;span&gt;Click on the map to bring it to life.&lt;/span&gt;&lt;/div&gt;
 &lt;div class=&quot;img-wrapper&quot;&gt;
 
     &lt;!-- Base map --&gt;
+    &lt;img class=&quot;bg-map&quot; src=&quot;../assets/img/map/isborough.png&quot;&gt;
     &lt;img class=&quot;base-map&quot; src=&quot;../assets/img/map/NEW-b_w+line.png&quot;&gt;
 
     &lt;!-- COLOUR OVERLAYS --&gt;
@@ -617,6 +616,7 @@ setup.chooseStoryAudio = () => {
 
 &lt;/div&gt;
 
+
 &lt;/main&gt;
 
 &lt;&lt;include &quot;footermap&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="15" name="listaudio" tags="nobr" position="600,225" size="100,100">&lt;&lt;set _list to $audiodata.filter(a =&gt; a &amp;&amp; a.theme === $theme)&gt;&gt;
@@ -639,8 +639,11 @@ setup.chooseStoryAudio = () => {
 &lt;&lt;set $theme to &quot;places&quot;&gt;&gt;
 &lt;main&gt;
 &lt;div class=&quot;upper-character-container&quot;&gt;
+&lt;img src=&quot;assets/img/characters/characters-14.png&quot;&gt;
+&lt;img src=&quot;assets/img/characters/characters-27.png&quot;&gt;
 &lt;img src=&quot;assets/img/characters/characters-10.png&quot;&gt;
 &lt;/div&gt;
+&lt;div class=&quot;content-container&quot;&gt;
 &lt;h1&gt;Places&lt;/h1&gt;
 
 &lt;p&gt;What places are special to you?&lt;/p&gt;
@@ -651,10 +654,6 @@ setup.chooseStoryAudio = () => {
   &lt;&lt;goto &quot;prerecord&quot;&gt;&gt;
   &lt;&lt;/button&gt;&gt;
   &lt;/div&gt;
-
-&lt;div class=&quot;lower-character-container&quot;&gt;
-&lt;img src=&quot;assets/img/characters/characters-14.png&quot;&gt;
-&lt;img src=&quot;assets/img/characters/characters-27.png&quot;&gt;
 &lt;/div&gt;
 &lt;/main&gt;
 &lt;&lt;include &quot;footertheme&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="17" name="people" tags="nobr" position="850,225" size="100,100">&lt;&lt;set $prevpass to &quot;map&quot;&gt;&gt;
@@ -663,9 +662,9 @@ setup.chooseStoryAudio = () => {
 &lt;&lt;set $theme to &quot;people&quot;&gt;&gt;
 &lt;main&gt;
 &lt;div class=&quot;upper-character-container&quot;&gt;
-&lt;img src=&quot;assets/img/characters/characters-14.png&quot;&gt;
-&lt;img src=&quot;assets/img/characters/characters-27.png&quot;&gt;
-&lt;img src=&quot;assets/img/characters/characters-10.png&quot;&gt;
+&lt;img src=&quot;assets/img/characters/charactersnew-40.png&quot;&gt;
+&lt;img src=&quot;assets/img/characters/characters-14 (1).png&quot;&gt;
+&lt;img src=&quot;assets/img/characters/characters-21.png&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;content-container&quot;&gt;
   &lt;h1&gt;People&lt;/h1&gt;
@@ -685,6 +684,12 @@ setup.chooseStoryAudio = () => {
 &lt;&lt;set $nextpass to &quot;&quot;&gt;&gt;
 &lt;&lt;set $theme to &quot;community&quot;&gt;&gt;
 &lt;main&gt;
+&lt;div class=&quot;upper-character-container&quot;&gt;
+&lt;img src=&quot;assets/img/characters/charactersnew-38.png&quot;&gt;
+&lt;img src=&quot;assets/img/characters/characters-24.png&quot;&gt;
+&lt;img src=&quot;assets/img/characters/characters34-36-34.png&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;content-container&quot;&gt;
 &lt;h1&gt;Community&lt;/h1&gt;
 &lt;p&gt;When people come together...&lt;/p&gt;
 
@@ -695,12 +700,19 @@ setup.chooseStoryAudio = () => {
   &lt;&lt;goto &quot;prerecord&quot;&gt;&gt;
   &lt;&lt;/button&gt;&gt;
   &lt;/div&gt;
+  &lt;/div&gt;
 &lt;/main&gt;
 &lt;&lt;include &quot;footertheme&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="joy" tags="nobr" position="1100,225" size="100,100">&lt;&lt;set $prevpass to &quot;map&quot;&gt;&gt;
 &lt;&lt;set $passage to &quot;joy&quot;&gt;&gt;
 &lt;&lt;set $nextpass to &quot;&quot;&gt;&gt;
 &lt;&lt;set $theme to &quot;joy&quot;&gt;&gt;
 &lt;main&gt;
+&lt;div class=&quot;upper-character-container&quot;&gt;
+&lt;img src=&quot;assets/img/characters/characterdog.png&quot;&gt;
+&lt;img src=&quot;assets/img/characters/characters-14 (1).png&quot;&gt;
+&lt;img src=&quot;assets/img/characters/characters-18.png&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;content-container&quot;&gt;
 &lt;h1&gt;Joy&lt;/h1&gt;
 &lt;p&gt;What brings them joy...&lt;/p&gt;
 &lt;&lt;include &quot;listaudio&quot;&gt;&gt;
@@ -710,12 +722,19 @@ setup.chooseStoryAudio = () => {
   &lt;&lt;goto &quot;prerecord&quot;&gt;&gt;
   &lt;&lt;/button&gt;&gt;
   &lt;/div&gt;
+  &lt;/div&gt;
 &lt;/main&gt;
 &lt;&lt;include &quot;footertheme&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="20" name="rage" tags="nobr" position="1225,225" size="100,100">&lt;&lt;set $prevpass to &quot;map&quot;&gt;&gt;
 &lt;&lt;set $passage to &quot;rage&quot;&gt;&gt;
 &lt;&lt;set $nextpass to &quot;&quot;&gt;&gt;
 &lt;&lt;set $theme to &quot;rage&quot;&gt;&gt;
 &lt;main&gt;
+&lt;div class=&quot;upper-character-container&quot;&gt;
+&lt;img src=&quot;assets/img/characters/characters-12.png&quot;&gt;
+&lt;img src=&quot;assets/img/characters/characters.png&quot;&gt;
+&lt;img src=&quot;assets/img/characters/characters-17.png&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;content-container&quot;&gt;
 &lt;h1&gt;Rage&lt;/h1&gt;
 &lt;p&gt;What makes them angry...&lt;/p&gt;
 &lt;&lt;include &quot;listaudio&quot;&gt;&gt;
@@ -725,12 +744,19 @@ setup.chooseStoryAudio = () => {
   &lt;&lt;goto &quot;prerecord&quot;&gt;&gt;
   &lt;&lt;/button&gt;&gt;
   &lt;/div&gt;
+  &lt;/div&gt;
 &lt;/main&gt;
 &lt;&lt;include &quot;footertheme&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="21" name="history" tags="nobr" position="100,350" size="100,100">&lt;&lt;set $prevpass to &quot;map&quot;&gt;&gt;
 &lt;&lt;set $passage to &quot;history&quot;&gt;&gt;
 &lt;&lt;set $nextpass to &quot;&quot;&gt;&gt;
 &lt;&lt;set $theme to &quot;history&quot;&gt;&gt;
 &lt;main&gt;
+&lt;div class=&quot;upper-character-container&quot;&gt;
+&lt;img src=&quot;assets/img/characters/characters-15.png&quot;&gt;
+&lt;img src=&quot;assets/img/characters/characters-13.png&quot;&gt;
+&lt;img src=&quot;assets/img/characters/characters-22.png&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;content-container&quot;&gt;
 &lt;h1&gt;History&lt;/h1&gt;
 &lt;p&gt;Something that’s changed, something that got lost, or just a good story about Islington...&lt;/p&gt;
 &lt;&lt;include &quot;listaudio&quot;&gt;&gt;
@@ -739,6 +765,7 @@ setup.chooseStoryAudio = () => {
 &lt;&lt;button &quot;Share your story&quot;&gt;&gt;
   &lt;&lt;goto &quot;prerecord&quot;&gt;&gt;
   &lt;&lt;/button&gt;&gt;
+  &lt;/div&gt;
   &lt;/div&gt;
 &lt;/main&gt;
 &lt;&lt;include &quot;footertheme&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="22" name="about" tags="nobr" position="225,350" size="100,100">&lt;main&gt;
