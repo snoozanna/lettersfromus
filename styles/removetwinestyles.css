@@ -13,11 +13,10 @@
   
   #story a.link-external:after {
     content: "";
+    margin-left: 0
   }
   
-  #story a.link-external:after {
-    content: "";
-  }
+
   
   #story {
     margin: 0;

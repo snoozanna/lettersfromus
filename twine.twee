@@ -336,22 +336,14 @@ setup.chooseStoryAudio = () => {
 
   <div class="nav-wrapper">
     <div class="nav-item">
-        [img[Back|../assets/img/back-sharp-b.png][$prevpass]]
+       <<button "Back">>
+  <<goto $prevpass>>
+  <</button>>
     </div>
   </div>
 
 
-<div class="nav-wrapper">
-    <div class="nav-item">
-        [img[Replay|../assets/img/replay-sharp-b.png][$passage]]
-    </div>
-  </div>
 
-<div class="nav-wrapper">
-    <div class="nav-item">
-        [img[Next|../assets/img/for-sharp-b.png][$nextpass]]
-    </div>
-  </div>
   
 </footer>
 
@@ -380,7 +372,9 @@ setup.chooseStoryAudio = () => {
 
   <div class="nav-wrapper">
     <div class="nav-item">
-        [img[Back|../assets/img/back-sharp-b.png][$prevpass]]
+      <<button "Back">>
+    <<goto "map">>
+    <</button>>
     </div>
   </div>
 
@@ -475,7 +469,7 @@ setup.chooseStoryAudio = () => {
  <div class="main-container text">
  <h1>Letters from us</h1>
    <div id="textMount"></div>
-  <p> <b>Letters from Us</b> is an interactive audio archive celebrating the everyday stories of the people of Islington. </p>
+  <p> <span class="project">Letters from Us</span> is an interactive audio archive celebrating the everyday stories of the people of Islington. </p>
 
 <p>It was created by <a href="https://www.koro.org.uk/" rel="noreferrer" target="_blank" class="highlighted">Koro</a>, in partnership with City St George’s, University of London, Highbury Roundhouse, Mildmay Community Centre and St Mary Magdalene Academy. </p>
 
@@ -611,6 +605,7 @@ setup.chooseStoryAudio = () => {
   <img src="assets/img/play.png">
   <<button _audio.audioName>>
     <<set $currentAudio to _audio>>
+    <<set $prevpass to $currentAudio.theme>>
     <<goto "listen">>
   <</button>>
   </div>
@@ -632,11 +627,11 @@ setup.chooseStoryAudio = () => {
 <div class="content-container">
 <h1>Places</h1>
 
-<p>What places are special to you?</p>
+<p>What places in Islington are special to you?</p>
 <<include "listaudio">>
 <br/><br/>
 <div class="btn-container secondary">
-<<button "Add a place">>
+<<button "Share a place">>
   <<goto "prerecord">>
   <</button>>
   </div>
@@ -657,7 +652,7 @@ setup.chooseStoryAudio = () => {
 </div>
 <div class="content-container">
   <h1>People</h1>
-  <p>Tell us about you - or someone in Islington that should be remembered.</p>
+  <p>Meet the people of Islington</p>
   <<include "listaudio">>
   <br/><br/>
   <div class="btn-container secondary">
@@ -684,12 +679,12 @@ setup.chooseStoryAudio = () => {
 </div>
 <div class="content-container">
 <h1>Community</h1>
-<p>When people come together...</p>
+<p>Where do people come together in Islington?</p>
 
 <<include "listaudio">>
 <br/><br/>
 <div class="btn-container secondary">
-<<button "Share your story">>
+<<button "Share a story">>
   <<goto "prerecord">>
   <</button>>
   </div>
@@ -710,11 +705,11 @@ setup.chooseStoryAudio = () => {
 </div>
 <div class="content-container">
 <h1>Joy</h1>
-<p>What brings them joy...</p>
+<p>What makes you happy?</p>
 <<include "listaudio">>
 <br/><br/>
 <div class="btn-container secondary">
-<<button "Share your story">>
+<<button "Share your joy">>
   <<goto "prerecord">>
   <</button>>
   </div>
@@ -736,11 +731,11 @@ setup.chooseStoryAudio = () => {
 </div>
 <div class="content-container">
 <h1>Rage</h1>
-<p>What makes them angry...</p>
+<p>What makes you angry?</p>
 <<include "listaudio">>
 <br/><br/>
 <div class="btn-container secondary">
-<<button "Share your story">>
+<<button "Share your rage">>
   <<goto "prerecord">>
   <</button>>
   </div>
@@ -762,11 +757,11 @@ setup.chooseStoryAudio = () => {
 </div>
 <div class="content-container">
 <h1>History</h1>
-<p>Something that’s changed, something that got lost, or just a good story about Islington...</p>
+<p>How has Islington changed?</p>
 <<include "listaudio">>
 <br/><br/>
 <div class="btn-container secondary">
-<<button "Share your story">>
+<<button "Share some history">>
   <<goto "prerecord">>
   <</button>>
   </div>
@@ -782,17 +777,17 @@ setup.chooseStoryAudio = () => {
 <h1>About</h1>
 <p>Letters from us is a community storytelling project that invites people in Islington to tell the story of their area, in their own words. Inspired by the long-running BBC radio show <a href="https://www.bbc.co.uk/programmes/b00f6hbp" rel="noreferrer" target="_blank" class="highlighted">Letter from America</a>, the project invites residents from different ages and backgrounds to share their stories and reflect on how they see their community.</p>
  
-<p>Creative team:</p>
+<h2>Creative team</h2>
 <ul>
-  <li>Creative director: Marie Klimis</li>
-  <li>Live journalist: Glenda Cooper</li>
-  <li>Illustrator: Jess Sanders</li>
-  <li>Creative programmer: Suzanna Hurst</li>
+  <li><span class="role">Creative director:</span> Marie Klimis</li>
+  <li><span class="role">Live journalist</span> Glenda Cooper</li>
+  <li><span class="role">Illustrator</span> Jess Sanders</li>
+  <li><span class="role">Creative programmer</span> Suzanna Hurst</li>
 </ul>
 
-<p>Letters from us is a project from Koro Productions, an arts charity based in Islington. </p>
+<p>Letters from us is a project from <a href="https://www.koro.org.uk/" target="_blank" rel="noreferrer" class="highlighted">Koro Productions</a>, an arts charity based in Islington. </p>
 
-<p>To support our work, sign up for our <a href="https://www.koro.org.uk/contact" target="_blank" rel="noreferrer">newsletter</a>, follow us on <a href="https://www.instagram.com/koroproductions_" target="_blank" rel="noreferrer">Instagram</a> or <a href="https://www.justgiving.com/charity/koroproductionsltd" target="_blank" rel="noreferrer">donate</a> to keep our growing archive alive. </p>
+<p>To support our work, sign up for our <a href="https://www.koro.org.uk/contact" target="_blank" rel="noreferrer" class="highlighted">newsletter</a>, follow us on <a href="https://www.instagram.com/koroproductions_" target="_blank" rel="noreferrer" class="highlighted">Instagram</a> or <a href="https://www.justgiving.com/charity/koroproductionsltd" target="_blank" rel="noreferrer" class="highlighted">donate</a> to keep our growing archive alive. </p>
 <<button "Back to Map">>
   <<goto "map">>
   <</button>>
@@ -841,7 +836,7 @@ setup.chooseStoryAudio = () => {
 <<set $showMenu to false>>
 <<set $menuOpen to false>>
 
-<<set $prevpass to "listen">>
+
 <<set $passage to "listen">>
 
 
@@ -883,7 +878,7 @@ setup.chooseStoryAudio = () => {
     <div class="nav-wrapper">
       <div class="nav-item">
       <<button "Back">>
-          <<goto "map">>
+          <<goto $prevpass>>
           <</button>>
       </div>
     </div>
@@ -1026,7 +1021,7 @@ setup.chooseStoryAudio = () => {
 
 </main>
 
-<<include "footerback">>
+<<include "footer">>
 
 :: record [nobr]
 <<set $prevpass to "prerecord">>
@@ -1035,10 +1030,10 @@ setup.chooseStoryAudio = () => {
 <main>
 <h1>Record</h1>
     <iframe src="https://www.speakpipe.com/widget/inline/2iawuy25u8ynlcssocfc003zmfcl529u" allow="microphone" width="100%" height="200" frameborder="0"></iframe>
-<p>By clicking Record, you consent for your recording to be published online as part of the project. You can withdraw that consent at any time. More info can be found in our <a href="#" class="highlighted">terms of use</a> .</p>
-<<button "Back to menu">>
+<p>By clicking Record, you consent for your recording to be published online as part of the project. You can withdraw that consent at any time. More info can be found in our <a href="../TCs-Koro-LFU.pdf" class="highlighted" target="_blank">terms of use</a> .</p>
+<<button "Back to map">>
   <<goto "map">>
   <</button>>
 
 </main>
-<<include "footerback">>
+<<include "footer">>
