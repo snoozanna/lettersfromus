@@ -625,6 +625,15 @@ h3.subtitle.category {
   display: block;
 }
 
+/* Text */
+.text-layer {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+
 /* Overlays */
 .overlay {
   position: absolute;
@@ -642,45 +651,6 @@ h3.subtitle.category {
 }
 
 /* map sections  */
-img.overlay#history{
-  width: 28%;
-    top: 47%;
-    left: 24%;
-}
-
-img.overlay#community {
-  width: 83%;
-  top: 21%;
-  left: 6%;
-}
-
-img.overlay#joy {
-  width: 44.5%;
-  top: 28%;
-  left: 18%;
-}
-
-img.overlay#people {
-  width: 49%;
-  top: initial;
-  left: inherit;
-  bottom: 9%;
-  right: 12%;
-}
-
-
-
-img.overlay#places {
-  width: 51%;
-  top: 7%;
-  left: 5%;
-}
-img.overlay#rage {
-  width: 42%;
-  top: 42.5%;
-  left: 53%;
-}
-
 
 /* HOTSPOTS (click areas) */
 .hotspot {
