@@ -80,124 +80,266 @@ setup.chooseStoryAudio = () => {
 :: StoryInit {"position":"100,100","size":"100,100"}
 <<set $theme to "">>
 <<set $audiodata to [ 
-
+/* COMMUNITY  */
   {
      audioName: "Christmas with the Mayor", 
     audioSrc: "Christmas_with_the_Mayor", 
     theme: "community"
-  }, 
-   {
-     audioName: "Islington traditions", 
-    audioSrc: "Islington_traditions", 
-    theme: "community"
-  }, 
-   {
-     audioName: "Out every day", 
-    audioSrc: "Out_every_day", 
-    theme: "community"
+    /* cap */
   }, 
    {
      audioName: "Talking to strangers", 
     audioSrc: "Talking_to_strangers", 
     theme: "community"
+     /* cap */
+  }, 
+   {
+     audioName: "Highbury Fields youth", 
+    audioSrc:"Highbury-Fields-youth", 
+    theme: "community"
+     /* cap */
   }, 
   {
+     audioName: "Protests and parties", 
+    audioSrc:"Protests-and-parties", 
+    theme: "community"
+     /* cap */
+  }, 
+   {
+     audioName: "Islington traditions", 
+    audioSrc: "Islington_traditions", 
+    theme: "community"
+     /* cap */
+  }, 
+   {
      audioName: "Working class spirit", 
     audioSrc: "Working_class_spirit", 
     theme: "community"
+     /* cap */
   }, 
    {
-     audioName: "Paddling pools & boating lakes", 
-    audioSrc: "Paddling_pools_boating_lakes", 
+     audioName: "Out every day", 
+    audioSrc: "Out_every_day", 
+    theme: "community"
+     /* cap */
+  }, 
+  /* HISTORY  */
+ {
+     audioName: "Gillespie Park", 
+    audioSrc: "Gillespie_Park", 
     theme: "history"
+     /* cap */
+  },
+  
+   {
+     audioName: "Memory Gardens", 
+    audioSrc: "Memory_Gardens", 
+    theme: "history"
+     /* cap */
+  },
+   {
+     audioName: "Paradise Park", 
+    audioSrc: "Paradise_Park", 
+    theme: "history"
+     /* cap */
   },
   {
      audioName: "Camden passage", 
     audioSrc: "Camden_passage", 
     theme: "history"
+     /* cap */
   },
   {
-     audioName: "Gillespie Park", 
-    audioSrc: "Gillespie_Park", 
+     audioName: "The Library", 
+    audioSrc: "The_Library", 
     theme: "history"
+     /* cap */
   },
-  {
-     audioName: "Memory Gardens", 
-    audioSrc: "Memory_Gardens", 
+{
+     audioName: "Pools and Lakes", 
+    audioSrc: "Pools_and_lakes", 
     theme: "history"
+     /* cap */
+  },
+  /* JOY  */
+   {
+     audioName: "Celebrating Arsenal", 
+    audioSrc: "Celebrating_Arsenal", 
+    theme: "joy"
+        /* cap */
+  },
+   {
+     audioName: "Dancing in Finsbury Park", 
+    audioSrc: "Dancing_in_Finsbury_Park", 
+    theme: "joy"
+        /* cap */
   },
   {
      audioName: "Walking down the market", 
     audioSrc: "Walking_down_the_market", 
     theme: "joy"
+         /* cap */
   }, 
-  {
-     audioName: "Meeting the Sotheby Singers", 
-    audioSrc: "Meeting_the_Sotheby_Singers", 
-    theme: "joy"
-  }, 
-  {
+   {
      audioName: "Singing in an orchard", 
     audioSrc: "Singing_in_an_orchard", 
     theme: "joy"
   },
   {
+     audioName: "Meeting the Sotheby Singers", 
+    audioSrc: "Meeting_the_Sotheby_Singers", 
+    theme: "joy"
+  }, 
+/* PEOPLE  */
+  {
    audioName: "Barbara", 
     audioSrc: "Barbara", 
     theme: "people"
+      /* cap */
     } ,
+    { 
+  audioName: "Brian", 
+  audioSrc: "Brian", 
+  theme: "people"
+     /* cap */
+},
+{ 
+  audioName: "Caroline", 
+  audioSrc: "Caroline", 
+  theme: "people"
+     /* cap */
+} ,
   {
    audioName: "Chris", 
     audioSrc: "Chris", 
     theme: "people"
+      /* cap */
     },
   {
    audioName: "David", 
     audioSrc: "David", 
     theme: "people"
+      /* cap */
     },
   {
    audioName: "Eloina", 
     audioSrc: "Eloina", 
     theme: "people"
+      /* cap */
     },
+    { 
+  audioName: "Emily", 
+  audioSrc: "Emily", 
+  theme: "people"
+     /* cap */
+} ,
   {
    audioName: "Frank", 
     audioSrc: "Frank", 
     theme: "people"
+      /* cap */
     },
+    { 
+  audioName: "Laurette", 
+  audioSrc: "Laurette", 
+  theme: "people"
+     /* cap */
+}, 
   {
    audioName: "Linda", 
     audioSrc: "Linda", 
     theme: "people"
+      /* cap */
     }, 
   { 
   audioName: "Muriel", 
    audioSrc: "Muriel", 
     theme: "people"
+      /* cap */
     }, 
-      {
-    audioName: "King Henry's Walk Allotments", 
-    audioSrc: "King_Henry_s_Walk_Allotments", 
+{ 
+  audioName: "Rick", 
+  audioSrc: "Rick", 
+  theme: "people"
+     /* cap */
+} ,
+{ 
+  audioName: "Zara", 
+  audioSrc: "Zara", 
+  theme: "people"
+     /* cap */
+  
+},
+/* PLACES  */
+{
+    audioName: "King Henry's Allotments", 
+    audioSrc: "King_Henry_s_Allotments", 
     theme: "places"
+    /* cap */
   }, 
-  { 
-  audioName: "Affording Islington", 
-   audioSrc: "Affording_Islington", 
-    theme: "rage"
-    }, 
+  {
+    audioName: "Musical pubs and chapels", 
+    audioSrc: "Musical_pubs_and_chapels", 
+    theme: "places"
+       /* cap */
+  }, 
+{
+    audioName: "Lebanese after school club", 
+    audioSrc: "Lebanese_after_school_club", 
+    theme: "places"
+       /* cap */
+  }, 
 
-  { 
+  {
+    audioName: "Olden Garden", 
+    audioSrc: "Olden_Garden", 
+    theme: "places"
+       /* cap */
+  },
+  {
+    audioName: "Where everyone is", 
+    audioSrc: "Where_everyone_is", 
+    theme: "places"
+       /* cap */
+  },
+/* RAGE  */
+ { 
   audioName: "Destroying a village", 
    audioSrc: "Destroying_a_village", 
     theme: "rage"
-    }, 
-  
-  { 
+    /* cap */
+    },
+     { 
+  audioName: "Clubbing_and_racism", 
+   audioSrc: "Clubbing_and_racism", 
+    theme: "rage"
+       /* cap */
+  },
+   { 
   audioName: "Kids in the streets", 
    audioSrc: "Kids_in_the_streets", 
     theme: "rage"
-    }
+    /* cap */
+    },
+{ 
+  audioName: "Affording Islington", 
+   audioSrc: "Affording_Islington", 
+    theme: "rage"
+    /* cap */
+ },
+    { 
+  audioName:"Carrying_a_coffin", 
+   audioSrc: "Carrying_a_coffin", 
+    theme: "rage"
+       /* cap */
+    },
+   
+  { 
+  audioName: "Fuelling_division", 
+   audioSrc: "Fuelling_division", 
+    theme: "rage"
+       /* cap */
+  }
 ]>>
 
 
@@ -1705,6 +1847,93 @@ Quite a few people I knew from the area were scooped up for Tomorrow's People.
 <</replace>>
 <</timed>>
 
+:: The_Library-cap [nobr]
+<<timed 0s>>
+<<replace "#caption">>
+Well, I used to love to play at the Library Pub, <</replace>>
+<</timed>>
+
+<<timed 4s>>
+<<replace "#caption">>
+which is across the road from the Union Chapel on Upper Street. <</replace>>
+<</timed>>
+
+<<timed 8s>>
+<<replace "#caption">>
+I used to attend open mics there every Monday night, <</replace>>
+<</timed>>
+
+<<timed 13s>>
+<<replace "#caption">>
+and must be nearly eight, nine years ago when I started going there, <</replace>>
+<</timed>>
+
+<<timed 18s>>
+<<replace "#caption">>
+and I met good friends through the in the music community there. <</replace>>
+<</timed>>
+
+<<timed 26s>>
+<<replace "#caption">>
+Yeah, it was always such a good atmosphere and challenging. <</replace>>
+<</timed>>
+
+<<timed 30s>>
+<<replace "#caption">>
+I was doing my best to keep up to the standard and write new songs, <</replace>>
+<</timed>>
+
+<<timed 35s>>
+<<replace "#caption">>
+and I'd usually write one or two songs during the week <</replace>>
+<</timed>>
+
+<<timed 38s>>
+<<replace "#caption">>
+ready to play for that Monday, but there were some real characters used to turn up at that open mic. <</replace>>
+<</timed>>
+
+<<timed 49s>>
+<<replace "#caption">>
+Yeah, since the management changed in the pub and they stopped having open mic upstairs, <</replace>>
+<</timed>>
+
+<<timed 58s>>
+<<replace "#caption">>
+it's different. It's been different, but then we moved the virtual acoustic club, moved to, <</replace>>
+<</timed>>
+
+<<timed 66s>>
+<<replace "#caption">>
+well, moved to Pimlico after that, <</replace>>
+<</timed>>
+
+<<timed 69s>>
+<<replace "#caption">>
+and then it's moved to the Brewhouse and Kitchen, as I mentioned before, <</replace>>
+<</timed>>
+
+<<timed 74s>>
+<<replace "#caption">>
+but yeah, that the library up on my gate ran for about, <</replace>>
+<</timed>>
+
+<<timed 78s>>
+<<replace "#caption">>
+well, must be 10 years, <</replace>>
+<</timed>>
+
+<<timed 80s>>
+<<replace "#caption">>
+and I was there for most of that time, <</replace>>
+<</timed>>
+
+<<timed 82s>>
+<<replace "#caption">>
+met some really interesting people and talented people. <</replace>>
+<</timed>>
+
+
 :: Gillespie_Park-cap [nobr]
 <<timed 00s>>
   <<replace "#caption">>  
@@ -1869,3 +2098,3636 @@ but yeah, that was a very special place.
 <</replace>>
 <</timed>>
 
+
+:: Walking_down_the_market-cap [nobr]
+<<timed 00s>>
+  <<replace "#caption">>  
+I love the sort of mix of the community here, 
+<</replace>>
+<</timed>>
+
+<<timed 03s>>
+  <<replace "#caption">>  
+and this is what I like about it. 
+<</replace>>
+<</timed>>
+
+<<timed 05s>>
+  <<replace "#caption">>  
+It's... I don't feel uncomfortable walking down the market, 
+<</replace>>
+<</timed>>
+
+<<timed 09s>>
+  <<replace "#caption">>  
+my son does, but I like to just walk down the market and feel at home. 
+<</replace>>
+<</timed>>
+
+<<timed 15s>>
+  <<replace "#caption">>  
+That's what Islington is.
+<</replace>>
+<</timed>>
+
+:: Barbara-cap [nobr]
+<<timed 00s>>
+  <<replace "#caption">>  
+So my name's Barbara. 
+<</replace>>
+<</timed>>
+
+<<timed 01s>>
+  <<replace "#caption">>  
+I grew up in Islington, down the other end of the borough, near St Peter Street. 
+<</replace>>
+<</timed>>
+
+<<timed 07s>>
+  <<replace "#caption">>  
+The buildings that we were tenants of in Granbridge Street, the rents weren't extortionate like they are these days. 
+<</replace>>
+<</timed>>
+
+<<timed 16s>>
+  <<replace "#caption">>  
+The buildings were let to go into disrepair, and the landlords were ordered by the council to repair the roofs and things, they didn't do it, they couldn't afford to do it, so the council practically CPOed the entire street. 
+<</replace>>
+<</timed>>
+
+<<timed 31s>>
+  <<replace "#caption">>  
+We got moved down to a new conversion in Mildmay Road, 
+<</replace>>
+<</timed>>
+
+<<timed 36s>>
+  <<replace "#caption">>  
+but I've been down this end of the borough just about 50 years. 
+<</replace>>
+<</timed>>
+
+<<timed 41s>>
+  <<replace "#caption">>  
+The community centre was in existence then, it was different. It has been remodeled and refurbished in places, 
+<</replace>>
+<</timed>>
+
+<<timed 49s>>
+  <<replace "#caption">>  
+but my father used to come here as a pensioner. 
+<</replace>>
+<</timed>>
+
+<<timed 54s>>
+  <<replace "#caption">>  
+He used to come three times a week to the lunch club with joice, 
+<</replace>>
+<</timed>>
+
+<<timed 57s>>
+  <<replace "#caption">>  
+and he would always say he didn't come because he was old, he came to help with the oldies, because everybody else was a lot older than he was at the time. 
+<</replace>>
+<</timed>>
+
+<<timed 66s>>
+  <<replace "#caption">>  
+Now I'm retired, I don't work anymore, and of course I went blind two years prior to retirement. 
+<</replace>>
+<</timed>>
+
+<<timed 73s>>
+  <<replace "#caption">>  
+So I've been coming to Golden Oldies now for just under four years. 
+<</replace>>
+<</timed>>
+
+<<timed 78s>>
+  <<replace "#caption">>  
+Now, in fairness, having retired, I did want to, and would have, under other circumstances, gone to the valleys in Wales, 
+<</replace>>
+<</timed>>
+
+<<timed 86s>>
+  <<replace "#caption">>  
+because I wanted to retire to a cottage in Wales, where I could pop out the back and grow me vegetables, and you know, 
+<</replace>>
+<</timed>>
+
+<<timed 94s>>
+  <<replace "#caption">>  
+problem being, I lost my vision, and when I lost my vision, it put being out in the country out of the picture, 
+<</replace>>
+<</timed>>
+
+<<timed 102s>>
+  <<replace "#caption">>  
+because I can't drive, I need to be near facilities, 
+<</replace>>
+<</timed>>
+
+<<timed 106s>>
+  <<replace "#caption">>  
+so staying here was the only real option, because I know my way around, 
+<</replace>>
+<</timed>>
+
+<<timed 111s>>
+  <<replace "#caption">>  
+I know the place, I had no choice, I had to stay, so I'm still here, I'm still in Islington, 
+<</replace>>
+<</timed>>
+
+<<timed 118s>>
+  <<replace "#caption">>  
+it was the vaccine, the Covid vaccine caused the problem. 
+<</replace>>
+<</timed>>
+
+<<timed 122s>>
+  <<replace "#caption">>  
+NHS just turned around and said, you can't prove it. Truly, there was nothing wrong with me or my vision. 
+<</replace>>
+<</timed>>
+
+<<timed 129s>>
+  <<replace "#caption">>  
+I used to work as a driver. There was nothing wrong with me or with my vision prior to having the Covid vaccine. 
+<</replace>>
+<</timed>>
+
+<<timed 137s>>
+  <<replace "#caption">>  
+14 days after the Covid vaccine, I started getting via various side effects, 
+<</replace>>
+<</timed>>
+
+<<timed 144s>>
+  <<replace "#caption">>  
+nothing to do with vision, right, but month by month something else was wrong,
+<</replace>>
+<</timed>>
+
+<<timed 149s>>
+  <<replace "#caption">>  
+something else was wrong, back at the doctors again, something else was wrong, 
+<</replace>>
+<</timed>>
+
+<<timed 153s>>
+  <<replace "#caption">>  
+nobody could put two and two together to discover what ailed me, 
+<</replace>>
+<</timed>>
+
+<<timed 158s>>
+  <<replace "#caption">>  
+and exactly one year after that first vaccine, the lights went out. Space of five minutes. 
+<</replace>>
+<</timed>>
+
+<<timed 163s>>
+  <<replace "#caption">>  
+One minute I could see I was collecting my emails. The next minute everything went sparkle, sparkle, sparkle, sparkle, and I couldn't see anything anymore. 
+<</replace>>
+<</timed>>
+
+<<timed 172s>>
+  <<replace "#caption">>  
+They found that in hindsight was that the blood vessels, 
+<</replace>>
+<</timed>>
+
+<<timed 177s>>
+  <<replace "#caption">>  
+it was an autoimmune condition that had made the blood vessels in the brain occlude, 
+<</replace>>
+<</timed>>
+
+<<timed 184s>>
+  <<replace "#caption">>  
+and where they'd occluded, the oxygenated supply wasn't coming through, 
+<</replace>>
+<</timed>>
+
+<<timed 188s>>
+  <<replace "#caption">>  
+and the piece of my brain that it was affected was the piece of the brain that ceased. 
+<</replace>>
+<</timed>>
+
+<<timed 193s>>
+  <<replace "#caption">>  
+So, basically, in other words, the cameras are still working, 
+<</replace>>
+<</timed>>
+
+<<timed 200s>>
+  <<replace "#caption">>  
+but the computer is dead, 
+<</replace>>
+<</timed>>
+
+<<timed 203s>>
+  <<replace "#caption">>  
+it's life. I've just had to learn to... 
+<</replace>>
+<</timed>>
+
+<<timed 205s>>
+  <<replace "#caption">>  
+I've spent the last four years being engrossed in my knitting, because that's my occupational therapy. 
+<</replace>>
+<</timed>>
+
+<<timed 211s>>
+  <<replace "#caption">>  
+Yeah, every time I feel a bit blue or I'm thinking about the problem too much, I just get on with my knitting. 
+<</replace>>
+<</timed>>
+
+<<timed 218s>>
+  <<replace "#caption">>  
+Yeah, keeps the wolf at bay, and four years to come to terms with it. 
+<</replace>>
+<</timed>>
+
+<<timed 225s>>
+  <<replace "#caption">>  
+I get around okay, I do okay. I think I'm sort of coping reasonably well, 
+<</replace>>
+<</timed>>
+
+<<timed 231s>>
+  <<replace "#caption">>  
+but yeah, the things that, the way I'd planned my retirement hasn't turned out the way I wanted it to be.
+<</replace>>
+<</timed>>
+
+:: Chris-cap [nobr]
+<<timed 00s>>
+  <<replace "#caption">>  
+Hi my name is Chris. 
+<</replace>>
+<</timed>>
+
+<<timed 02s>>
+  <<replace "#caption">>  
+I am a widow, 
+<</replace>>
+<</timed>>
+
+<<timed 04s>>
+  <<replace "#caption">>  
+but fortunately I had a good wife and six children, 
+<</replace>>
+<</timed>>
+
+<<timed 11s>>
+  <<replace "#caption">>  
+and living in Islington in the same house now for the last 51 years, 
+<</replace>>
+<</timed>>
+
+<<timed 19s>>
+  <<replace "#caption">>  
+and working for Islington Council for 34 years, 
+<</replace>>
+<</timed>>
+
+<<timed 24s>>
+  <<replace "#caption">>  
+so I'm just a very lucky person to be here. 
+<</replace>>
+<</timed>>
+
+<<timed 28s>>
+  <<replace "#caption">>  
+I had heart trouble, 
+<</replace>>
+<</timed>>
+
+<<timed 30s>>
+  <<replace "#caption">>  
+I think a heart attack when I was, when I was 44 
+<</replace>>
+<</timed>>
+
+<<timed 34s>>
+  <<replace "#caption">>  
+and as I've passed that, doubling that date, now I'm 89 I feel quite well blessed, 
+<</replace>>
+<</timed>>
+
+<<timed 41s>>
+  <<replace "#caption">>  
+particularly with a good family of children, 
+<</replace>>
+<</timed>>
+
+<<timed 44s>>
+  <<replace "#caption">>  
+but now I was 
+<</replace>>
+<</timed>>
+
+<<timed 48s>>
+  <<replace "#caption">>  
+luckily happily married, but my wife died in 1996 
+<</replace>>
+<</timed>>
+
+<<timed 54s>>
+  <<replace "#caption">>  
+then, in 2000 met a local young lady, and we had 17 years gallivanting, I think, 
+<</replace>>
+<</timed>>
+
+<<timed 65s>>
+  <<replace "#caption">>  
+which is what we did, sort of 20 odd cruises and holidays every six weeks, you know, that sort of business. 
+<</replace>>
+<</timed>>
+
+<<timed 73s>>
+  <<replace "#caption">>  
+So I've been very well blessed with all that, 
+<</replace>>
+<</timed>>
+
+<<timed 76s>>
+  <<replace "#caption">>  
+and now I've got the support of my children, who 
+<</replace>>
+<</timed>>
+
+<<timed 81s>>
+  <<replace "#caption">>  
+contact me, or two of them contact me, three of them contact me every day, 
+<</replace>>
+<</timed>>
+
+<<timed 87s>>
+  <<replace "#caption">>  
+and they also come and help me with the gardening, because I'm quite keen.
+<</replace>>
+<</timed>>
+
+<<timed 91s>>
+  <<replace "#caption">>  
+I've got a house with a garden, quite keen on gardening. 
+<</replace>>
+<</timed>>
+
+<<timed 96s>>
+  <<replace "#caption">>  
+When I first joined Islington, I had to come here by underground, because my parents were living in Southgate 
+<</replace>>
+<</timed>>
+
+<<timed 103s>>
+  <<replace "#caption">>  
+when I arrived, they were, they were desperate for workers, I think, 
+<</replace>>
+<</timed>>
+
+<<timed 108s>>
+  <<replace "#caption">>  
+because I came in and was seen by one of the senior management in housing, and they said, 
+<</replace>>
+<</timed>>
+
+<<timed 114s>>
+  <<replace "#caption">>  
+"Yeah, you sound all right, you can come in, you know, it was a matter then of full employment, 
+<</replace>>
+<</timed>>
+
+<<timed 121s>>
+  <<replace "#caption">>  
+which changed quite dramatically within the council and everywhere else in that way, 
+<</replace>>
+<</timed>>
+
+<<timed 126s>>
+  <<replace "#caption">>  
+because after later in the 60s, 
+<</replace>>
+<</timed>>
+
+<<timed 130s>>
+  <<replace "#caption">>  
+suddenly it was all the university graduates were coming in to local government, 
+<</replace>>
+<</timed>>
+
+<<timed 136s>>
+  <<replace "#caption">>  
+and when I joined local government, I was told that I didn't do politics, 
+<</replace>>
+<</timed>>
+
+<<timed 144s>>
+  <<replace "#caption">>  
+but those that followed did, and they thought 
+<</replace>>
+<</timed>>
+
+<<timed 148s>>
+  <<replace "#caption">>  
+they didn't want to sort of necessarily go by the rules of the local councilors,
+<</replace>>
+<</timed>>
+
+<<timed 152s>>
+  <<replace "#caption">>  
+who were not necessarily that well educated, 
+<</replace>>
+<</timed>>
+
+<<timed 157s>>
+  <<replace "#caption">>  
+they wanted their own policies sort of pushed through and found it quite sort of a difficult time. 
+<</replace>>
+<</timed>>
+
+<<timed 166s>>
+  <<replace "#caption">>  
+My nicest experience, I suppose, was looking after homeless families. 
+<</replace>>
+<</timed>>
+
+<<timed 174s>>
+  <<replace "#caption">>  
+I sort of started by looking after homeless families, using temporary accommodation for them, 
+<</replace>>
+<</timed>>
+
+<<timed 180s>>
+  <<replace "#caption">>  
+went on, then, to running the reception centres for the homeless families within Islington. 
+<</replace>>
+<</timed>>
+
+<<timed 186s>>
+  <<replace "#caption">>  
+We had half a dozen and 
+<</replace>>
+<</timed>>
+
+<<timed 188s>>
+  <<replace "#caption">>  
+did that for 34 years with the council, 
+<</replace>>
+<</timed>>
+
+<<timed 193s>>
+  <<replace "#caption">>  
+but we ran the reception centres, which meant I was often on call overnight as well, 
+<</replace>>
+<</timed>>
+
+<<timed 200s>>
+  <<replace "#caption">>  
+because homelessness can happen any time of day or night, 
+<</replace>>
+<</timed>>
+
+<<timed 204s>>
+  <<replace "#caption">>  
+and the various reasons we had to even in the middle of the night make decisions 
+<</replace>>
+<</timed>>
+
+<<timed 210s>>
+  <<replace "#caption">>  
+as to what we could do to assist the people that were being referred to us, 
+<</replace>>
+<</timed>>
+
+<<timed 216s>>
+  <<replace "#caption">>  
+either by police or individually just presenting themselves somewhere, 
+<</replace>>
+<</timed>>
+
+<<timed 222s>>
+  <<replace "#caption">>  
+and so for 34 years I worked for Islington Council, 
+<</replace>>
+<</timed>>
+
+<<timed 228s>>
+  <<replace "#caption">>  
+and now we were well rewarded with it, because a long pension. 
+<</replace>>
+<</timed>>
+
+<<timed 234s>>
+  <<replace "#caption">>  
+I like Islington, and we feel comfortable here, 
+<</replace>>
+<</timed>>
+
+<<timed 236s>>
+  <<replace "#caption">>  
+having lived in the same house for 51 years. 
+<</replace>>
+<</timed>>
+
+<<timed 239s>>
+  <<replace "#caption">>  
+I would had I got my way completely moved to something smaller, 
+<</replace>>
+<</timed>>
+
+<<timed 245s>>
+  <<replace "#caption">>  
+but I have a son at home who's in his late 60s who will not move. 
+<</replace>>
+<</timed>>
+
+<<timed 251s>>
+  <<replace "#caption">>  
+It was a house for mum, dad, and the six children. 
+<</replace>>
+<</timed>>
+
+<<timed 254s>>
+  <<replace "#caption">>  
+It's now a house for two old age pensioners, and 
+<</replace>>
+<</timed>>
+
+<<timed 259s>>
+  <<replace "#caption">>  
+we are too comfortable to be moved.
+<</replace>>
+<</timed>>
+
+:: David-cap [nobr]
+<<timed 00s>>
+  <<replace "#caption">>  
+My name is David Walter, 52 years of age. 
+<</replace>>
+<</timed>>
+
+<<timed 05s>>
+  <<replace "#caption">>  
+I joined the British Army for five years, from 1997 to 2003 
+<</replace>>
+<</timed>>
+
+<<timed 13s>>
+  <<replace "#caption">>  
+I came back, worked in different jobs, from construction to security guard to... 
+<</replace>>
+<</timed>>
+
+<<timed 23s>>
+  <<replace "#caption">>  
+to working in shops. 
+<</replace>>
+<</timed>>
+
+<<timed 25s>>
+  <<replace "#caption">>  
+I am a volunteer at the Newington Green meeting house since 2019 
+<</replace>>
+<</timed>>
+
+<<timed 35s>>
+  <<replace "#caption">>  
+I got a job working there for a year in 2023 
+<</replace>>
+<</timed>>
+
+<<timed 44s>>
+  <<replace "#caption">>  
+I enjoy it. 
+<</replace>>
+<</timed>>
+
+<<timed 45s>>
+  <<replace "#caption">>  
+I like doing the research for the history of Newington Green Meeting House. 
+<</replace>>
+<</timed>>
+
+<<timed 51s>>
+  <<replace "#caption">>  
+I got an undergraduate degree from Birkbeck University, completed it in 2020 
+<</replace>>
+<</timed>>
+
+<<timed 60s>>
+  <<replace "#caption">>  
+I'm a big reader, and I like reading a lot of stuff. 
+<</replace>>
+<</timed>>
+
+<<timed 63s>>
+  <<replace "#caption">>  
+My favorite stuff is like non-fiction, which is history, 
+<</replace>>
+<</timed>>
+
+<<timed 67s>>
+  <<replace "#caption">>  
+and fiction, like, is classical literature. So I like all, like, late 18th century to early 19th century literature, 
+<</replace>>
+<</timed>>
+
+<<timed 80s>>
+  <<replace "#caption">>  
+also like early 20th century literature, as well. 
+<</replace>>
+<</timed>>
+
+<<timed 84s>>
+  <<replace "#caption">>  
+I'm into the history of East Asia, and also British colonial history, as well.
+<</replace>>
+<</timed>>
+
+
+
+:: Eloina [nobr]
+<<timed 00s>>
+  <<replace "#caption">>  
+My name is Eloina, and I am Spanish. 
+<</replace>>
+<</timed>>
+
+<<timed 03s>>
+  <<replace "#caption">>  
+I came from Spain in 1980 I think. 
+<</replace>>
+<</timed>>
+
+<<timed 09s>>
+  <<replace "#caption">>  
+Actually, I was quite young. I was about 22 when I first came to London, 
+<</replace>>
+<</timed>>
+
+<<timed 16s>>
+  <<replace "#caption">>  
+and I was just happy and excited to to be in London, 
+<</replace>>
+<</timed>>
+
+<<timed 25s>>
+  <<replace "#caption">>  
+I found it very different from Spain, and I really liked the vibe 
+<</replace>>
+<</timed>>
+
+<<timed 32s>>
+  <<replace "#caption">>  
+I, my first impression, I mean, I didn't know any, any English, 
+<</replace>>
+<</timed>>
+
+<<timed 43s>>
+  <<replace "#caption">>  
+so then it became the hardest part, really 
+<</replace>>
+<</timed>>
+
+<<timed 46s>>
+  <<replace "#caption">>  
+understanding and learning. 
+<</replace>>
+<</timed>>
+
+<<timed 52s>>
+  <<replace "#caption">>  
+It was, it was not easy, especially when you didn't know any language at all,
+<</replace>>
+<</timed>>
+
+<<timed 59s>>
+  <<replace "#caption">>  
+so it was the hard work of becoming integrated in London, 
+<</replace>>
+<</timed>>
+
+<<timed 67s>>
+  <<replace "#caption">>  
+which wasn't that easy. 
+<</replace>>
+<</timed>>
+
+<<timed 69s>>
+  <<replace "#caption">>  
+I always lived in Islington, and I like the fact that this is 
+<</replace>>
+<</timed>>
+
+<<timed 77s>>
+  <<replace "#caption">>  
+very multicultural, and I really like this community very much, 
+<</replace>>
+<</timed>>
+
+<<timed 84s>>
+  <<replace "#caption">>  
+especially since I retire, because there are a lot of things to do, 
+<</replace>>
+<</timed>>
+
+<<timed 91s>>
+  <<replace "#caption">>  
+and every day of the week I can go to a different place 
+<</replace>>
+<</timed>>
+
+<<timed 98s>>
+  <<replace "#caption">>  
+and just enjoy different activities. 
+<</replace>>
+<</timed>>
+
+<<timed 102s>>
+  <<replace "#caption">>  
+I go to different groups that I do crafts. 
+<</replace>>
+<</timed>>
+
+<<timed 107s>>
+  <<replace "#caption">>  
+I enjoy that as well, very much. 
+<</replace>>
+<</timed>>
+
+<<timed 110s>>
+  <<replace "#caption">>  
+I do like the singing. 
+<</replace>>
+<</timed>>
+
+<<timed 113s>>
+  <<replace "#caption">>  
+I taught myself to play the recorder.
+<</replace>>
+<</timed>>
+
+<<timed 119s>>
+  <<replace "#caption">>  
+So I have four children and five grandchildren. 
+<</replace>>
+<</timed>>
+
+<<timed 125s>>
+  <<replace "#caption">>  
+What else can I say about myself? 
+<</replace>>
+<</timed>>
+
+<<timed 129s>>
+  <<replace "#caption">>  
+I'm just.. I would say I'm just very happy 
+<</replace>>
+<</timed>>
+
+<<timed 132s>>
+  <<replace "#caption">>  
+to be able to be where I am at the moment. 
+<</replace>>
+<</timed>>
+
+<<timed 138s>>
+  <<replace "#caption">>  
+I'm just happy to be here in Islington.
+<</replace>>
+<</timed>>
+
+
+:: Frank-cap [nobr]
+<<timed 00s>>
+  <<replace "#caption">>  
+I am Frank David. 
+<</replace>>
+<</timed>>
+
+<<timed 01s>>
+  <<replace "#caption">>  
+I moved to Islington in 1978 
+<</replace>>
+<</timed>>
+
+<<timed 09s>>
+  <<replace "#caption">>  
+Islington seemed like it was miles away from anywhere important, 
+<</replace>>
+<</timed>>
+
+<<timed 14s>>
+  <<replace "#caption">>  
+but we got ourselves a house here and settled in. 
+<</replace>>
+<</timed>>
+
+<<timed 19s>>
+  <<replace "#caption">>  
+It was very different back in the 1970s 
+<</replace>>
+<</timed>>
+
+<<timed 22s>>
+  <<replace "#caption">>  
+it was very rough around Finsbury Park. 
+<</replace>>
+<</timed>>
+
+<<timed 26s>>
+  <<replace "#caption">>  
+Talking to people who lived here then and are still here, they say there was a fight at night outside the pubs. 
+<</replace>>
+<</timed>>
+
+<<timed 35s>>
+  <<replace "#caption">>  
+People were more aggressive. 
+<</replace>>
+<</timed>>
+
+<<timed 39s>>
+  <<replace "#caption">>  
+We had a different demographic, we had an awful lot of empty houses. 
+<</replace>>
+<</timed>>
+
+<<timed 45s>>
+  <<replace "#caption">>  
+We had people from housing associations who were moving into the houses in various streets around. 
+<</replace>>
+<</timed>>
+
+<<timed 55s>>
+  <<replace "#caption">>  
+We also had squatters that changed the nature of the places we lived. 
+<</replace>>
+<</timed>>
+
+<<timed 60s>>
+  <<replace "#caption">>  
+It was also very poor, people really had very little in Islington. 
+<</replace>>
+<</timed>>
+
+<<timed 65s>>
+  <<replace "#caption">>  
+I think the health service has looked after us better in recent years than it did way back then. 
+<</replace>>
+<</timed>>
+
+<<timed 71s>>
+  <<replace "#caption">>  
+Of course, I'm probably talking about health because I'm an older person getting towards the end of the 70s, 
+<</replace>>
+<</timed>>
+
+<<timed 77s>>
+  <<replace "#caption">>  
+but yes, you can get more healthcare now more easily than you could back then. 
+<</replace>>
+<</timed>>
+
+<<timed 83s>>
+  <<replace "#caption">>  
+I suppose I didn't need it much when I was in my 30s. 
+<</replace>>
+<</timed>>
+
+<<timed 87s>>
+  <<replace "#caption">>  
+I used to cycle everywhere. 
+<</replace>>
+<</timed>>
+
+<<timed 89s>>
+  <<replace "#caption">>  
+In many ways, life was easier, but people were rougher. 
+<</replace>>
+<</timed>>
+
+<<timed 94s>>
+  <<replace "#caption">>  
+Fact that we're only a few miles from the centre of London makes a big difference. 
+<</replace>>
+<</timed>>
+
+<<timed 98s>>
+  <<replace "#caption">>  
+I lived in Bridlington for about six years, being a full-time carer, 
+<</replace>>
+<</timed>>
+
+<<timed 103s>>
+  <<replace "#caption">>  
+and there wasn't the diversity that you get in Islington now. 
+<</replace>>
+<</timed>>
+
+<<timed 108s>>
+  <<replace "#caption">>  
+It was a very mono society up there. People didn't talk about much up there that wasn't right wing. 
+<</replace>>
+<</timed>>
+
+<<timed 119s>>
+  <<replace "#caption">>  
+Down here, you can find a range of people to talk to about a whole range of politics, religion, 
+<</replace>>
+<</timed>>
+
+<<timed 128s>>
+  <<replace "#caption">>  
+even different kinds of... food banks, that sort of thing.
+
+
+<</replace>>
+<</timed>>
+
+:: Linda-cap [nobr]
+<<timed 00s>>
+  <<replace "#caption">>  
+I'm Linda Brown. 
+<</replace>>
+<</timed>>
+
+<<timed 02s>>
+  <<replace "#caption">>  
+I'm retired. I don't work now, so right. 
+<</replace>>
+<</timed>>
+
+<<timed 04s>>
+  <<replace "#caption">>  
+I'm 75, I'll be 76 this year. 
+<</replace>>
+<</timed>>
+
+<<timed 08s>>
+  <<replace "#caption">>  
+I've got two children, boy and girl. 
+<</replace>>
+<</timed>>
+
+<<timed 10s>>
+  <<replace "#caption">>  
+I've got two grandchildren, boy and girl, 
+<</replace>>
+<</timed>>
+
+<<timed 13s>>
+  <<replace "#caption">>  
+basically, like, and as I say, I'm in here because I volunteer, but 
+<</replace>>
+<</timed>>
+
+<<timed 18s>>
+  <<replace "#caption">>  
+I do like to think I'm friends with most of the people around here, anyway. 
+<</replace>>
+<</timed>>
+
+<<timed 22s>>
+  <<replace "#caption">>  
+I've lived here since 1969 as I said, been all over, is it? 
+<</replace>>
+<</timed>>
+
+<<timed 27s>>
+  <<replace "#caption">>  
+But I've actually lived in Mildmay since 1969 when we moved round here so that's 57 years ago. 
+<</replace>>
+<</timed>>
+
+<<timed 36s>>
+  <<replace "#caption">>  
+Amazed
+<</replace>>
+<</timed>>
+
+<<timed 37s>>
+  <<replace "#caption">>  
+I'm amazed I've lived here that long myself now I've said it. 
+<</replace>>
+<</timed>>
+
+<<timed 43s>>
+  <<replace "#caption">>  
+I used to live down Lever Lane. I don't know if you know where Lever Lane is, but Lever Lane, they've got a Catholic church, 
+<</replace>>
+<</timed>>
+
+<<timed 51s>>
+  <<replace "#caption">>  
+and my dad was Italian, and my first memories really was walking in the Italian procession when I was a kid. 
+<</replace>>
+<</timed>>
+
+<<timed 59s>>
+  <<replace "#caption">>  
+School, I went to school there as well. 
+<</replace>>
+<</timed>>
+
+<<timed 64s>>
+  <<replace "#caption">>  
+I don't know, but as I say, I'm really Islington born and bred, so 
+<</replace>>
+<</timed>>
+
+<<timed 67s>>
+  <<replace "#caption">>  
+it's everything I've ever done has really been in Islington. 
+<</replace>>
+<</timed>>
+
+<<timed 72s>>
+  <<replace "#caption">>  
+Got married in Islington in Upper Street, you know. 
+<</replace>>
+<</timed>>
+
+<<timed 75s>>
+  <<replace "#caption">>  
+So, yeah, it's all been Islington.
+<</replace>>
+<</timed>>
+
+:: Muriel-cap
+<<timed 00s>>
+  <<replace "#caption">>  
+I am Muriel Reza, and I am a Haringey resident, 
+<</replace>>
+<</timed>>
+
+<<timed 04s>>
+  <<replace "#caption">>  
+but I have so many ties with Islington. 
+<</replace>>
+<</timed>>
+
+<<timed 08s>>
+  <<replace "#caption">>  
+I worked here for Islington Council for over 12 years, 
+<</replace>>
+<</timed>>
+
+<<timed 14s>>
+  <<replace "#caption">>  
+mostly my working life was there, and then around Upper Street, Highbury Fields, 
+<</replace>>
+<</timed>>
+
+<<timed 20s>>
+  <<replace "#caption">>  
+so my daytime was spent mainly in Islington, and sometimes I go and have my lunch in the chapel, Union Chapel, 
+<</replace>>
+<</timed>>
+
+<<timed 29s>>
+  <<replace "#caption">>  
+the little bit of greenery there, and it was quite nice. 
+<</replace>>
+<</timed>>
+
+<<timed 33s>>
+  <<replace "#caption">>  
+And then my children, we used to come to parks, any free events like Barnard Park to name a few, so many places we've been, 
+<</replace>>
+<</timed>>
+
+<<timed 41s>>
+  <<replace "#caption">>  
+and we were very happy. 
+<</replace>>
+<</timed>>
+
+<<timed 43s>>
+  <<replace "#caption">>  
+Now that I finished working, I come back, and I joined a few exercise classes, few events, and I have attended so many. 
+<</replace>>
+<</timed>>
+
+<<timed 54s>>
+  <<replace "#caption">>  
+So, there are so many opportunities, and I have met so many people, and I learnt a lot of things. 
+<</replace>>
+<</timed>>
+
+<<timed 59s>>
+  <<replace "#caption">>  
+There was a gardening project I took part in, and the LSO, that is London Symphony Orchestra. 
+<</replace>>
+<</timed>>
+
+<<timed 67s>>
+  <<replace "#caption">>  
+We went and made some music, and we made some lovely artifacts, where what we were singing about, 
+<</replace>>
+<</timed>>
+
+<<timed 75s>>
+  <<replace "#caption">>  
+I mean, someone drew it, and it was so great. 
+<</replace>>
+<</timed>>
+
+<<timed 78s>>
+  <<replace "#caption">>  
+We made a song, and then someone made the music to it, so create something like that, and see the end of it. 
+<</replace>>
+<</timed>>
+
+<<timed 84s>>
+  <<replace "#caption">>  
+That was just fantastic. I thoroughly enjoyed my time last year, joining all these groups and people with varied interests. 
+<</replace>>
+<</timed>>
+
+<<timed 96s>>
+  <<replace "#caption">>  
+Islington is quite busy, the health generation, they have so many events, and I'm quite happy to be part of it.
+<</replace>>
+<</timed>>
+
+
+:: King_Henry_s_Walk_Allotments-cap [nobr]
+<<timed 0s>>
+  <<replace "#caption">>  
+Islington, it still has a lot of nature reserves and stuff, 
+<</replace>>
+<</timed>>
+
+<<timed 3s>>
+  <<replace "#caption">>  
+a lot of stuff that I like walking through just to help me relax, 
+<</replace>>
+<</timed>>
+
+<<timed 9s>>
+  <<replace "#caption">>  
+and I think there was a place called King Henry's Walk allotment, 
+<</replace>>
+<</timed>>
+
+<<timed 15s>>
+  <<replace "#caption">>  
+and one of my friends kept a plot there, and it's kind of like a part nature reserve, it has a pond 
+<</replace>>
+<</timed>>
+
+<<timed 25s>>
+  <<replace "#caption">>  
+where there's like lots of wild little bits of wildlife there, and it's where people grow their crops there as well. 
+<</replace>>
+<</timed>>
+
+<<timed 32s>>
+  <<replace "#caption">>  
+So, everything from potatoes to asparagus. It's quite a nice area. Haven't been there for a while. 
+<</replace>>
+<</timed>>
+
+<<timed 40s>>
+  <<replace "#caption">>  
+I'd like to go there, I'd like to go back, but usually in the seasons, like in spring and summer and Christmas, 
+<</replace>>
+<</timed>>
+
+<<timed 46s>>
+  <<replace "#caption">>  
+they do like little events there as well.
+<</replace>>
+<</timed>>
+
+
+
+:: Affording_Islington-cap [nobr]
+<<timed 0s>>
+  <<replace "#caption">>  
+If you're a young person coming to Islington, it might be difficult because you might not quite know how to fit in. 
+<</replace>>
+<</timed>>
+
+<<timed 8s>>
+  <<replace "#caption">>  
+If you're a student coming here, there, of course, is student accommodation, but I think it's quite expensive. 
+<</replace>>
+<</timed>>
+
+<<timed 15s>>
+  <<replace "#caption">>  
+It might be hard to get to know the community. 
+<</replace>>
+<</timed>>
+
+<<timed 18s>>
+  <<replace "#caption">>  
+50 years ago, we had lots of pubs with music in them, and people could go there, meet friends, make new friends. 
+<</replace>>
+<</timed>>
+
+<<timed 25s>>
+  <<replace "#caption">>  
+I think that doesn't happen so much now. 
+<</replace>>
+<</timed>>
+
+<<timed 28s>>
+  <<replace "#caption">>  
+We used to have squatters; they would be very welcoming if you were new to Islington. 
+<</replace>>
+<</timed>>
+
+<<timed 33s>>
+  <<replace "#caption">>  
+You could go and stay with them, maybe even move in and become a part of their community. 
+<</replace>>
+<</timed>>
+
+<<timed 39s>>
+  <<replace "#caption">>  
+Rent is very expensive in Islington, I think it's prohibitive. 
+<</replace>>
+<</timed>>
+
+<<timed 44s>>
+  <<replace "#caption">>  
+It's something like 1500 to 2000 pounds a month, just for a place to lay your head. 
+<</replace>>
+<</timed>>
+
+<<timed 51s>>
+  <<replace "#caption">>  
+That's incredibly expensive compared to wages, so a young person moving in, 
+<</replace>>
+<</timed>>
+
+<<timed 57s>>
+  <<replace "#caption">>  
+or even two people with a family moving in, would have a lot of trouble paying the rent and paying the rest of the bills. 
+<</replace>>
+<</timed>>
+
+<<timed 65s>>
+  <<replace "#caption">>  
+It's ridiculous how expensive it is to live here. 
+<</replace>>
+<</timed>>
+
+<<timed 69s>>
+  <<replace "#caption">>  
+We need to make it more financially affordable to get people to live in Islington. 
+<</replace>>
+<</timed>>
+
+<<timed 75s>>
+  <<replace "#caption">>  
+We don't have much open space on which to build houses or new blocks of flats, so I don't quite know how we're going to accomplish that, 
+<</replace>>
+<</timed>>
+
+<<timed 84s>>
+  <<replace "#caption">>  
+but we have a forward-looking council. 
+<</replace>>
+<</timed>>
+
+<<timed 87s>>
+  <<replace "#caption">>  
+They are aware of the problems, and they know that unless you can get people to come and participate anew in an area, 
+<</replace>>
+<</timed>>
+
+<<timed 96s>>
+  <<replace "#caption">>  
+it will tend to die away.
+<</replace>>
+<</timed>>
+
+
+
+
+:: Destroying_a_village-cap [nobr]
+<<timed 0s>>
+  <<replace "#caption">>  
+I live at by Islington Green, and 
+<</replace>>
+<</timed>>
+
+<<timed 6s>>
+  <<replace "#caption">>  
+one of the local politicians here sort of turned round and asked me, 
+<</replace>>
+<</timed>>
+
+<<timed 12s>>
+  <<replace "#caption">>  
+as to the improvements, the gentrification of Newington Green, 
+<</replace>>
+<</timed>>
+
+<<timed 19s>>
+  <<replace "#caption">>  
+and my answer to him, it wasn't gentrification, 
+<</replace>>
+<</timed>>
+
+<<timed 23s>>
+  <<replace "#caption">>  
+it was destroying a village, 
+<</replace>>
+<</timed>>
+
+<<timed 25s>>
+  <<replace "#caption">>  
+because they took away our banks, our dairy, and all these sort of, and the butcher, 
+<</replace>>
+<</timed>>
+
+<<timed 32s>>
+  <<replace "#caption">>  
+they took all these things away by gentrification of the area, 
+<</replace>>
+<</timed>>
+
+<<timed 37s>>
+  <<replace "#caption">>  
+and that to me is one of the things that disturbed me. 
+<</replace>>
+<</timed>>
+
+<<timed 41s>>
+  <<replace "#caption">>  
+Well, it killed the village in that way, because it was a lovely village. 
+<</replace>>
+<</timed>>
+
+<<timed 45s>>
+  <<replace "#caption">>  
+We had the bank and everything else, two banks, I think, 
+<</replace>>
+<</timed>>
+
+<<timed 48s>>
+  <<replace "#caption">>  
+and we had the hairdresser there, and sort of ordinary sort of folk living here, 
+<</replace>>
+<</timed>>
+
+<<timed 53s>>
+  <<replace "#caption">>  
+and the gentrification came in when you have a nice cheese shop now, 
+<</replace>>
+<</timed>>
+
+<<timed 57s>>
+  <<replace "#caption">>  
+so you can have a lovely choice of 18 cheeses or 88 cheeses, I don't know, but 
+<</replace>>
+<</timed>>
+
+<<timed 64s>>
+  <<replace "#caption">>  
+I'm not a cheese expert. It's not good for my cholesterol, 
+<</replace>>
+<</timed>>
+
+<<timed 66s>>
+  <<replace "#caption">>  
+but it's the way has Islington changed, 
+<</replace>>
+<</timed>>
+
+<<timed 71s>>
+  <<replace "#caption">>  
+but I certainly, he didn't put me on the committee, sort of suggesting that it was an improvement.
+<</replace>>
+<</timed>>
+
+
+
+:: Kids_in_the_streets-cap [nobr]
+<<timed 0s>>
+  <<replace "#caption">>  
+I think it's changed big time. 
+<</replace>>
+<</timed>>
+
+<<timed 1s>>
+  <<replace "#caption">>  
+It used to be really, it's not unfriendly now, but it's not like it used to be, 
+<</replace>>
+<</timed>>
+
+<<timed 7s>>
+  <<replace "#caption">>  
+like years ago, when my kids was little, my street door was open all day, 
+<</replace>>
+<</timed>>
+
+<<timed 10s>>
+  <<replace "#caption">>  
+never shut the street door, you had kids in and out, in and out all day, you know, using your toilet, 
+<</replace>>
+<</timed>>
+
+<<timed 15s>>
+  <<replace "#caption">>  
+people wouldn't leave their doors open anymore, you know, you just never know, 
+<</replace>>
+<</timed>>
+
+<<timed 19s>>
+  <<replace "#caption">>  
+certainly wasn't those stabbings then. 
+<</replace>>
+<</timed>>
+
+<<timed 24s>>
+  <<replace "#caption">>  
+I think my kids had a lot more freedom than the kids got today. 
+<</replace>>
+<</timed>>
+
+<<timed 27s>>
+  <<replace "#caption">>  
+Most people won't let their kids play out, and they moan about being on computers and phones, but then what else they going to do? 
+<</replace>>
+<</timed>>
+
+<<timed 35s>>
+  <<replace "#caption">>  
+You know, my kids used to be out all day, you know, playing out in the street. 
+<</replace>>
+<</timed>>
+
+<<timed 40s>>
+  <<replace "#caption">>  
+These kids being stuck in flats and all that all the time, and not going out.
+<</replace>>
+<</timed>>
+
+<<timed 44s>>
+  <<replace "#caption">>  
+It's got no real idea sometimes what goes on out there. 
+<</replace>>
+<</timed>>
+
+<<timed 48s>>
+  <<replace "#caption">>  
+No, as I say, things really changed. I mean...
+<</replace>>
+<</timed>>
+
+<<timed 51s>>
+  <<replace "#caption">>  
+even on this estate, like years ago, I mean, really, I suppose they consider it dangerous now, 
+<</replace>>
+<</timed>>
+
+<<timed 55s>>
+  <<replace "#caption">>  
+but every estate had their own bonfire night, you know, big fire in the middle of the estate. 
+<</replace>>
+<</timed>>
+
+<<timed 61s>>
+  <<replace "#caption">>  
+Kids on this estate used to be collecting wood. 
+<</replace>>
+<</timed>>
+
+<<timed 64s>>
+  <<replace "#caption">>  
+Nothing, that's what I said. 
+<</replace>>
+<</timed>>
+
+<<timed 65s>>
+  <<replace "#caption">>  
+I don't feel kids today have got the lives that my kids had, 
+<</replace>>
+<</timed>>
+
+<<timed 69s>>
+  <<replace "#caption">>  
+and I just think these kids are missing out a bit now, you know.
+<</replace>>
+<</timed>>
+
+
+:: Protests-and-parties-cap [nobr]
+<<timed 0s>>
+  <<replace "#caption">>  
+So my niece was in a, 
+<</replace>>
+<</timed>>
+
+<<timed 2s>>
+  <<replace "#caption">>  
+she went to a museum, 
+<</replace>>
+<</timed>>
+
+<<timed 3s>>
+  <<replace "#caption">>  
+it was like a black history museum. 
+<</replace>>
+<</timed>>
+
+<<timed 5s>>
+  <<replace "#caption">>  
+She actually saw me at one of the demonstrations when I was about 15 or 16, 
+<</replace>>
+<</timed>>
+
+<<timed 9s>>
+  <<replace "#caption">>  
+and I don't even know how she was.. she spotted me out 
+<</replace>>
+<</timed>>
+
+<<timed 13s>>
+  <<replace "#caption">>  
+in, I think that was a Colin Roach. 
+<</replace>>
+<</timed>>
+
+<<timed 16s>>
+  <<replace "#caption">>  
+He was, he was murdered, yeah, by police, was it with police? 
+<</replace>>
+<</timed>>
+
+<<timed 23s>>
+  <<replace "#caption">>  
+Can't remember now, or the Deptford fire, not quite sure about that one, 
+<</replace>>
+<</timed>>
+
+<<timed 28s>>
+  <<replace "#caption">>  
+because there's so much bits and pieces going on, 
+<</replace>>
+<</timed>>
+
+<<timed 29s>>
+  <<replace "#caption">>  
+but she actually took a picture of me when I was.. it was like 30 or 40 years, 
+<</replace>>
+<</timed>>
+
+<<timed 35s>>
+  <<replace "#caption">>  
+she found a picture of me in that museum, you know, so I thought that was really interesting, me and my friend, 
+<</replace>>
+<</timed>>
+
+<<timed 40s>>
+  <<replace "#caption">>  
+but yeah, it was a, and it's funny, because there was no TV to tell us where to go. 
+<</replace>>
+<</timed>>
+
+<<timed 47s>>
+  <<replace "#caption">>  
+We just knew, we just knew there was a demonstration, something bad has happened, right? 
+<</replace>>
+<</timed>>
+
+<<timed 52s>>
+  <<replace "#caption">>  
+And we have to go here, or we've got to walk here. 
+<</replace>>
+<</timed>>
+
+<<timed 54s>>
+  <<replace "#caption">>  
+We walked, we walked a lot, we walked, we walked, we walked, and we chanted. Was no fighting or anything.
+<</replace>>
+<</timed>>
+
+<<timed 59s>>
+  <<replace "#caption">>  
+It was the police that caused the problems with the fighting, and most of the time, because it was just, 
+<</replace>>
+<</timed>>
+
+<<timed 64s>>
+  <<replace "#caption">>  
+you can't go down there, and everything, and then everyone was told to stay calm, stay calm, you know. So...
+<</replace>>
+<</timed>>
+
+<<timed 68s>>
+  <<replace "#caption">>  
+and then sometimes it will turn into fights, because you know, you've got these everyone, especially the boy men with their testosterone going on, and everything, you know. 
+<</replace>>
+<</timed>>
+
+<<timed 75s>>
+  <<replace "#caption">>  
+So, there's all that going on, but there was, yeah, there was quite a few, 
+<</replace>>
+<</timed>>
+
+<<timed 82s>>
+  <<replace "#caption">>  
+and this is, this is, this is a crazy thing about even like when you look at, so, excuse me, social media now, 
+<</replace>>
+<</timed>>
+
+<<timed 89s>>
+  <<replace "#caption">>  
+we don't know what's going on unless you look at social media, 
+<</replace>>
+<</timed>>
+
+<<timed 91s>>
+  <<replace "#caption">>  
+that connection that we had before, of knowing we don't have, 
+<</replace>>
+<</timed>>
+
+<<timed 96s>>
+  <<replace "#caption">>  
+if it was a party, we all knew where the party was, we all knew where the rave was. 
+<</replace>>
+<</timed>>
+
+<<timed 101s>>
+  <<replace "#caption">>  
+We all knew. We all just knew. 
+<</replace>>
+<</timed>>
+
+<<timed 102s>>
+  <<replace "#caption">>  
+I don't even.. there was no stickers up anywhere. We just knew. 
+<</replace>>
+<</timed>>
+
+<<timed 106s>>
+  <<replace "#caption">>  
+And then we don't meet up there. 
+<</replace>>
+<</timed>>
+
+<<timed 108s>>
+  <<replace "#caption">>  
+Yeah, social media.. oh, that's going.. that's how you know 
+<</replace>>
+<</timed>>
+
+<<timed 112s>>
+  <<replace "#caption">>  
+As I said, we did the stuff that we all had, and obviously we didn't realise that we had. 
+<</replace>>
+<</timed>>
+
+<<timed 118s>>
+  <<replace "#caption">>  
+It's not there anymore.
+<</replace>>
+<</timed>>
+
+
+
+
+
+:: Highbury-Fields-youth-cap [nobr]
+<<timed 0s>>
+  <<replace "#caption">>  
+Probably Highbury Fields, 
+<</replace>>
+<</timed>>
+
+<<timed 1s>>
+  <<replace "#caption">>  
+because I think it's an anchor of community around here, 
+<</replace>>
+<</timed>>
+
+<<timed 7s>>
+  <<replace "#caption">>  
+and a lot of important things happen at Highbury Fields, 
+<</replace>>
+<</timed>>
+
+<<timed 10s>>
+  <<replace "#caption">>  
+because it's just such a big open space, and everyone 
+<</replace>>
+<</timed>>
+
+<<timed 14s>>
+  <<replace "#caption">>  
+can kind of just join together, and so there'll be like park runs on Sundays, 
+<</replace>>
+<</timed>>
+
+<<timed 20s>>
+  <<replace "#caption">>  
+or like whenever it's really hot, everyone will go to Highbury for just like tan and have a picnic. 
+<</replace>>
+<</timed>>
+
+<<timed 27s>>
+  <<replace "#caption">>  
+Probably the first and only time I went to a park run, 
+<</replace>>
+<</timed>>
+
+<<timed 31s>>
+  <<replace "#caption">>  
+I was very scared, because I was, I'm not very good runner. 
+<</replace>>
+<</timed>>
+
+<<timed 36s>>
+  <<replace "#caption">>  
+I was also quite young, and we did it with school, and it was just kind of shocking, because there were a lot of people, 
+<</replace>>
+<</timed>>
+
+<<timed 41s>>
+  <<replace "#caption">>  
+like I'd say 100 and something kids, and it was really nice, because everyone was really supportive. 
+<</replace>>
+<</timed>>
+
+<<timed 48s>>
+  <<replace "#caption">>  
+When I go to Highbury Fields, I see mostly young people, 
+<</replace>>
+<</timed>>
+
+<<timed 53s>>
+  <<replace "#caption">>  
+like teenage older teens, 
+<</replace>>
+<</timed>>
+
+<<timed 57s>>
+  <<replace "#caption">>  
+and I think it's nice because often you'll see a lot of 
+<</replace>>
+<</timed>>
+
+<<timed 62s>>
+  <<replace "#caption">>  
+people you've never met from different schools, but when everyone comes home from school, everyone kind of seems to be going through the park. 
+<</replace>>
+<</timed>>
+
+<<timed 68s>>
+  <<replace "#caption">>  
+So, if you like, are looking, if you want to meet new people 
+<</replace>>
+<</timed>>
+
+<<timed 73s>>
+  <<replace "#caption">>  
+who may be in the same year as you, Highbury Fields is a good place to start, I think.
+<</replace>>
+<</timed>>
+
+
+:: Paradise_Park-cap
+<<timed 0s>>
+  <<replace "#caption">>  
+The parks are heaven. 
+<</replace>>
+<</timed>>
+
+<<timed 2s>>
+  <<replace "#caption">>  
+We used to go swimming, we used to go to the park, we used to go to the zoo, see all the animals there. 
+<</replace>>
+<</timed>>
+
+<<timed 9s>>
+  <<replace "#caption">>  
+If you went up to Paradise Park, you had this zoo and you could go around feeding the animals, doing different things, cleaning them out. 
+<</replace>>
+<</timed>>
+
+<<timed 18s>>
+  <<replace "#caption">>  
+The kids used to love going there, cleaning the pigs out and all that, 
+<</replace>>
+<</timed>>
+
+<<timed 22s>>
+  <<replace "#caption">>  
+then we went and bought eggs and butter and cheese and things like that, 
+<</replace>>
+<</timed>>
+
+<<timed 28s>>
+  <<replace "#caption">>  
+and sometimes we used to be able to get bacon there, 
+<</replace>>
+<</timed>>
+
+<<timed 32s>>
+  <<replace "#caption">>  
+where they've had lots of bacons on sale when they've lost the animals, 
+<</replace>>
+<</timed>>
+
+<<timed 37s>>
+  <<replace "#caption">>  
+instead of wasting it, we bought it cheaper there, but we used to love it. 
+<</replace>>
+<</timed>>
+
+<<timed 44s>>
+  <<replace "#caption">>  
+The boys, three boys and my husband, I used to take them up to Lee Valley fishing. 
+<</replace>>
+<</timed>>
+
+<<timed 49s>>
+  <<replace "#caption">>  
+Used to take them up there about 4 o'clock in the morning. 
+<</replace>>
+<</timed>>
+
+<<timed 54s>>
+  <<replace "#caption">>  
+He got fed up with people moaning about him fishing. 
+<</replace>>
+<</timed>>
+
+<<timed 58s>>
+  <<replace "#caption">>  
+He started collecting the fish out of there that are trapped with all the nettings and all that, 
+<</replace>>
+<</timed>>
+
+<<timed 64s>>
+  <<replace "#caption">>  
+and he used to take them and do all the nettings and put them back in, so he got 
+<</replace>>
+<</timed>>
+
+<<timed 71s>>
+  <<replace "#caption">>  
+the it, then he started doing them in our back garden, taking them from there, bring them home and breed them at home,
+<</replace>>
+<</timed>>
+
+<<timed 81s>>
+  <<replace "#caption">>  
+and then taking them back there. He always kept the lakes and all that full of the fish. 
+<</replace>>
+<</timed>>
+
+<<timed 88s>>
+  <<replace "#caption">>  
+I've known so many times going up there with great big drums of water with the fish inside, 
+<</replace>>
+<</timed>>
+
+<<timed 95s>>
+  <<replace "#caption">>  
+taking them to put them in the lakes, 
+<</replace>>
+<</timed>>
+
+<<timed 99s>>
+  <<replace "#caption">>  
+and we used to do that three, four times a year, 
+<</replace>>
+<</timed>>
+
+<<timed 102s>>
+  <<replace "#caption">>  
+yeah, in the 70s, because that's when I had the kids.
+<</replace>>
+<</timed>>
+
+
+:: Dancing_in_Finsbury_Park-cap [nobr]
+<<timed 0s>>
+  <<replace "#caption">>  
+Yeah, so I used to go out, I've been.. 
+<</replace>>
+<</timed>>
+
+<<timed 1s>>
+  <<replace "#caption">>  
+we used to go out every Saturday night, guarantee you, 
+<</replace>>
+<</timed>>
+
+<<timed 6s>>
+  <<replace "#caption">>  
+every Saturday night we used to go up to the Ritz at Tottenham. 
+<</replace>>
+<</timed>>
+
+<<timed 10s>>
+  <<replace "#caption">>  
+We used to go quite a lot, and they used to have a lot of shows up there. 
+<</replace>>
+<</timed>>
+
+<<timed 14s>>
+  <<replace "#caption">>  
+Well, I used to wear a mini skirt and a top and high heel shoes, three inch shoe, and that was me, 
+<</replace>>
+<</timed>>
+
+<<timed 21s>>
+  <<replace "#caption">>  
+but we was up dancing all night, that's the only thing we ever done, 
+<</replace>>
+<</timed>>
+
+<<timed 26s>>
+  <<replace "#caption">>  
+because we used to work Monday to Friday, 
+<</replace>>
+<</timed>>
+
+<<timed 29s>>
+  <<replace "#caption">>  
+and then that was our free time. 
+<</replace>>
+<</timed>>
+
+<<timed 32s>>
+  <<replace "#caption">>  
+I used to like the Bee Gees a lot, 
+<</replace>>
+<</timed>>
+
+<<timed 35s>>
+  <<replace "#caption">>  
+saw the Rolling Stones at Hyde Park 
+<</replace>>
+<</timed>>
+
+<<timed 39s>>
+  <<replace "#caption">>  
+before we ever had to pay for it, 
+<</replace>>
+<</timed>>
+
+<<timed 43s>>
+  <<replace "#caption">>  
+we used to sit in the Hyde Park and sit in the grass 
+<</replace>>
+<</timed>>
+
+<<timed 46s>>
+  <<replace "#caption">>  
+and listen to them and get up dancing and all that. 
+<</replace>>
+<</timed>>
+
+<<timed 50s>>
+  <<replace "#caption">>  
+I took my oldest son there one weekend when we knew they was up there. 
+<</replace>>
+<</timed>>
+
+<<timed 52s>>
+  <<replace "#caption">>  
+We saw Madness down at Finsbury Park. 
+<</replace>>
+<</timed>>
+
+<<timed 60s>>
+  <<replace "#caption">>  
+He used to always be down there. He still goes down there quite a few times. 
+<</replace>>
+<</timed>>
+
+<<timed 66s>>
+  <<replace "#caption">>  
+T Rex, they're the sort of music I liked. 
+<</replace>>
+<</timed>>
+
+<<timed 70s>>
+  <<replace "#caption">>  
+Oh, down Finsbury Park, all them sort of things... 
+<</replace>>
+<</timed>>
+
+<<timed 73s>>
+  <<replace "#caption">>  
+we used to go quite a few times if there was music, we used to say, 'Mum', 
+<</replace>>
+<</timed>>
+
+<<timed 81s>>
+  <<replace "#caption">>  
+and we used to go out, come home. 
+<</replace>>
+<</timed>>
+
+<<timed 84s>>
+  <<replace "#caption">>  
+We had a good time.
+<</replace>>
+<</timed>>
+
+
+:: Celebrating_Arsenal-cap [nobr]
+
+<<timed 0s>>
+  <<replace "#caption">>  
+Arsenal stadium, you cannot miss it, 
+<</replace>>
+<</timed>>
+
+<<timed 2s>>
+  <<replace "#caption">>  
+especially if it's, let's say, a Premier League. 
+<</replace>>
+<</timed>>
+
+<<timed 5s>>
+  <<replace "#caption">>  
+Any time of league time, you'll always see someone, at least 20 people minimum, with an Arsenal jersey. 
+<</replace>>
+<</timed>>
+
+<<timed 12s>>
+  <<replace "#caption">>  
+I'm one of them as well. 
+<</replace>>
+<</timed>>
+
+<<timed 13s>>
+  <<replace "#caption">>  
+You can always hear it as well. I can hear it from my house. 
+<</replace>>
+<</timed>>
+
+<<timed 16s>>
+  <<replace "#caption">>  
+So, Arsenal Stadium, it's just.. I would say that's the main event, 
+<</replace>>
+<</timed>>
+
+<<timed 21s>>
+  <<replace "#caption">>  
+even though the food is amazing. 
+<</replace>>
+<</timed>>
+
+<<timed 23s>>
+  <<replace "#caption">>  
+Sports anywhere in the UK, especially in London, especially in Islington, 
+<</replace>>
+<</timed>>
+
+<<timed 28s>>
+  <<replace "#caption">>  
+you just have to be an Arsenal fan, and you're just attracted to it, and the community's just lovely. 
+<</replace>>
+<</timed>>
+
+<<timed 34s>>
+  <<replace "#caption">>  
+My best Arsenal moment was not that long ago, when Arsenal won the Premier League. 
+<</replace>>
+<</timed>>
+
+<<timed 40s>>
+  <<replace "#caption">>  
+They haven't won in 22 years. 
+<</replace>>
+<</timed>>
+
+<<timed 42s>>
+  <<replace "#caption">>  
+It's finally time, and there was a parade. 
+<</replace>>
+<</timed>>
+
+<<timed 46s>>
+  <<replace "#caption">>  
+Boy, that was.. I can't even put that into words. 
+<</replace>>
+<</timed>>
+
+<<timed 50s>>
+  <<replace "#caption">>  
+It was packed, so many people crowded some places, especially Holloway Road. 
+<</replace>>
+<</timed>>
+
+<<timed 55s>>
+  <<replace "#caption">>  
+You could not even move, but a community... 
+<</replace>>
+<</timed>>
+
+<<timed 58s>>
+  <<replace "#caption">>  
+it was just lovely to be around, especially with good weather. 
+<</replace>>
+<</timed>>
+
+<<timed 61s>>
+  <<replace "#caption">>  
+Everyone's just smiling. You can start a random conversation with anyone you don't even know their name, and they're telling you their whole life story. 
+<</replace>>
+<</timed>>
+
+<<timed 69s>>
+  <<replace "#caption">>  
+Everyone's chanting, holding red smoke cans, and it was just such an amazing experience. 
+<</replace>>
+<</timed>>
+
+<<timed 77s>>
+  <<replace "#caption">>  
+And I hope it happens again. Please Arsenal, do not be last again.
+<</replace>>
+<</timed>>
+
+
+:: Brian-cap [nobr]
+
+<<timed 0s>>
+  <<replace "#caption">>  
+My name is Brian Morrison. 
+<</replace>>
+<</timed>>
+
+<<timed 2s>>
+  <<replace "#caption">>  
+I was born in the northeast of England. 
+<</replace>>
+<</timed>>
+
+<<timed 5s>>
+  <<replace "#caption">>  
+Then, when I was entering secondary school age, 
+<</replace>>
+<</timed>>
+
+<<timed 10s>>
+  <<replace "#caption">>  
+my family moved to Ireland, 
+<</replace>>
+<</timed>>
+
+<<timed 13s>>
+  <<replace "#caption">>  
+so I lived there until I finished secondary school and university in Dublin 
+<</replace>>
+<</timed>>
+
+<<timed 21s>>
+  <<replace "#caption">>  
+and then moved to London many years ago now, 
+<</replace>>
+<</timed>>
+
+<<timed 25s>>
+  <<replace "#caption">>  
+almost 40 years ago.
+<</replace>>
+<</timed>>
+
+<<timed 28s>>
+  <<replace "#caption">>  
+I studied architecture at university. 
+<</replace>>
+<</timed>>
+
+<<timed 31s>>
+  <<replace "#caption">>  
+Didn't really like the process of working in architects' offices, and 
+<</replace>>
+<</timed>>
+
+<<timed 39s>>
+  <<replace "#caption">>  
+so I'm retired from that now, long time. 
+<</replace>>
+<</timed>>
+
+<<timed 42s>>
+  <<replace "#caption">>  
+Studied carpentry. 
+<</replace>>
+<</timed>>
+
+<<timed 45s>>
+  <<replace "#caption">>  
+I do voluntary work at Highbury Roundhouse, and also with Camden Green Gym. 
+<</replace>>
+<</timed>>
+
+<<timed 56s>>
+  <<replace "#caption">>  
+I do conservation work once a week. 
+<</replace>>
+<</timed>>
+
+<<timed 59s>>
+  <<replace "#caption">>  
+That's really all I can add.
+<</replace>>
+<</timed>>
+
+<<timed 62s>>
+  <<replace "#caption">>  
+I like the mixture of old and new in Islington, that that lends it a certain character. 
+<</replace>>
+<</timed>>
+
+<<timed 68s>>
+  <<replace "#caption">>  
+Some of the buildings, certainly near the Roundhouse, the housing stock has been here for 150 years, maybe 200 years, 
+<</replace>>
+<</timed>>
+
+<<timed 81s>>
+  <<replace "#caption">>  
+that gives it a really grounded feeling, but then you find modern buildings in between or next, adjacent to 
+<</replace>>
+<</timed>>
+
+<<timed 91s>>
+  <<replace "#caption">>  
+some of the older buildings, 
+<</replace>>
+<</timed>>
+
+<<timed 93s>>
+  <<replace "#caption">>  
+I suppose, because I studied architecture, I'm aware of building styles, 
+<</replace>>
+<</timed>>
+
+<<timed 99s>>
+  <<replace "#caption">>  
+for example, the Roundhouse itself is a very modern and cleverly designed, very successfully designed, I think. 
+<</replace>>
+<</timed>>
+
+<<timed 106s>>
+  <<replace "#caption">>  
+It's a... it lends a very good atmosphere and background for people to have activities in. 
+<</replace>>
+<</timed>>
+
+<<timed 115s>>
+  <<replace "#caption">>  
+I think I think the community is very lucky to have this building. 
+<</replace>>
+<</timed>>
+
+<<timed 119s>>
+  <<replace "#caption">>  
+What I like about Islington, it's very diverse. 
+<</replace>>
+<</timed>>
+
+<<timed 125s>>
+  <<replace "#caption">>  
+It seems that people are quite liberal here, and even though there's, there's, there's a mixture of wealth and 
+<</replace>>
+<</timed>>
+
+<<timed 137s>>
+  <<replace "#caption">>  
+people who are living on less as well. 
+<</replace>>
+<</timed>>
+
+<<timed 142s>>
+  <<replace "#caption">>  
+There's a good mixture, good mixture, 
+<</replace>>
+<</timed>>
+
+<<timed 145s>>
+  <<replace "#caption">>  
+maybe it's the architecture and the people you see on the street, but Islington seems very liberal, 
+<</replace>>
+<</timed>>
+
+<<timed 154s>>
+  <<replace "#caption">>  
+whereas for example I'm carrying a guitar usually, on my way to the underground station every day, and then getting maybe to Islington, or wherever I'm going to North London. 
+<</replace>>
+<</timed>>
+
+<<timed 166s>>
+  <<replace "#caption">>  
+You'll see other guitar players around North London, but you don't see very many in Westminster. 
+<</replace>>
+<</timed>>
+
+<<timed 173s>>
+  <<replace "#caption">>  
+You don't see people carrying guitars, 
+<</replace>>
+<</timed>>
+
+<<timed 175s>>
+  <<replace "#caption">>  
+and Islington - it's not surprising to see somebody with a musical instrument as well. 
+<</replace>>
+<</timed>>
+
+<<timed 181s>>
+  <<replace "#caption">>  
+One of my first memories of Islington, I remember it was when I came joined first in a talent competition in 2010 
+<</replace>>
+<</timed>>
+
+<<timed 193s>>
+  <<replace "#caption">>  
+Yeah, it was, it was a talent competition for people who had suffered from mental health problems at some stage in their life, 
+<</replace>>
+<</timed>>
+
+<<timed 201s>>
+  <<replace "#caption">>  
+and quite a lot of people entered into it. 
+<</replace>>
+<</timed>>
+
+<<timed 204s>>
+  <<replace "#caption">>  
+So, I was.. I'd never won. I'd never come first in anything before, but I got the judges' first prize. 
+<</replace>>
+<</timed>>
+
+<<timed 210s>>
+  <<replace "#caption">>  
+There was an audience first prize, and the judges' first prize, and I won with a song that I wrote and played on guitar. 
+<</replace>>
+<</timed>>
+
+<<timed 217s>>
+  <<replace "#caption">>  
+I got joint first and won 100 pounds and 
+<</replace>>
+<</timed>>
+
+<<timed 223s>>
+  <<replace "#caption">>  
+got a mug, and a biro, and a certificate, 
+<</replace>>
+<</timed>>
+
+<<timed 227s>>
+  <<replace "#caption">>  
+which I had for a long time. 
+<</replace>>
+<</timed>>
+
+<<timed 229s>>
+  <<replace "#caption">>  
+Yeah, that was 2010. Long time ago.
+<</replace>>
+<</timed>>
+
+
+:: Caroline-cap [nobr]
+
+<<timed 0s>>
+  <<replace "#caption">>  
+It my name is Caroline McIntyre. 
+<</replace>>
+<</timed>>
+
+<<timed 2s>>
+  <<replace "#caption">>  
+I moved to Highbury in 1968 
+<</replace>>
+<</timed>>
+
+<<timed 6s>>
+  <<replace "#caption">>  
+I brought three children up. 
+<</replace>>
+<</timed>>
+
+<<timed 8s>>
+  <<replace "#caption">>  
+I used to work at Highbury Roundhouse. All my kids went here in the youth club, and that, 
+<</replace>>
+<</timed>>
+
+<<timed 14s>>
+  <<replace "#caption">>  
+and they've all worked here as well. 
+<</replace>>
+<</timed>>
+
+<<timed 16s>>
+  <<replace "#caption">>  
+I have done fostering, child minding, cooking, cleaning, driving. 
+<</replace>>
+<</timed>>
+
+<<timed 23s>>
+  <<replace "#caption">>  
+I've done lots of other little bits and pieces in between. 
+<</replace>>
+<</timed>>
+
+<<timed 27s>>
+  <<replace "#caption">>  
+I started with my sister, she was a tailorist, and we done suits and that, 
+<</replace>>
+<</timed>>
+
+<<timed 33s>>
+  <<replace "#caption">>  
+and I used to put the hook and eye on men's trousers, 
+<</replace>>
+<</timed>>
+
+<<timed 37s>>
+  <<replace "#caption">>  
+and so many times I had them in my finger instead of on the trousers, 
+<</replace>>
+<</timed>>
+
+<<timed 42s>>
+  <<replace "#caption">>  
+I didn't want to do it anymore, and I started in clothes, heavy coats for the big shops, 
+<</replace>>
+<</timed>>
+
+<<timed 49s>>
+  <<replace "#caption">>  
+and I used to love doing them, mohair coats, sew the hem, sew the seams, join them all up together, 
+<</replace>>
+<</timed>>
+
+<<timed 57s>>
+  <<replace "#caption">>  
+sew them, and padlock them all, because it wasn't cheap coats, 
+<</replace>>
+<</timed>>
+
+<<timed 61s>>
+  <<replace "#caption">>  
+they was for a company, I can't remember who it is, 
+<</replace>>
+<</timed>>
+
+<<timed 64s>>
+  <<replace "#caption">>  
+but we used to do all that, and they used to go out in thousands. 
+<</replace>>
+<</timed>>
+
+<<timed 69s>>
+  <<replace "#caption">>  
+I like Islington because there's lots to do. 
+<</replace>>
+<</timed>>
+
+<<timed 73s>>
+  <<replace "#caption">>  
+I like going to different places, but I want to come back here. 
+<</replace>>
+<</timed>>
+
+<<timed 78s>>
+  <<replace "#caption">>  
+I feel safer because I wanted to move out to Essex with all my sisters, but I've gone out there. 
+<</replace>>
+<</timed>>
+
+<<timed 86s>>
+  <<replace "#caption">>  
+I spent a year out there, had to come back. I couldn't take it. It was too quiet. 
+<</replace>>
+<</timed>>
+
+<<timed 90s>>
+  <<replace "#caption">>  
+Here you can walk out the door into something in Islington, but there you can't. 
+<</replace>>
+<</timed>>
+
+<<timed 96s>>
+  <<replace "#caption">>  
+You've got to walk miles, so that's where we're lucky.
+<</replace>>
+<</timed>>
+
+
+:: Emily-cap [nobr]
+
+<<timed 0s>>
+  <<replace "#caption">>  
+My name is Emily. 
+<</replace>>
+<</timed>>
+
+<<timed 1s>>
+  <<replace "#caption">>  
+I'm 15, so I'm actually not English, like at all. 
+<</replace>>
+<</timed>>
+
+<<timed 7s>>
+  <<replace "#caption">>  
+My mum is French, and my dad is Italian, and, but I've lived.. 
+<</replace>>
+<</timed>>
+
+<<timed 11s>>
+  <<replace "#caption">>  
+I was born in England, and I've lived in Islington my entire life.
+<</replace>>
+<</timed>>
+
+<<timed 16s>>
+  <<replace "#caption">>  
+I like going out, seeing people, talking to people. 
+<</replace>>
+<</timed>>
+
+<<timed 21s>>
+  <<replace "#caption">>  
+Islington is very diverse, I think, for so many cultures, 
+<</replace>>
+<</timed>>
+
+<<timed 25s>>
+  <<replace "#caption">>  
+so many different people in one place, 
+<</replace>>
+<</timed>>
+
+<<timed 28s>>
+  <<replace "#caption">>  
+and this kind of strikes me, so many different styles 
+<</replace>>
+<</timed>>
+
+<<timed 31s>>
+  <<replace "#caption">>  
+people wear, so like the clothes here that everyone wears, and like their, how they do their hair and stuff is so different, 
+<</replace>>
+<</timed>>
+
+<<timed 38s>>
+  <<replace "#caption">>  
+and I think it's nice because it's a way of expressing yourself.
+<</replace>>
+<</timed>>
+
+<<timed 42s>>
+  <<replace "#caption">>  
+It's just, it seems very open and quite happy place. 
+<</replace>>
+<</timed>>
+
+<<timed 47s>>
+  <<replace "#caption">>  
+I think the amount of people, like European people, has changed a lot, because I think before Brexit this was a very, very, very... I think I want to say French place, very Spanish too.
+<</replace>>
+<</timed>>
+
+<<timed 64s>>
+  <<replace "#caption">>  
+Now you, I think, you could walk five minutes and you'd hear people speaking foreign languages, 
+<</replace>>
+<</timed>>
+
+<<timed 70s>>
+  <<replace "#caption">>  
+and it was really nice because it added to the sense of like we're in such a community, 
+<</replace>>
+<</timed>>
+
+<<timed 76s>>
+  <<replace "#caption">>  
+there are so many different languages and different people here, and it's nice to hear that, and not just to like see it, 
+<</replace>>
+<</timed>>
+
+<<timed 83s>>
+  <<replace "#caption">>  
+but recently I don't think there's as many people, 
+<</replace>>
+<</timed>>
+
+<<timed 87s>>
+  <<replace "#caption">>  
+and I think this is still quite a culturally diverse place. 
+<</replace>>
+<</timed>>
+
+<<timed 89s>>
+  <<replace "#caption">>  
+I just don't think it is as much, and I think we're kind of missing out there.
+<</replace>>
+<</timed>>
+
+
+:: Laurette-cap [nobr]
+
+<<timed 0s>>
+  <<replace "#caption">>  
+My name is Laurette Josiah, 
+<</replace>>
+<</timed>>
+
+<<timed 2s>>
+  <<replace "#caption">>  
+and I have lived in Islington for 65 years coming next week. 
+<</replace>>
+<</timed>>
+
+<<timed 12s>>
+  <<replace "#caption">>  
+My biggest memory is family, 
+<</replace>>
+<</timed>>
+
+<<timed 14s>>
+  <<replace "#caption">>  
+being in a big family, brothers, sisters, six sisters, seven, including me, then five brothers, 
+<</replace>>
+<</timed>>
+
+<<timed 20s>>
+  <<replace "#caption">>  
+and then the other kids that my mum looked after as well, also, 
+<</replace>>
+<</timed>>
+
+<<timed 25s>>
+  <<replace "#caption">>  
+there was a big fire in our house when my mom was pregnant with the younger one, 
+<</replace>>
+<</timed>>
+
+<<timed 32s>>
+  <<replace "#caption">>  
+and so there was 11 siblings, and then people living upstairs, because in those days people used to come to this country
+<</replace>>
+<</timed>>
+
+<<timed 37s>>
+  <<replace "#caption">>  
+and they used to come into our house, so they'd have a house room with your family, another room with your family, another room with your family, then our family, that would be like that, just so many people, 
+<</replace>>
+<</timed>>
+
+<<timed 47s>>
+  <<replace "#caption">>  
+and I'll actually remember it's the first time I actually tasted fish and chips, 
+<</replace>>
+<</timed>>
+
+<<timed 51s>>
+  <<replace "#caption">>  
+because we were in a.. we were after the fire, the police took us in this blue police van, I remember it, 
+<</replace>>
+<</timed>>
+
+<<timed 56s>>
+  <<replace "#caption">>  
+and we.. there was.. and they took us to get fish and chips, and it was the first time, actually on the paper, because we weren't even allowed to eat food outside, much as eat fish and chips out of paper, 
+<</replace>>
+<</timed>>
+
+<<timed 66s>>
+  <<replace "#caption">>  
+and they took us to this home, this children's home, 
+<</replace>>
+<</timed>>
+
+<<timed 69s>>
+  <<replace "#caption">>  
+and I remember this one was given two rooms, we had to share because there were too many children, 
+<</replace>>
+<</timed>>
+
+<<timed 73s>>
+  <<replace "#caption">>  
+but I remember that time the donations, because it went on the radio and on the TV, the donations that came in from people, 
+<</replace>>
+<</timed>>
+
+<<timed 81s>>
+  <<replace "#caption">>  
+shoes and coats, and there was so much stuff that was donated to us as a family. 
+<</replace>>
+<</timed>>
+
+<<timed 87s>>
+  <<replace "#caption">>  
+I remember that, but growing up as a child, 
+<</replace>>
+<</timed>>
+
+<<timed 91s>>
+  <<replace "#caption">>  
+I thought everyone was like me, 
+<</replace>>
+<</timed>>
+
+<<timed 94s>>
+  <<replace "#caption">>  
+carefree, loving life, brothers, sisters, family, friends, eating, tasting, you know, yeah, food, home-cooked food. 
+<</replace>>
+<</timed>>
+
+<<timed 108s>>
+  <<replace "#caption">>  
+We never did fish and chips. It was like, what, no fish and chips. 
+<</replace>>
+<</timed>>
+
+<<timed 113s>>
+  <<replace "#caption">>  
+It was, it was like rice, chicken, potatoes, 
+<</replace>>
+<</timed>>
+
+<<timed 120s>>
+  <<replace "#caption">>  
+West Indian provisions that she brought over. 
+<</replace>>
+<</timed>>
+
+<<timed 125s>>
+  <<replace "#caption">>  
+School was okay. I remember being at my primary school, St John's School, and 
+<</replace>>
+<</timed>>
+
+<<timed 130s>>
+  <<replace "#caption">>  
+everybody that went to St John's School had to learn to swim 
+<</replace>>
+<</timed>>
+
+<<timed 133s>>
+  <<replace "#caption">>  
+because the headmaster, he had his wife and his son died in a boating accident, 
+<</replace>>
+<</timed>>
+
+<<timed 138s>>
+  <<replace "#caption">>  
+and I think one of his things that he said, that any child that goes through his school, 
+<</replace>>
+<</timed>>
+
+<<timed 143s>>
+  <<replace "#caption">>  
+they have to learn to swim. 
+<</replace>>
+<</timed>>
+
+<<timed 144s>>
+  <<replace "#caption">>  
+So, everyone that went through St. John's school at my age, we all knew how to swim. 
+<</replace>>
+<</timed>>
+
+<<timed 149s>>
+  <<replace "#caption">>  
+I went to Barnsbury, so all girls' school. 
+<</replace>>
+<</timed>>
+
+<<timed 154s>>
+  <<replace "#caption">>  
+I wasn't a goodie two shoes. 
+<</replace>>
+<</timed>>
+
+<<timed 154s>>
+  <<replace "#caption">>  
+It was a bit.. I was a bit.. the thing is, right, I had four siblings who had gone there before me, so they were in the school, so I was quite brave. 
+<</replace>>
+<</timed>>
+
+<<timed 165s>>
+  <<replace "#caption">>  
+I wasn't there, wasn't when you got a sibling in each class, remember you're okay. 
+<</replace>>
+<</timed>>
+
+<<timed 170s>>
+  <<replace "#caption">>  
+So I didn't really have much problems in in secondary school, never ever got suspended, or... 
+<</replace>>
+<</timed>>
+
+<<timed 176s>>
+  <<replace "#caption">>  
+there was, there were, there was stuff there were, there were not, there were fights, but there were more fights between the Greeks and the Turkish people, 
+<</replace>>
+<</timed>>
+
+<<timed 183s>>
+  <<replace "#caption">>  
+those types of fights, but there wasn't no fights between blacks and whites, and everything 
+<</replace>>
+<</timed>>
+
+<<timed 187s>>
+  <<replace "#caption">>  
+from different schools, one school to another school, there was that sort of things going on. 
+<</replace>>
+<</timed>>
+
+<<timed 191s>>
+  <<replace "#caption">>  
+Did I like school? Yes. Did I enjoy school? Yes. 
+<</replace>>
+<</timed>>
+
+<<timed 195s>>
+  <<replace "#caption">>  
+Did I make a lot of friends in school? Yes. 
+<</replace>>
+<</timed>>
+
+<<timed 199s>>
+  <<replace "#caption">>  
+Or what were the teachers like? They were okay, there was racism, but I didn't know till later on, which I'm glad I didn't. 
+<</replace>>
+<</timed>>
+
+<<timed 205s>>
+  <<replace "#caption">>  
+And then they had these comics I used to buy every week
+<</replace>>
+<</timed>>
+
+<<timed 209s>>
+  <<replace "#caption">>  
+Bunty, Jackie, Ginty, Judy, and used to go in the world as crazy, the world of the comics, but the stories you used to literally go into those stories and fantasize. 
+<</replace>>
+<</timed>>
+
+<<timed 222s>>
+  <<replace "#caption">>  
+I remember, I remember Jackie, but they were like, for the older kids, you know, fashion dress and hair, but there wasn't geared for black people. 
+<</replace>>
+<</timed>>
+
+<<timed 229s>>
+  <<replace "#caption">>  
+But I didn't know that.
+<</replace>>
+<</timed>>
+
+<<timed 230s>>
+  <<replace "#caption">>  
+I didn't see it, but it wasn't.. there were no pictures of black images, even in the comics. There was none, but I didn't. We didn't see at that time it was like later on, 
+<</replace>>
+<</timed>>
+
+<<timed 230s>>
+  <<replace "#caption">>  
+I think, Islington is a lovely place to live in. It really, really is. 
+<</replace>>
+<</timed>>
+
+<<timed 230s>>
+  <<replace "#caption">>  
+And it's a lovely place to bring your children. I, yeah, brought my kids up in Highbury. 
+<</replace>>
+<</timed>>
+
+<<timed 230s>>
+  <<replace "#caption">>  
+I would probably go on holiday in my house and go on holiday.
+<</replace>>
+<</timed>>
+
+
+
+:: Rick-cap [nobr]
+
+<<timed 0s>>
+  <<replace "#caption">>  
+I've worked in Islington for 26 years, doing music, working with different projects and different people. 
+<</replace>>
+<</timed>>
+
+<<timed 9s>>
+  <<replace "#caption">>  
+It's all been community based. I call myself a community musician. 
+<</replace>>
+<</timed>>
+
+<<timed 15s>>
+  <<replace "#caption">>  
+We started off on just doing a Wednesday in a psychiatric hospital near the Whittington. 
+<</replace>>
+<</timed>>
+
+<<timed 21s>>
+  <<replace "#caption">>  
+Patients were involved in playing and singing with us, and then staff even have the place, we had a sort of common room. 
+<</replace>>
+<</timed>>
+
+<<timed 30s>>
+  <<replace "#caption">>  
+We all went in there together, and then we managed to get an office there, 
+<</replace>>
+<</timed>>
+
+<<timed 36s>>
+  <<replace "#caption">>  
+which was in an old toilet,
+<</replace>>
+<</timed>>
+
+<<timed 39s>>
+  <<replace "#caption">>  
+so start off basic... and so, then we moved to the new place, the new psychiatric hospital, 
+<</replace>>
+<</timed>>
+
+<<timed 48s>>
+  <<replace "#caption">>  
+which is on Dartmouth Park Hill, and then we're working on wards, 
+<</replace>>
+<</timed>>
+
+<<timed 55s>>
+  <<replace "#caption">>  
+we'd go along and get all the patients involved in that on that particular ward, 
+<</replace>>
+<</timed>>
+
+<<timed 59s>>
+  <<replace "#caption">>  
+we'd play for an hour, and that sort of model continued, you know, for the new place. 
+<</replace>>
+<</timed>>
+
+<<timed 66s>>
+  <<replace "#caption">>  
+We went into 26 million quid, and we got our own office. 
+<</replace>>
+<</timed>>
+
+<<timed 73s>>
+  <<replace "#caption">>  
+This was all musing and was funded by the NHS. That went on, we started to do festivals there, three or four a year.
+<</replace>>
+<</timed>>
+
+<<timed 82s>>
+  <<replace "#caption">>  
+We used to put festivals on at Union Chapel, 
+<</replace>>
+<</timed>>
+
+<<timed 85s>>
+  <<replace "#caption">>  
+so for maybe five years we were doing two or three festivals a year there you know. 
+<</replace>>
+<</timed>>
+
+<<timed 93s>>
+  <<replace "#caption">>  
+I used to play to the homeless at Union Chapel on Sundays and New Year's Eve, so that was special, you know, playing to them at St Stephen's Church, Canonbury Road. 
+<</replace>>
+<</timed>>
+
+<<timed 109s>>
+  <<replace "#caption">>  
+I used to run a singing class, you know, for the homeless for three years. 
+<</replace>>
+<</timed>>
+
+<<timed 115s>>
+  <<replace "#caption">>  
+I moved to Isledon Road, like mental health community center. 
+<</replace>>
+<</timed>>
+
+<<timed 120s>>
+  <<replace "#caption">>  
+We, there was a recording studio there, so this is us playing at the Whittington Hospital, you know, in the big entrance, the atrium. 
+<</replace>>
+<</timed>>
+
+<<timed 127s>>
+  <<replace "#caption">>  
+We played at the mental health side, and we played in the General Hospital. 
+<</replace>>
+<</timed>>
+
+<<timed 132s>>
+  <<replace "#caption">>  
+After I'd done 10 years at Isledon Road, we moved on to Sotheby Centre. I did 16 years of music at Sotheby's. 
+<</replace>>
+<</timed>>
+
+<<timed 145s>>
+  <<replace "#caption">>  
+You know, when Covid came along, I started doing music sessions outdoors in parks and stuff. 
+<</replace>>
+<</timed>>
+
+<<timed 152s>>
+  <<replace "#caption">>  
+So you mentioned Highbury Fields earlier, and we started up there, 
+<</replace>>
+<</timed>>
+
+<<timed 159s>>
+  <<replace "#caption">>  
+and also in Sotheby's garden, they had a lovely garden, and we got a large band, 
+<</replace>>
+<</timed>>
+
+<<timed 166s>>
+  <<replace "#caption">>  
+which is a 13 piece band called the Fairweather Band, and that's it, really. 
+<</replace>>
+<</timed>>
+
+<<timed 172s>>
+  <<replace "#caption">>  
+David Oliver, who sort of founded all this, he's very special. 
+<</replace>>
+<</timed>>
+
+<<timed 177s>>
+  <<replace "#caption">>  
+I mean, he's dead now, unfortunately, that he got all of this started, 
+<</replace>>
+<</timed>>
+
+<<timed 184s>>
+  <<replace "#caption">>  
+and it just kind of mushroomed to get the musical charity started. 
+<</replace>>
+<</timed>>
+
+<<timed 190s>>
+  <<replace "#caption">>  
+He called it Islington Music Forum, which was a pun on the International Monetary Fund, you know, 
+<</replace>>
+<</timed>>
+
+<<timed 200s>>
+  <<replace "#caption">>  
+same initials, and his kind of inspiration deserved an MBA, really, or an OBE, but which he never got it was unrecognised, really, by people 
+<</replace>>
+<</timed>>
+
+<<timed 217s>>
+  <<replace "#caption">>  
+David had a saying, which was a round of applause is worth 1000 tablets, you know, that you, 
+<</replace>>
+<</timed>>
+
+<<timed 225s>>
+  <<replace "#caption">>  
+you don't need to take the tablets just as soon as you hear that applause, you know, then you, you want to, 
+<</replace>>
+<</timed>>
+
+<<timed 233s>>
+  <<replace "#caption">>  
+you want to do the music, can you, you know, it helps you to get your life going, you know, get on your feet.
+<</replace>>
+<</timed>>
+
+
+
+:: Zara-cap [nobr]
+<<timed 0s>>
+ <<replace "#caption">> My name is Zara. I am 14 years old. <</replace>> 
+ <</timed>>
+
+<<timed 4s>>
+ <<replace "#caption">> I love to read, I love sports, I love music, and I think I can just find myself doing anything. <</replace>> 
+ <</timed>>
+
+<<timed 10s>>
+ <<replace "#caption">> And I live in Islington, I live near Holloway. <</replace>> 
+ <</timed>>
+
+<<timed 14s>>
+ <<replace "#caption">> I think I would recommend Holloway. <</replace>> 
+ <</timed>>
+
+<<timed 17s>>
+ <<replace "#caption">> Let's say you walk on Holloway Road, there's just so many different types of cuisines, you're basically traveling the world <</replace>> 
+ <</timed>>
+
+<<timed 22s>>
+ <<replace "#caption">> just with a few footsteps, so you just get to open yourself up to a lot of different cultures. <</replace>> 
+ <</timed>>
+
+<<timed 28s>>
+ <<replace "#caption">> They always play music as well. <</replace>> 
+ <</timed>>
+
+<<timed 30s>>
+ <<replace "#caption">> How I would describe Islington to someone who's never been here is loud, <</replace>> 
+ <</timed>>
+
+<<timed 36s>>
+ <<replace "#caption">> there's always some type of amplified sound, <</replace>> 
+ <</timed>>
+
+<<timed 40s>>
+ <<replace "#caption">> whether that is someone shouting, someone laughing, someone on the phone, music <</replace>> 
+ <</timed>>
+
+<<timed 45s>>
+ <<replace "#caption">> so I would say loud, but not necessarily in a bad way, you know, you just need a bit of sound. <</replace>> 
+ <</timed>>
+
+<<timed 51s>>
+ <<replace "#caption">> Specifically, in the summer, I would say colourful, and I love when it just, like, everything of like shops and houses, just all the colors, just kind of get in your face, <</replace>> 
+ <</timed>>
+
+<<timed 62s>>
+ <<replace "#caption">> and I would say it's just a place to do everything, activities, that's how I would put it. <</replace>> 
+ <</timed>>
+
+<<timed 68s>>
+ <<replace "#caption">> I think there's always something happening in Islington. <</replace>> 
+ <</timed>>
+
+
+:: Lebanese_after_school_club-cap [nobr]
+
+<<timed 0s>>
+<<replace "#caption">>
+There's this very underrated place to get food. <</replace>>
+<</timed>>
+
+<<timed 4s>>
+<<replace "#caption">>
+It's a Lebanese grill shop, and it's underrated outside of Islington, I think. <</replace>>
+<</timed>>
+
+<<timed 11s>>
+<<replace "#caption">>
+But the people who live in this area, especially like just around Highbury Fields, know it very well. <</replace>>
+<</timed>>
+
+<<timed 16s>>
+<<replace "#caption">>
+And so it's just got like it's really cheap, and it's got really nice food. <</replace>>
+<</timed>>
+
+<<timed 22s>>
+<<replace "#caption">>
+I think for seven pounds, you can get like grilled chicken with vegetables and like a wrap, I think. <</replace>>
+<</timed>>
+
+<<timed 29s>>
+<<replace "#caption">>
+So it's really nice, and a lot of people go there, and so it kind of feels like an after-school club or something, <</replace>>
+<</timed>>
+
+<<timed 36s>>
+<<replace "#caption">>
+because you'll always have like around 30 kids in there, <</replace>>
+<</timed>>
+
+<<timed 40s>>
+<<replace "#caption">>
+and so it's just has got a really nice like atmosphere. <</replace>>
+<</timed>>
+
+
+:: Musical_pubs_and_chapels-cap [nobr]
+
+<<timed 0s>>
+<<replace "#caption">>
+Well, I do like the Union Chapel. <</replace>>
+<</timed>>
+
+<<timed 2s>>
+<<replace "#caption">>
+I've seen some really good performances there. <</replace>>
+<</timed>>
+
+<<timed 6s>>
+<<replace "#caption">>
+I went to see an artist called Laura Cantrell a couple of years ago, and it was great. <</replace>>
+<</timed>>
+
+<<timed 15s>>
+<<replace "#caption">>
+I've seen a choir there as well, and it's such a really interesting conversion. <</replace>>
+<</timed>>
+
+<<timed 21s>>
+<<replace "#caption">>
+It's the Union Chapel, is actually a religious worship place, but the acoustics are so good that it's just really good for concerts. <</replace>>
+<</timed>>
+
+<<timed 32s>>
+<<replace "#caption">>
+Yeah, I'd like to go there more often. <</replace>>
+<</timed>>
+
+<<timed 34s>>
+<<replace "#caption">>
+That's a, that's a favorite place of mine as well. <</replace>>
+<</timed>>
+
+<<timed 37s>>
+<<replace "#caption">>
+Open mics at the Brewhouse and Kitchen, which is a pub on the ground floor, but on the upper floor, <</replace>>
+<</timed>>
+
+<<timed 46s>>
+<<replace "#caption">>
+the upper floor, we have open mics every Monday. <</replace>>
+<</timed>>
+
+<<timed 51s>>
+<<replace "#caption">>
+It's the Virtual Acoustic Club, and also they have Islington Folk Club on a Thursday there, <</replace>>
+<</timed>>
+
+<<timed 58s>>
+<<replace "#caption">>
+and but the open mic could do with a few more audience members coming along. <</replace>>
+<</timed>>
+
+<<timed 63s>>
+<<replace "#caption">>
+It tends to be just the musicians who turn up to listen to each other, <</replace>>
+<</timed>>
+
+<<timed 70s>>
+<<replace "#caption">>
+but nice to have, and then some of the some of the punters come upstairs and listen. <</replace>>
+<</timed>>
+
+<<timed 77s>>
+<<replace "#caption">>
+They don't know it's on, you know. <</replace>>
+<</timed>>
+
+<<timed 78s>>
+<<replace "#caption">>
+They sometimes they stumble across it, but... <</replace>>
+<</timed>>
+
+<<timed 83s>>
+<<replace "#caption">>
+yeah, I think when people do come up, they're always surprised by the quality of the singing and playing. <</replace>>
+<</timed>>
+
+<<timed 90s>>
+<<replace "#caption">>
+It's very enjoyable. <</replace>>
+<</timed>>
+
+<<timed 92s>>
+<<replace "#caption">>
+More people should come to the Brewhouse and Kitchen. <</replace>>
+<</timed>>
+
+
+
+:: Olden_Garden-cap [nobr]
+
+<<timed 0s>>
+<<replace "#caption">>
+So that's a special place, it's called Olden Gardens. <</replace>>
+<</timed>>
+
+<<timed 5s>>
+<<replace "#caption">>
+It's a kind of community gardening project. <</replace>>
+<</timed>>
+
+<<timed 8s>>
+<<replace "#caption">>
+We go in there and we play, or we sit in the sun, or they've got kind of like wooden lodge, and it's a beautiful place. <</replace>>
+<</timed>>
+
+<<timed 18s>>
+<<replace "#caption">>
+They've got fruit trees, you can pick fruit, or... <</replace>>
+<</timed>>
+
+<<timed 22s>>
+<<replace "#caption">>
+and it's kind of away from the bustle, as you say. <</replace>>
+<</timed>>
+
+<<timed 26s>>
+<<replace "#caption">>
+Highbury Fields is quite special to us. We get some good crowds there when we're playing there. <</replace>>
+<</timed>>
+
+<<timed 32s>>
+<<replace "#caption">>
+We played there on Sunday, and the Arsenal fans were walking by with, you know, smiles on their faces because we were playing, <</replace>>
+<</timed>>
+
+<<timed 42s>>
+<<replace "#caption">>
+I think all the special places that I've got are probably you know, from the music. <</replace>>
+<</timed>>
+
+
+
+:: Where_everyone_is-cap [nobr]
+
+<<timed 0s>>
+<<replace "#caption">>
+Maybe Angel, for some reason, just people my age are so attracted to it. <</replace>>
+<</timed>>
+
+<<timed 5s>>
+<<replace "#caption">>
+It's just where everyone is, and they also have a youth hub, which is really good. <</replace>>
+<</timed>>
+
+<<timed 11s>>
+<<replace "#caption">>
+I've been there a few times, and I've played ping pong, so if that's something that you're interested in, <</replace>>
+<</timed>>
+
+<<timed 17s>>
+<<replace "#caption">>
+then you should definitely check it out. <</replace>>
+<</timed>>
+
+<<timed 18s>>
+<<replace "#caption">>
+What they do at a youth hub, they do a lot of things. <</replace>>
+<</timed>>
+
+<<timed 21s>>
+<<replace "#caption">>
+You have sports there. You have... <</replace>>
+<</timed>>
+
+<<timed 23s>>
+<<replace "#caption">>
+I was a part of some youth council election, so they were hosting that there. <</replace>>
+<</timed>>
+
+<<timed 28s>>
+<<replace "#caption">>
+It's just there if you want to just hang with people your age, so that's something lovely to do. <</replace>>
+<</timed>>
+
+<<timed 34s>>
+<<replace "#caption">>
+So you can basically do anything there, but it's mostly, I would say, sports and games. <</replace>>
+<</timed>>
+
+
+:: Carrying_a_coffin-cap [nobr]
+<<timed 00s>>
+  <<replace "#caption">>  
+I think that in Islington, there is a tradition of demonstrations, really, 
+<</replace>>
+<</timed>>
+
+<<timed 05s>>
+  <<replace "#caption">>  
+because it's quite left wing, and...
+<</replace>>
+<</timed>>
+
+<<timed 08s>>
+  <<replace "#caption">>  
+in a former life I used to be involved with animal rights and animal welfare, 
+<</replace>>
+<</timed>>
+
+<<timed 16s>>
+  <<replace "#caption">>  
+and we carried a coffin through the streets of Islington 
+<</replace>>
+<</timed>>
+
+<<timed 21s>>
+  <<replace "#caption">>  
+with... it was still anti experiments on animals, you know.
+<</replace>>
+<</timed>>
+
+:: Clubbing_and_racism-cap [nobr]
+<<timed 0s>>
+<<replace "#caption">>
+When I got older, I used to go to the club scenes. <</replace>>
+<</timed>>
+
+<<timed 2s>>
+<<replace "#caption">>
+In, see, this is a very different types of clubs, you know. There's clubs that you get the ethnic minorities, the West Indian people going to, <</replace>>
+<</timed>>
+
+<<timed 10s>>
+<<replace "#caption">>
+then you've got the clubs English people go to, where they'll play white music, <</replace>>
+<</timed>>
+
+<<timed 14s>>
+<<replace "#caption">>
+and then you'll have black music with, you know, reggae music, and that sort of stuff, and everything. <</replace>>
+<</timed>>
+
+<<timed 19s>>
+<<replace "#caption">>
+So that was the difference there. <</replace>>
+<</timed>>
+
+<<timed 20s>>
+<<replace "#caption">>
+So, it depends... and white people did used to come to our clubs, <</replace>>
+<</timed>>
+
+<<timed 27s>>
+<<replace "#caption">>
+but if a black person went to their club, there will be a problem, you know. There will be.. <</replace>>
+<</timed>>
+
+<<timed 31s>>
+<<replace "#caption">>
+I remember one time I went, it was a pub in Holloway Road, and it was my friend, she's a white girl, it was her wedding, <</replace>>
+<</timed>>
+
+<<timed 40s>>
+<<replace "#caption">>
+and after the wedding they went to the pub, I was the only black person, they won't let me in, <</replace>>
+<</timed>>
+
+<<timed 45s>>
+<<replace "#caption">>
+and she didn't want to go in, and I said, "No, this is your wedding, you have to go, you know, and it was, it was really, really, it was horrible, you know, that I had to be turned away, <</replace>>
+<</timed>>
+
+<<timed 56s>>
+<<replace "#caption">>
+and she cried, and I said, "It's your wedding, I said, "What, what did you know, no, you have to go". <</replace>>
+<</timed>>
+
+<<timed 61s>>
+<<replace "#caption">>
+That was my really, really first experience of direct racism. <</replace>>
+<</timed>>
+
+<<timed 65s>>
+<<replace "#caption">>
+You can't come in here because you are black. <</replace>>
+<</timed>>
+
+<<timed 68s>>
+<<replace "#caption">>
+It was like it was called Riley's, I remember. I know it's off Holloway Road somewhere. <</replace>>
+<</timed>>
+
+
+
+:: Fuelling_division-cap [nobr]
+<<timed 0s>>
+<<replace "#caption">>
+What I find challenging in Islington, <</replace>>
+<</timed>>
+
+<<timed 3s>>
+<<replace "#caption">>
+I would say there's also quite a class divide. <</replace>>
+<</timed>>
+
+<<timed 8s>>
+<<replace "#caption">>
+You can see it, it's just right in your face, like you'll just pass a street with semi-detached houses, detached houses, big tall mansions, <</replace>>
+<</timed>>
+
+<<timed 16s>>
+<<replace "#caption">>
+and then you would see flats, like council flats that aren't kept in the best shape, <</replace>>
+<</timed>>
+
+<<timed 23s>>
+<<replace "#caption">>
+so I feel like maybe the council may not take care of them properly, <</replace>>
+<</timed>>
+
+<<timed 31s>>
+<<replace "#caption">>
+and it's not only class divide, but also there's a lot of things like racism, sexism, all types of bigotry, <</replace>>
+<</timed>>
+
+<<timed 39s>>
+<<replace "#caption">>
+and that does happen quite a lot, <</replace>>
+<</timed>>
+
+<<timed 45s>>
+<<replace "#caption">>
+especially there's like certain times in the news where you would see something would happen <</replace>>
+<</timed>>
+
+<<timed 50s>>
+<<replace "#caption">>
+and it just gets, that anger gets misdirected to innocent people, <</replace>>
+<</timed>>
+
+<<timed 58s>>
+<<replace "#caption">>
+which they have nothing to do with, like they have nothing to do with it, <</replace>>
+<</timed>>
+
+<<timed 61s>>
+<<replace "#caption">>
+and I'd say that happens a lot. <</replace>>
+<</timed>>
+
+<<timed 64s>>
+<<replace "#caption">>
+So it is kind of scary, especially as, like, a person of any minority group, person of color, an immigrant, especially. <</replace>>
+<</timed>>
+
+<<timed 74s>>
+<<replace "#caption">>
+I feel like that happens a lot, which also kind of ties a bit into class. <</replace>>
+<</timed>>
+
+<<timed 79s>>
+<<replace "#caption">>
+I'd say Euro 2021. That's a moment where I felt there was a lot of divide into people. <</replace>>
+<</timed>>
+
+<<timed 90s>>
+<<replace "#caption">>
+Obviously, Saka, I remember him, that was also like, when he was, you know, coming up, so when they had missed the penalties. <</replace>>
+<</timed>>
+
+<<timed 102s>>
+<<replace "#caption">>
+England had missed the penalties. It was just kind of like, you know, sirens going into everyone's heads, mostly like black people or just any person of color, <</replace>>
+<</timed>>
+
+<<timed 113s>>
+<<replace "#caption">>
+so and there were a lot of people who were mistreating, bullying, attacking mostly black people because of it. <</replace>>
+<</timed>>
+
+<<timed 125s>>
+<<replace "#caption">>
+Even though it's football, it's supposed to be fun. I remember going in the street, it was not that safe. <</replace>>
+<</timed>>
+
+<<timed 131s>>
+<<replace "#caption">>
+Even my family members, they were looking behind their backs, just walking, like you know, walking to the shops, walking to work, <</replace>>
+<</timed>>
+
+<<timed 143s>>
+<<replace "#caption">>
+and they just had to look behind their backs, just because of football. <</replace>>
+<</timed>>
+
+<<timed 147s>>
+<<replace "#caption">>
+So, I felt like 2021 Euro, I was a time where I... <</replace>>
+<</timed>>
+
+<<timed 151s>>
+<<replace "#caption">>
+I personally, I think that was one of the biggest times where I was kind of worried about stuff like that. <</replace>>
+<</timed>>
+
+
+:: Singing_in_an_orchard-cap [nobr]
+CAPTIONS TBC
+
+
+:: Meeting_the_Sotheby_Singers-cap [nobr]
+CAPTIONS TBC
