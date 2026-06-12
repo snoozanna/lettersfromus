@@ -587,23 +587,37 @@ setup.chooseStoryAudio = () => {
 <main class="landing">
 
   <div class="landing-character-container">
-    <img src="assets/img/characters/characters-27.png" alt="Relaxing" class="relax" />
-    <img src="assets/img/characters/characters-24.png" alt="Skater" class="skater" />
-    <img src="assets/img/characters/duo.png" alt="Duo" class="duo" />
-    <img src="assets/img/characters/oldcouple.png" alt="Elderly couple" class="couple" />
 
-<div class="btn-container title-wrapper">
-  <h1 class="title">Letters from us</h1>
-  <div>
-    <span>An online archive of</span>
-    <span>Islington voices</span>
-  </div>
-    <<button "Start">>
-      <<goto $nextpass>>
+    <div class="char-wrapper relax">
+      <img src="assets/img/characters/characters-27.png" alt="Relaxing">
+    </div>
+
+    <div class="char-wrapper skater">
+      <img src="assets/img/characters/characters-24.png" alt="Skater">
+    </div>
+
+    <div class="char-wrapper duo">
+      <img src="assets/img/characters/duo.png" alt="Duo">
+    </div>
+
+    <div class="char-wrapper couple">
+      <img src="assets/img/characters/oldcouple.png" alt="Elderly couple">
+    </div>
+
+    <div class="btn-container title-wrapper">
+      <h1 class="title">Letters from us</h1>
+
+      <div class="subtitle">
+        <span>An online archive of</span>
+        <span>Islington voices</span>
+      </div>
+
+      <<button "Start">>
+        <<goto $nextpass>>
       <</button>>
-</div>
-  </div>
+    </div>
 
+  </div>
 
 </main>
 
