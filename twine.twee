@@ -231,8 +231,8 @@ setup.chooseStoryAudio = () => {
       /* cap */
     } ,
     { 
-  audioName: "Brian", 
-  audioSrc: "Brian", 
+  audioName: "Bryan", 
+  audioSrc: "Bryan", 
   theme: "people"
      /* cap */
 },
@@ -586,13 +586,25 @@ setup.chooseStoryAudio = () => {
 
 <main class="landing">
 
-  <img src="assets/img/lettersfromustitle.png" alt="Letters from us" class="lockup" />
+  <div class="landing-character-container">
+    <img src="assets/img/characters/characters-27.png" alt="Relaxing" class="relax" />
+    <img src="assets/img/characters/characters-24.png" alt="Skater" class="skater" />
+    <img src="assets/img/characters/duo.png" alt="Duo" class="duo" />
+    <img src="assets/img/characters/oldcouple.png" alt="Elderly couple" class="couple" />
 
-<div class="btn-container ">
-  <<button "Start">>
-    <<goto $nextpass>>
-    <</button>>
+<div class="btn-container title-wrapper">
+  <h1>Letters from us</h1>
+  <div>
+    <span>An online archive of</span>
+    <span>Islington voices</span>
+  </div>
+    <<button "Start">>
+      <<goto $nextpass>>
+      <</button>>
 </div>
+  </div>
+
+
 </main>
 
 :: intro [nobr]
@@ -4341,11 +4353,11 @@ And I hope it happens again. Please Arsenal, do not be last again.
 <</timed>>
 
 
-:: Brian-cap [nobr]
+:: Bryan-cap [nobr]
 
 <<timed 0s>>
   <<replace "#caption">>  
-My name is Brian Morrison. 
+My name is Bryan Morrison. 
 <</replace>>
 <</timed>>
 
