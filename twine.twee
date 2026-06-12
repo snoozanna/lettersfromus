@@ -593,7 +593,7 @@ setup.chooseStoryAudio = () => {
     <img src="assets/img/characters/oldcouple.png" alt="Elderly couple" class="couple" />
 
 <div class="btn-container title-wrapper">
-  <h1>Letters from us</h1>
+  <h1 class="title">Letters from us</h1>
   <div>
     <span>An online archive of</span>
     <span>Islington voices</span>
@@ -624,7 +624,7 @@ setup.chooseStoryAudio = () => {
   <<include "header">>
 <main id="main"> 
  <div class="main-container text">
- <h1>Letters from us</h1>
+ <h1 class="title">Letters from us</h1>
    <div id="textMount"></div>
   <p> <span class="project">Letters from Us</span> is an interactive audio archive celebrating the everyday stories of the people of Islington. </p>
 
@@ -657,7 +657,7 @@ setup.chooseStoryAudio = () => {
 <<set $passage to "map">>
 <<set $nextpass to "">>
 
-<main>
+<main class="main-map">
 <br/>
 <div class="map-instruction">
 <h1>Letters from us</h1>
@@ -1000,9 +1000,10 @@ setup.chooseStoryAudio = () => {
 </audio>
 
 <<if $captions is true>>
-<div id="caption">
+  
+<p id="caption">
 
-</div>
+</p>
   <<include `$currentAudio.audioSrc + "-cap"`>>
 <</if>>
 
@@ -1729,7 +1730,7 @@ despite the gentrification, like the, kind of the working class spirit is there.
 <</replace>>
 <</timed>>
 
-:: Paddling_pools_boating_lakes-cap [nobr]
+:: Pools_and_lakes-cap [nobr]
 <<timed 00s>>
   <<replace "#caption">>  
 Clissold, I mean, when my kids was little, we used to, there was loads of kids up there. 

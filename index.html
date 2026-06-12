@@ -641,7 +641,7 @@ setup.chooseStoryAudio = () => {
     &lt;img src=&quot;assets/img/characters/oldcouple.png&quot; alt=&quot;Elderly couple&quot; class=&quot;couple&quot; /&gt;
 
 &lt;div class=&quot;btn-container title-wrapper&quot;&gt;
-  &lt;h1&gt;Letters from us&lt;/h1&gt;
+  &lt;h1 class=&quot;title&quot;&gt;Letters from us&lt;/h1&gt;
   &lt;div&gt;
     &lt;span&gt;An online archive of&lt;/span&gt;
     &lt;span&gt;Islington voices&lt;/span&gt;
@@ -669,7 +669,7 @@ setup.chooseStoryAudio = () => {
   &lt;&lt;include &quot;header&quot;&gt;&gt;
 &lt;main id=&quot;main&quot;&gt; 
  &lt;div class=&quot;main-container text&quot;&gt;
- &lt;h1&gt;Letters from us&lt;/h1&gt;
+ &lt;h1 class=&quot;title&quot;&gt;Letters from us&lt;/h1&gt;
    &lt;div id=&quot;textMount&quot;&gt;&lt;/div&gt;
   &lt;p&gt; &lt;span class=&quot;project&quot;&gt;Letters from Us&lt;/span&gt; is an interactive audio archive celebrating the everyday stories of the people of Islington. &lt;/p&gt;
 
@@ -692,7 +692,7 @@ setup.chooseStoryAudio = () => {
 &lt;&lt;set $passage to &quot;map&quot;&gt;&gt;
 &lt;&lt;set $nextpass to &quot;&quot;&gt;&gt;
 
-&lt;main&gt;
+&lt;main class=&quot;main-map&quot;&gt;
 &lt;br/&gt;
 &lt;div class=&quot;map-instruction&quot;&gt;
 &lt;h1&gt;Letters from us&lt;/h1&gt;
@@ -990,9 +990,10 @@ setup.chooseStoryAudio = () => {
 &lt;/audio&gt;
 
 &lt;&lt;if $captions is true&gt;&gt;
-&lt;div id=&quot;caption&quot;&gt;
+  
+&lt;p id=&quot;caption&quot;&gt;
 
-&lt;/div&gt;
+&lt;/p&gt;
   &lt;&lt;include `$currentAudio.audioSrc + &quot;-cap&quot;`&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 
@@ -1680,7 +1681,7 @@ that I know from Walter Sickert as well, so yeah, it&#39;s
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 despite the gentrification, like the, kind of the working class spirit is there.
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="31" name="Paddling_pools_boating_lakes-cap" tags="nobr" position="100,475" size="100,100">&lt;&lt;timed 00s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="31" name="Pools_and_lakes-cap" tags="nobr" position="100,475" size="100,100">&lt;&lt;timed 00s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 Clissold, I mean, when my kids was little, we used to, there was loads of kids up there. 
 &lt;&lt;/replace&gt;&gt;
