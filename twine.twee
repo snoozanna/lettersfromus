@@ -956,7 +956,7 @@ setup.chooseStoryAudio = () => {
 
 
 :: about [nobr]
-<main>
+<main class="about">
 <h1>About</h1>
 <p>Letters from us is a community storytelling project that invites people in Islington to tell the story of their area, in their own words. Inspired by the long-running BBC radio show <a href="https://www.bbc.co.uk/programmes/b00f6hbp" rel="noreferrer" target="_blank" class="highlighted">Letter from America</a>, the project invites residents from different ages and backgrounds to share their stories and reflect on how they see their community.</p>
  
@@ -1111,7 +1111,7 @@ setup.chooseStoryAudio = () => {
 <<set $passage to "prerecord">>
 <<set $nextpass to "record">>
 
-<main>
+<main class="about">
 <h1>Record your story</h1>
 <p>Tell us about you, your favourite place in Islington, something that brings you joy, or rage, or simply something about Islington’s history others may not know about.</p>
 <<button "Record">>
@@ -1126,7 +1126,7 @@ setup.chooseStoryAudio = () => {
 <<set $prevpass to "prerecord">>
 <<set $passage to "record">>
 
-<main>
+<main class="about">
 <h1>Record</h1>
     <iframe src="https://www.speakpipe.com/widget/inline/2iawuy25u8ynlcssocfc003zmfcl529u" allow="microphone" width="100%" height="200" frameborder="0"></iframe>
 <p>By clicking Record, you consent for your recording to be published online as part of the project. You can withdraw that consent at any time. More info can be found in our <a href="../TCs-Koro-LFU.pdf" class="highlighted" target="_blank">terms of use</a> .</p>

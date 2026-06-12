@@ -513,7 +513,7 @@ h3.subtitle.category {
     z-index: 2;
   }
 
-  .title {
+  h1 {
     font-size: clamp(4rem, 6vw, 7rem);
   }
 
@@ -972,7 +972,9 @@ span.bold {
 
 
 /* ABOUT  */
-
+main.about{
+  align-items: start;
+}
 span.role{
   color: var(--tropical-teal);
   font-weight: 600;
