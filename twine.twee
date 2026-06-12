@@ -572,7 +572,7 @@ setup.chooseStoryAudio = () => {
 <<set $nextpass to "">>
 
 <main>
-<br/><br/>
+<br/>
 <div class="map-instruction">
 <h1>Letters from us</h1>
 <span>Click on the map to bring it to life.</span></div>
@@ -743,6 +743,8 @@ setup.chooseStoryAudio = () => {
 
 </main>
 <<include "footertheme">>
+
+
 
 
 :: community [nobr]

@@ -632,6 +632,7 @@ h3.subtitle.category {
   width: 100%;
   height: auto;
   position: absolute;
+  z-index: 3;
 }
 
 /* Overlays */
@@ -655,7 +656,7 @@ h3.subtitle.category {
 /* HOTSPOTS (click areas) */
 .hotspot {
   position: absolute;
-  z-index: 3;
+  z-index: 4;
 }
 
 /* Make link fill hotspot */
