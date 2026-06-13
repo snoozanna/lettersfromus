@@ -85,49 +85,49 @@ setup.chooseStoryAudio = () => {
      audioName: "Christmas with the Mayor", 
     audioSrc: "Christmas_with_the_Mayor", 
     theme: "community"
-    /* cap */
+    /* checked */
   }, 
    {
      audioName: "Talking to strangers", 
     audioSrc: "Talking_to_strangers", 
     theme: "community"
-     /* cap */
+     /* checked */
   }, 
    {
      audioName: "Highbury Fields youth", 
     audioSrc:"Highbury-Fields-youth", 
     theme: "community"
-     /* cap */
+     /* checked */
   }, 
   {
      audioName: "Protests and parties", 
     audioSrc:"Protests-and-parties", 
     theme: "community"
-     /* cap */
+     /* checked */
   }, 
    {
      audioName: "Islington traditions", 
     audioSrc: "Islington_traditions", 
     theme: "community"
-     /* cap */
+     /* checked */
   }, 
    {
      audioName: "Working class spirit", 
     audioSrc: "Working_class_spirit", 
     theme: "community"
-     /* cap */
+     /* checked */
   }, 
    {
      audioName: "Welcoming communities", 
     audioSrc: "Welcoming_communities", 
     theme: "community"
-     /* cap */
+     /* checked */
   }, 
    {
      audioName: "Out every day", 
     audioSrc: "Out_every_day", 
     theme: "community"
-     /* cap */
+     /* checked */
   }, 
  
  
@@ -136,44 +136,44 @@ setup.chooseStoryAudio = () => {
      audioName: "Gillespie Park", 
     audioSrc: "Gillespie_Park", 
     theme: "history"
-     /* cap */
+     /* checked */
   },
   
    {
      audioName: "Memory Gardens", 
     audioSrc: "Memory_Gardens", 
     theme: "history"
-     /* cap */
+     /* checked */
   },
    {
      audioName: "Paradise Park", 
     audioSrc: "Paradise_Park", 
     theme: "history"
-     /* cap */
+     /* checked */
   },
   {
      audioName: "Camden passage", 
     audioSrc: "Camden_passage", 
     theme: "history"
-     /* cap */
+     /* checked */
   },
   {
      audioName: "The Library", 
     audioSrc: "The_Library", 
     theme: "history"
-     /* cap */
+     /* checked */
   },
 {
      audioName: "Pools and Lakes", 
     audioSrc: "Pools_and_lakes", 
     theme: "history"
-     /* cap */
+     /* checked */
   },
 {
      audioName: "Politician without politics", 
     audioSrc: "Politician_without_politics", 
     theme: "history"
-     /* cap */
+     /* checked */
   },
 
   /* JOY  */
@@ -181,34 +181,37 @@ setup.chooseStoryAudio = () => {
      audioName: "Celebrating Arsenal", 
     audioSrc: "Celebrating_Arsenal", 
     theme: "joy"
-        /* cap */
+        /* checked */
   },
    {
      audioName: "Dancing in Finsbury Park", 
     audioSrc: "Dancing_in_Finsbury_Park", 
     theme: "joy"
-        /* cap */
+        /* checked */
   },
    {
      audioName: "Running in a church", 
     audioSrc: "Running_in_a_church", 
     theme: "joy"
+     /* checked */
   }, 
   {
      audioName: "Halloween houses", 
     audioSrc: "Halloween_houses", 
     theme: "joy"
+    /* checked */
   }, 
   {
      audioName: "Walking down the market", 
     audioSrc: "Walking_down_the_market", 
     theme: "joy"
-         /* cap */
+        /* checked */
   }, 
    {
      audioName: "Singing in an orchard", 
     audioSrc: "Singing_in_an_orchard", 
     theme: "joy"
+     /* checked */
   },
   {
      audioName: "Meeting the Sotheby Singers", 
@@ -1154,49 +1157,49 @@ So, a lot of people, they raised funds all throughout the year.
 <</replace>>
 <</timed>>
 
-<<timed 12s>>
+<<timed 13s>>
   <<replace "#caption">>  
 So, we used to go to where Emirates Stadium was built, that was the Islington Council's transport area, 
 <</replace>>
 <</timed>>
 
-<<timed 23s>>
+<<timed 23.5s>>
   <<replace "#caption">>  
 we used to go there and pick a bus, and then I used to, we used to go to all these roads that your 
 <</replace>>
 <</timed>>
 
-<<timed 29s>>
+<<timed 30s>>
   <<replace "#caption">>  
 normal public or normal buses not allowed, 
 <</replace>>
 <</timed>>
 
-<<timed 33s>>
+<<timed 33.5s>>
   <<replace "#caption">>  
 and we go there and pick a lot of people up, 
 <</replace>>
 <</timed>>
 
-<<timed 35s>>
+<<timed 36s>>
   <<replace "#caption">>  
 and they used to take them all to the place, and they were greeted with cups of tea, and it was really nice, and so many artists gave their time free. 
 <</replace>>
 <</timed>>
 
-<<timed 45s>>
+<<timed 45.5s>>
   <<replace "#caption">>  
 They were never bored, and almost everyone got a raffle ticket, and they all won. 
 <</replace>>
 <</timed>>
 
-<<timed 51s>>
+<<timed 51.5s>>
   <<replace "#caption">>  
 And I remember we used to raise funds early in the year and make some bags, 
 <</replace>>
 <</timed>>
 
-<<timed 59s>>
+<<timed 60s>>
   <<replace "#caption">>  
 a lot of dry food, and
 <</replace>>
@@ -1218,7 +1221,7 @@ My husband and I, we stayed the whole day there. We had lunch.
 
 <<timed 69s>>
   <<replace "#caption">>  
-Sometimes we got the Islington mayor, so it was really lovely. 
+Sometimes we got the Islington Mayor, so it was really lovely. 
 <</replace>>
 <</timed>>
 
@@ -1237,14 +1240,14 @@ you know, we had a really good day today, and if not for this event,
 <</timed>>
 
 
-<<timed 88s>>
+<<timed 89s>>
   <<replace "#caption">>  
 we would have been alone, and that really sort of broke my heart. 
 <</replace>>
 <</timed>>
 
 
-<<timed 93s>>
+<<timed 93.5s>>
   <<replace "#caption">>  
 Some people haven't got family, so it was a, you know, bit of an eye opener. 
 <</replace>>
@@ -1258,14 +1261,14 @@ And, of course, after the event, people went to the pub,
 <</timed>>
 
 
-<<timed 99s>>
+<<timed 101s>>
   <<replace "#caption">>  
 but I had children and 
 <</replace>>
 <</timed>>
 
 
-<<timed 102s>>
+<<timed 103s>>
   <<replace "#caption">>
 I don't drink, so no point me going to the pub...
 <</replace>>
@@ -1298,55 +1301,55 @@ hit the milestone at the border of the borough, and you just walk around.
 <</replace>>
 <</timed>>
 
-<<timed 24s>>
+<<timed 25s>>
   <<replace "#caption">>  
-I think it's about a 5-10 mile walk, and when you're finished, you've beaten the bones. 
+I think it's about a 5-10 mile walk, and when you're finished, you've beaten the bounds. 
 <</replace>>
 <</timed>>
 
-<<timed 28s>>
+<<timed 29s>>
   <<replace "#caption">>  
-The other thing that's a lot more fun is when we have a new mayor every May, because the mayorship revolves around the councilors. 
+The other thing that's a lot more fun is when we have a new Mayor every May, because the mayorship revolves around the councilors. 
 <</replace>>
 <</timed>>
 
-<<timed 38s>>
+<<timed 38.5s>>
   <<replace "#caption">>  
 That mayor will come out in their full regalia, gold chains and red cloak, and talk to people in various community events that might be happening, 
 <</replace>>
 <</timed>>
 
-<<timed 49s>>
+<<timed 49.5s>>
   <<replace "#caption">>  
 just to introduce him or herself to the rest of us. 
 <</replace>>
 <</timed>>
 
-<<timed 52s>>
+<<timed 55s>>
   <<replace "#caption">>  
 That's quite old-fashioned in many ways, but they managed to keep up to date because they talk about things that we're interested in, 
 <</replace>>
 <</timed>>
 
-<<timed 59s>>
+<<timed 60s>>
   <<replace "#caption">>  
 like housing or violence against women and girls, the issues that of the day, 
 <</replace>>
 <</timed>>
 
-<<timed 66s>>
+<<timed 66.5s>>
   <<replace "#caption">>  
 which are important to people in the area. 
 <</replace>>
 <</timed>>
 
-<<timed 68s>>
+<<timed 69s>>
   <<replace "#caption">>  
 So, yes, it's sort of a combination of old-fashioned wearing the gold regalia, 
 <</replace>>
 <</timed>>
 
-<<timed 74s>>
+<<timed 74.5s>>
   <<replace "#caption">>  
 which probably wouldn't be made these days, 
 <</replace>>
@@ -1358,13 +1361,13 @@ and the red cloak, and talking about modern issues that mean a lot to us,
 <</replace>>
 <</timed>>
 
-<<timed 80s>>
+<<timed 80.5s>>
   <<replace "#caption">>  
 and just coming out and patting kids on the head 
 <</replace>>
 <</timed>>
 
-<<timed 83s>>
+<<timed 83.5s>>
   <<replace "#caption">>  
 like people used to do.
 <</replace>>
@@ -1380,7 +1383,7 @@ Islington actually offers a lot for somebody in my position to do.
 <</replace>>
 <</timed>>
 
-<<timed 05s>>
+<<timed 06s>>
   <<replace "#caption">>  
 Okay, I'm out every day. 
 <</replace>>
@@ -1394,23 +1397,23 @@ On Monday, I go to a premises up in Archway called Islington Outlook.
 
 <<timed 17s>>
   <<replace "#caption">>  
-It's a daycare center, and 
+It's a daycare centre, and 
 <</replace>>
 <</timed>>
 
-<<timed 20s>>
+<<timed 21s>>
   <<replace "#caption">>  
 I go there basically to use the gym, to do yoga and to study computer. 
 <</replace>>
 <</timed>>
 
-<<timed 27s>>
+<<timed 27.5s>>
   <<replace "#caption">>  
 There's a chap up there that teaches computer for people that are non-sighted. 
 <</replace>>
 <</timed>>
 
-<<timed 34s>>
+<<timed 34.5s>>
   <<replace "#caption">>  
 And then on Tuesday afternoon I go to church, because church, that's their social afternoon. 
 <</replace>>
@@ -1428,19 +1431,19 @@ no charge, all right,
 <</replace>>
 <</timed>>
 
-<<timed 53s>>
+<<timed 54s>>
   <<replace "#caption">>  
 and you can sit and talk with all your friends around the table between twelve and three 
 <</replace>>
 <</timed>>
 
-<<timed 58s>>
+<<timed 58.5s>>
   <<replace "#caption">>  
 cups of tea flow freely, and then you go home, so it's a social event. 
 <</replace>>
 <</timed>>
 
-<<timed 64s>>
+<<timed 64.5s>>
   <<replace "#caption">>  
 It's not a church event, it's a social event at the church. 
 <</replace>>
@@ -1452,9 +1455,9 @@ Then on Wednesday, I come now here in the morning and run the knitting knit and 
 <</replace>>
 <</timed>>
 
-<<timed 77s>>
+<<timed 77.5s>>
   <<replace "#caption">>  
-Yeah, and then on Thursday I come back here again for the Chero Bix, 
+Yeah, and then on Thursday I come back here again for the Chair Aerobics, 
 <</replace>>
 <</timed>>
 
@@ -1464,13 +1467,13 @@ and then on Friday I come here again for the Golden Oldies Club,
 <</replace>>
 <</timed>>
 
-<<timed 87s>>
+<<timed 87.5s>>
   <<replace "#caption">>  
-and then now Saturday mornings a bit varied because I go to Mildmay library for a knitting group, 
+and then now Saturday mornings a bit varied because I go to Mildmay Library for a knitting group, 
 <</replace>>
 <</timed>>
 
-<<timed 94s>>
+<<timed 95s>>
   <<replace "#caption">>  
 but the following Saturday I go to Mildmay Club for a similar knitting group, 
 <</replace>>
@@ -1482,13 +1485,13 @@ then on the Sunday I'll go church, but for Sunday church, not for social yeah,
 <</replace>>
 <</timed>>
 
-<<timed 105s>>
+<<timed 105.5s>>
   <<replace "#caption">>  
 although you meet other people there, have a cup of tea after the service, and whatever. 
 <</replace>>
 <</timed>>
 
-<<timed 110s>>
+<<timed 110.5s>>
   <<replace "#caption">>  
 So there's plenty of things to do in Islington at various venues. 
 <</replace>>
@@ -1504,23 +1507,23 @@ Yeah, it's quite a nice place to be in that respect.
 :: Talking_to_strangers-cap [nobr]
 <<timed 00s>>
   <<replace "#caption">>  
-I mean, I live with Marmay Park now, and I don't even know the people next door. 
+I mean, I live in Mildmay Park now, and I don't even know the people next door. 
 <</replace>>
 <</timed>>
 
-<<timed 04s>>
+<<timed 04.5s>>
   <<replace "#caption">>  
-It's completely changed. It really is not like it used to be. 
+It's completely changed. It really is. Islingtons not like it used to be. 
 <</replace>>
 <</timed>>
 
-<<timed 09s>>
+<<timed 10s>>
   <<replace "#caption">>  
 I mean, even like down to coming and seeing people, like you know, I've got - 
 <</replace>>
 <</timed>>
 
-<<timed 14s>>
+<<timed 14.5s>>
   <<replace "#caption">>  
 I'm with a local housing association as well, and we've had a couple of people on there that really have needed help, you know, social services cases, 
 <</replace>>
@@ -1532,25 +1535,25 @@ and nothing happens, you know.
 <</replace>>
 <</timed>>
 
-<<timed 24s>>
+<<timed 25.5s>>
   <<replace "#caption">>  
 It used to, used to go and see, I mean, at the time, Jeremy Corbyn was our counselor here before he became an MP, 
 <</replace>>
 <</timed>>
 
-<<timed 32s>>
+<<timed 32.5s>>
   <<replace "#caption">>  
 and he was marvelous. 
 <</replace>>
 <</timed>>
 
-<<timed 34s>>
+<<timed 34.5s>>
   <<replace "#caption">>  
-He used to, you know, he used to sympathize and really go into different things, and that, 
+He used to, you know, he used to sympathise and really go into different things, and that, 
 <</replace>>
 <</timed>>
 
-<<timed 40s>>
+<<timed 41.5s>>
   <<replace "#caption">>  
 but it's just not the same anymore. I don't...
 <</replace>>
@@ -1568,19 +1571,19 @@ and even if it was somebody that you saw every day,
 <</replace>>
 <</timed>>
 
-<<timed 49s>>
+<<timed 49.5s>>
   <<replace "#caption">>  
 you never knew them, you never had a conversation with them. 
 <</replace>>
 <</timed>>
 
-<<timed 52s>>
+<<timed 52.5s>>
   <<replace "#caption">>  
 If they saw you two or three days on the spin by the end of the week, it was morning,
 <</replace>>
 <</timed>>
 
-<<timed 57s>>
+<<timed 58s>>
   <<replace "#caption">>  
  you don't get that round here anymore. That's all stopped. 
 <</replace>>
@@ -1600,23 +1603,23 @@ they think you up to something, you know, like
 
 <<timed 67s>>
   <<replace "#caption">>  
-it's not like that anymore, it's not what it used to be. 
+it's not like that anymore, Islingtons not what it used to be. 
 <</replace>>
 <</timed>>
 
-<<timed 70s>>
+<<timed 70.5s>>
   <<replace "#caption">>  
 It's like my daughter laughs, because London's just got so quick now. 
 <</replace>>
 <</timed>>
 
-<<timed 73s>>
+<<timed 74s>>
   <<replace "#caption">>  
 You go in the shop, and you know someone's talking in front of you, people get the hump, they want to get served and out, 
 <</replace>>
 <</timed>>
 
-<<timed 80s>>
+<<timed 81s>>
   <<replace "#caption">>  
 you know, like people walk past people that's in trouble in the street 
 <</replace>>
@@ -1624,7 +1627,7 @@ you know, like people walk past people that's in trouble in the street
 
 <<timed 86s>>
   <<replace "#caption">>  
-and don't help them anymore, whereas that wasn't backed years ago. 
+and don't help them anymore, whereas that wouldn't have happened years ago. 
 <</replace>>
 <</timed>>
 
@@ -1634,7 +1637,7 @@ There's just not the care in the community that there was then.
 <</replace>>
 <</timed>>
 
-<<timed 93s>>
+<<timed 93.5s>>
   <<replace "#caption">>  
 It's just not there. I mean, it's just not the same. 
 <</replace>>
@@ -1642,13 +1645,13 @@ It's just not there. I mean, it's just not the same.
 
 <<timed 97s>>
   <<replace "#caption">>  
-It isn't to whether it's the same everywhere or not. I don't know, 
+It isn't. Whether it's the same everywhere or not, I don't know,
 <</replace>>
 <</timed>>
 
-<<timed 100s>>
+<<timed 101s>>
   <<replace "#caption">>  
-but it's just not the same here now
+but it's just not the same here now.
 <</replace>>
 <</timed>>
 
@@ -1666,19 +1669,19 @@ which is in Islington.
 <</replace>>
 <</timed>>
 
-<<timed 09s>>
+<<timed 10s>>
   <<replace "#caption">>  
 It's behind, it's kind of off Essex Road, 
 <</replace>>
 <</timed>>
 
-<<timed 13s>>
+<<timed 13.5s>>
   <<replace "#caption">>  
 and I like the tradition that they have a community Christmas fair, 
 <</replace>>
 <</timed>>
 
-<<timed 19s>>
+<<timed 19.5s>>
   <<replace "#caption">>  
 you know, where kids, the local people, could come together and like 
 <</replace>>
@@ -1690,25 +1693,25 @@ buy stuff from the stall.
 <</replace>>
 <</timed>>
 
-<<timed 26s>>
+<<timed 28s>>
   <<replace "#caption">>  
 Most of it is like bric-a-brac or stuff that they made themselves, lots of artisanal stuff, 
 <</replace>>
 <</timed>>
 
-<<timed 33s>>
+<<timed 33.5s>>
   <<replace "#caption">>  
 like knitwear, wrapping paper, books, things like that. 
 <</replace>>
 <</timed>>
 
-<<timed 37s>>
+<<timed 38s>>
   <<replace "#caption">>  
-You know, and usually they do it for charity stuff, or charity, and stuff. 
+You know, and usually they do it for charity stuff and stuff. 
 <</replace>>
 <</timed>>
 
-<<timed 40s>>
+<<timed 41.5s>>
   <<replace "#caption">>  
 The Walter Sickert Community Centre, they're responsible for like, 
 <</replace>>
@@ -1720,25 +1723,25 @@ like doing things like arts and crafts, coffee mornings,
 <</replace>>
 <</timed>>
 
-<<timed 51s>>
+<<timed 51.5s>>
   <<replace "#caption">>  
-dinners, seasonal, like barbecues, like seasonal dinners, also end of month luncheons as well, 
+dinners, seasonal, barbecues, seasonal dinners, also end of month luncheons as well, 
 <</replace>>
 <</timed>>
 
-<<timed 59s>>
+<<timed 59.5s>>
   <<replace "#caption">>  
 so it's quite nice there, you know, it's just like, because there's, you know, there's all sorts of people that I meet on the street 
 <</replace>>
 <</timed>>
 
-<<timed 65s>>
+<<timed 65.5s>>
   <<replace "#caption">>  
 that I know from Walter Sickert as well, so yeah, it's 
 <</replace>>
 <</timed>>
 
-<<timed 70s>>
+<<timed 70.5s>>
   <<replace "#caption">>  
 despite the gentrification, like the, kind of the working class spirit is there.
 <</replace>>
@@ -1759,7 +1762,7 @@ You had a big paddling pool up there, used to be able to get like 100 kids in th
 
 <<timed 11s>>
   <<replace "#caption">>  
-you know, like a good 50. Anyway, you know, like 
+you know, like a good 50 anyway, you know, like 
 <</replace>>
 <</timed>>
 
@@ -1769,13 +1772,13 @@ I suppose Clissold, like it's where my kids grew up, basically, there, you know,
 <</replace>>
 <</timed>>
 
-<<timed 21s>>
+<<timed 21.5s>>
   <<replace "#caption">>  
 Finsbury Park, really, I think, is my biggest memory of that, 
 <</replace>>
 <</timed>>
 
-<<timed 25s>>
+<<timed 25.5s>>
   <<replace "#caption">>  
 because my nan used to live that way, and my granddad used to sell chestnuts outside the church and outside Arsenal. 
 <</replace>>
@@ -1787,7 +1790,7 @@ My granddad was Italian, and we used to always get the bus up to Finsbury Park, 
 <</replace>>
 <</timed>>
 
-<<timed 43s>>
+<<timed 43.5s>>
   <<replace "#caption">>  
 and all of a sudden, peanuts and chestnuts he used to sell, and then we used to go into the park and they had a boating lake in there, in Finsbury Park, 
 <</replace>>
@@ -1817,13 +1820,13 @@ you know, and used to, there used to be a thing in Finsbury Park that you could 
 <</replace>>
 <</timed>>
 
-<<timed 79s>>
+<<timed 79.5s>>
   <<replace "#caption">>  
 you know, and all these sorts of things, it's all silly things now, but kids, 
 <</replace>>
 <</timed>>
 
-<<timed 83s>>
+<<timed 84s>>
   <<replace "#caption">>  
 that don't happen now, does it?
 <</replace>>
@@ -1838,7 +1841,7 @@ Angel is special, but it's very changed these days, you know.
 <</replace>>
 <</timed>>
 
-<<timed 03s>>
+<<timed 04s>>
   <<replace "#caption">>  
 They've got the N1 centre up there now, never used to be there. 
 <</replace>>
@@ -1846,7 +1849,7 @@ They've got the N1 centre up there now, never used to be there.
 
 <<timed 07s>>
   <<replace "#caption">>  
-Chapel Mark, it used to be wonderful, not so hot anymore. 
+Chapel Market, it used to be wonderful, not so hot anymore. 
 <</replace>>
 <</timed>>
 
@@ -1880,7 +1883,7 @@ the antiques don't particularly interest me. But prior to that, there was Payton
 <</replace>>
 <</timed>>
 
-<<timed 49s>>
+<<timed 49.5s>>
   <<replace "#caption">>  
 not like the knitting shop there, that's that's there now, and everything's so extortionately priced, you know. 
 <</replace>>
@@ -1916,7 +1919,7 @@ that's where Anna Sher started her drama school, which then moved down behind Ch
 <</replace>>
 <</timed>>
 
-<<timed 90s>>
+<<timed 90.5s>>
   <<replace "#caption">>  
 but it started off in Bentham Court back in the day, 
 <</replace>>
@@ -1928,15 +1931,15 @@ and quite a lot of people were snapped up from there.
 <</replace>>
 <</timed>>
 
-<<timed 97s>>
+<<timed 97.5s>>
   <<replace "#caption">>  
 They did Tomorrow's People was the first production they did, and that included the young lady, I can't remember her name now, 
 <</replace>>
 <</timed>>
 
-<<timed 106s>>
+<<timed 107s>>
   <<replace "#caption">>  
-but Reese, more recently diagnosed with dementia, 
+but more recently diagnosed with dementia, 
 <</replace>>
 <</timed>>
 
@@ -1958,12 +1961,12 @@ Quite a few people I knew from the area were scooped up for Tomorrow's People.
 Well, I used to love to play at the Library Pub, <</replace>>
 <</timed>>
 
-<<timed 4s>>
+<<timed 5s>>
 <<replace "#caption">>
 which is across the road from the Union Chapel on Upper Street. <</replace>>
 <</timed>>
 
-<<timed 8s>>
+<<timed 8.5s>>
 <<replace "#caption">>
 I used to attend open mics there every Monday night, <</replace>>
 <</timed>>
@@ -1973,32 +1976,32 @@ I used to attend open mics there every Monday night, <</replace>>
 and must be nearly eight, nine years ago when I started going there, <</replace>>
 <</timed>>
 
-<<timed 18s>>
+<<timed 18.5s>>
 <<replace "#caption">>
-and I met good friends through the in the music community there. <</replace>>
+and I met good friends through the... in the music community there. <</replace>>
 <</timed>>
 
-<<timed 26s>>
+<<timed 27s>>
 <<replace "#caption">>
 Yeah, it was always such a good atmosphere and challenging. <</replace>>
 <</timed>>
 
-<<timed 30s>>
+<<timed 30.5s>>
 <<replace "#caption">>
 I was doing my best to keep up to the standard and write new songs, <</replace>>
 <</timed>>
 
-<<timed 35s>>
+<<timed 35.5s>>
 <<replace "#caption">>
 and I'd usually write one or two songs during the week <</replace>>
 <</timed>>
 
-<<timed 38s>>
+<<timed 39s>>
 <<replace "#caption">>
 ready to play for that Monday, but there were some real characters used to turn up at that open mic. <</replace>>
 <</timed>>
 
-<<timed 49s>>
+<<timed 49.5s>>
 <<replace "#caption">>
 Yeah, since the management changed in the pub and they stopped having open mic upstairs, <</replace>>
 <</timed>>
@@ -2033,7 +2036,7 @@ well, must be 10 years, <</replace>>
 and I was there for most of that time, <</replace>>
 <</timed>>
 
-<<timed 82s>>
+<<timed 82.5s>>
 <<replace "#caption">>
 met some really interesting people and talented people. <</replace>>
 <</timed>>
@@ -2046,13 +2049,13 @@ Gillespie Nature Park.
 <</replace>>
 <</timed>>
 
-<<timed 01s>>
+<<timed 02s>>
   <<replace "#caption">>  
 It was originally a rail shunting yard.
 <</replace>>
 <</timed>>
 
-<<timed 05s>>
+<<timed 06s>>
   <<replace "#caption">>  
 It had many tracks, and the trains used to shuffle back and forth there, because Finsbury Park was, especially during wartime, 
 <</replace>>
@@ -2072,7 +2075,7 @@ At the end, the shunting yard wasn't used for about 20 or 30 years after the war
 
 <<timed 22s>>
   <<replace "#caption">>  
-It fell into disuse. It was offered to Islington Council, and they said, "We're not that interested. 
+It fell into disuse. It was offered to Islington Council, and they said, "We're not that interested." 
 <</replace>>
 <</timed>>
 
@@ -2088,7 +2091,7 @@ and the nature park has gone from strength to strength.
 <</replace>>
 <</timed>>
 
-<<timed 42s>>
+<<timed 42.5s>>
   <<replace "#caption">>  
 It has been quietly developed. 
 <</replace>>
@@ -2106,7 +2109,7 @@ partly I think because of the acid nature of the soil, probably helped by all th
 <</replace>>
 <</timed>>
 
-<<timed 62s>>
+<<timed 62.5s>>
   <<replace "#caption">>  
 It's a very restful place. 
 <</replace>>
@@ -2118,7 +2121,7 @@ When we had a dog, we could take the dog there, and she loved it.
 <</replace>>
 <</timed>>
 
-<<timed 67s>>
+<<timed 68s>>
   <<replace "#caption">>  
 The same on Parkland Walk, it's secluded, and the sky looks very big when you're there.
 <</replace>>
@@ -2137,7 +2140,7 @@ I think it was called Memory Gardens,
 <</replace>>
 <</timed>>
 
-<<timed 07s>>
+<<timed 08s>>
   <<replace "#caption">>  
 It is no longer in existence, 
 <</replace>>
@@ -2155,13 +2158,13 @@ and it was the kind of first place
 <</replace>>
 <</timed>>
 
-<<timed 18s>>
+<<timed 18.5s>>
   <<replace "#caption">>  
 that I really felt I could sort of go and be myself, 
 <</replace>>
 <</timed>>
 
-<<timed 28s>>
+<<timed 28.5s>>
   <<replace "#caption">>  
 and I think that started for me to be able to to then go to other places, 
 <</replace>>
@@ -2185,13 +2188,13 @@ and we would meet there, and it just was great.
 <</replace>>
 <</timed>>
 
-<<timed 57s>>
+<<timed 57.5s>>
   <<replace "#caption">>  
 I felt it was really, really lovely. 
 <</replace>>
 <</timed>>
 
-<<timed 60s>>
+<<timed 60.5s>>
   <<replace "#caption">>  
 So I was sad when they started to construct all these buildings, 
 <</replace>>
@@ -2217,19 +2220,19 @@ and this is what I like about it.
 <</replace>>
 <</timed>>
 
-<<timed 05s>>
+<<timed 05.5s>>
   <<replace "#caption">>  
 It's... I don't feel uncomfortable walking down the market, 
 <</replace>>
 <</timed>>
 
-<<timed 09s>>
+<<timed 09.5s>>
   <<replace "#caption">>  
 my son does, but I like to just walk down the market and feel at home. 
 <</replace>>
 <</timed>>
 
-<<timed 15s>>
+<<timed 16s>>
   <<replace "#caption">>  
 That's what Islington is.
 <</replace>>
@@ -3737,7 +3740,7 @@ So my niece was in a,
 <</replace>>
 <</timed>>
 
-<<timed 2s>>
+<<timed 2.5s>>
   <<replace "#caption">>  
 she went to a museum, 
 <</replace>>
@@ -3755,19 +3758,19 @@ She actually saw me at one of the demonstrations when I was about 15 or 16,
 <</replace>>
 <</timed>>
 
-<<timed 9s>>
+<<timed 10s>>
   <<replace "#caption">>  
 and I don't even know how she was.. she spotted me out 
 <</replace>>
 <</timed>>
 
-<<timed 13s>>
+<<timed 13.5s>>
   <<replace "#caption">>  
 in, I think that was a Colin Roach. 
 <</replace>>
 <</timed>>
 
-<<timed 16s>>
+<<timed 17s>>
   <<replace "#caption">>  
 He was, he was murdered, yeah, by police, was it with police? 
 <</replace>>
@@ -3785,87 +3788,87 @@ because there's so much bits and pieces going on,
 <</replace>>
 <</timed>>
 
-<<timed 29s>>
+<<timed 30s>>
   <<replace "#caption">>  
 but she actually took a picture of me when I was.. it was like 30 or 40 years, 
 <</replace>>
 <</timed>>
 
-<<timed 35s>>
+<<timed 36s>>
   <<replace "#caption">>  
 she found a picture of me in that museum, you know, so I thought that was really interesting, me and my friend, 
 <</replace>>
 <</timed>>
 
-<<timed 40s>>
+<<timed 41s>>
   <<replace "#caption">>  
 but yeah, it was a, and it's funny, because there was no TV to tell us where to go. 
 <</replace>>
 <</timed>>
 
-<<timed 47s>>
+<<timed 48s>>
   <<replace "#caption">>  
 We just knew, we just knew there was a demonstration, something bad has happened, right? 
 <</replace>>
 <</timed>>
 
-<<timed 52s>>
+<<timed 53s>>
   <<replace "#caption">>  
 And we have to go here, or we've got to walk here. 
 <</replace>>
 <</timed>>
 
-<<timed 54s>>
+<<timed 55s>>
   <<replace "#caption">>  
 We walked, we walked a lot, we walked, we walked, we walked, and we chanted. Was no fighting or anything.
 <</replace>>
 <</timed>>
 
-<<timed 59s>>
+<<timed 60s>>
   <<replace "#caption">>  
 It was the police that caused the problems with the fighting, and most of the time, because it was just, 
 <</replace>>
 <</timed>>
 
-<<timed 64s>>
+<<timed 64.5s>>
   <<replace "#caption">>  
 you can't go down there, and everything, and then everyone was told to stay calm, stay calm, you know. So...
 <</replace>>
 <</timed>>
 
-<<timed 68s>>
+<<timed 69s>>
   <<replace "#caption">>  
 and then sometimes it will turn into fights, because you know, you've got these everyone, especially the boy men with their testosterone going on, and everything, you know. 
 <</replace>>
 <</timed>>
 
-<<timed 75s>>
+<<timed 76.5s>>
   <<replace "#caption">>  
 So, there's all that going on, but there was, yeah, there was quite a few, 
 <</replace>>
 <</timed>>
 
-<<timed 82s>>
+<<timed 82.5s>>
   <<replace "#caption">>  
 and this is, this is, this is a crazy thing about even like when you look at, so, excuse me, social media now, 
 <</replace>>
 <</timed>>
 
-<<timed 89s>>
+<<timed 89.5s>>
   <<replace "#caption">>  
 we don't know what's going on unless you look at social media, 
 <</replace>>
 <</timed>>
 
-<<timed 91s>>
+<<timed 91.5s>>
   <<replace "#caption">>  
-that connection that we had before, of knowing we don't have, 
+that connection that we had before, of knowing... we don't have.
 <</replace>>
 <</timed>>
 
 <<timed 96s>>
   <<replace "#caption">>  
-if it was a party, we all knew where the party was, we all knew where the rave was. 
+If it was a party, we all knew where the party was, we all knew where the rave was. 
 <</replace>>
 <</timed>>
 
@@ -3875,7 +3878,7 @@ We all knew. We all just knew.
 <</replace>>
 <</timed>>
 
-<<timed 102s>>
+<<timed 103s>>
   <<replace "#caption">>  
 I don't even.. there was no stickers up anywhere. We just knew. 
 <</replace>>
@@ -3887,7 +3890,7 @@ And then we don't meet up there.
 <</replace>>
 <</timed>>
 
-<<timed 108s>>
+<<timed 109s>>
   <<replace "#caption">>  
 Yeah, social media.. oh, that's going.. that's how you know 
 <</replace>>
@@ -3895,11 +3898,11 @@ Yeah, social media.. oh, that's going.. that's how you know
 
 <<timed 112s>>
   <<replace "#caption">>  
-As I said, we did the stuff that we all had, and obviously we didn't realise that we had. 
+As I said, we did... Something that we all had, and obviously we didn't realise that we had... 
 <</replace>>
 <</timed>>
 
-<<timed 118s>>
+<<timed 119s>>
   <<replace "#caption">>  
 It's not there anymore.
 <</replace>>
@@ -3916,25 +3919,25 @@ Probably Highbury Fields,
 <</replace>>
 <</timed>>
 
-<<timed 1s>>
+<<timed 2s>>
   <<replace "#caption">>  
 because I think it's an anchor of community around here, 
 <</replace>>
 <</timed>>
 
-<<timed 7s>>
+<<timed 7.5s>>
   <<replace "#caption">>  
 and a lot of important things happen at Highbury Fields, 
 <</replace>>
 <</timed>>
 
-<<timed 10s>>
+<<timed 11s>>
   <<replace "#caption">>  
 because it's just such a big open space, and everyone 
 <</replace>>
 <</timed>>
 
-<<timed 14s>>
+<<timed 14.5s>>
   <<replace "#caption">>  
 can kind of just join together, and so there'll be like park runs on Sundays, 
 <</replace>>
@@ -3964,13 +3967,13 @@ I was also quite young, and we did it with school, and it was just kind of shock
 <</replace>>
 <</timed>>
 
-<<timed 41s>>
+<<timed 42s>>
   <<replace "#caption">>  
 like I'd say 100 and something kids, and it was really nice, because everyone was really supportive. 
 <</replace>>
 <</timed>>
 
-<<timed 48s>>
+<<timed 49s>>
   <<replace "#caption">>  
 When I go to Highbury Fields, I see mostly young people, 
 <</replace>>
@@ -3978,11 +3981,11 @@ When I go to Highbury Fields, I see mostly young people,
 
 <<timed 53s>>
   <<replace "#caption">>  
-like teenage older teens, 
+like teenage... older teens, 
 <</replace>>
 <</timed>>
 
-<<timed 57s>>
+<<timed 58s>>
   <<replace "#caption">>  
 and I think it's nice because often you'll see a lot of 
 <</replace>>
@@ -3994,7 +3997,7 @@ people you've never met from different schools, but when everyone comes home fro
 <</replace>>
 <</timed>>
 
-<<timed 68s>>
+<<timed 69s>>
   <<replace "#caption">>  
 So, if you like, are looking, if you want to meet new people 
 <</replace>>
@@ -4007,14 +4010,14 @@ who may be in the same year as you, Highbury Fields is a good place to start, I 
 <</timed>>
 
 
-:: Paradise_Park-cap
+:: Paradise_Park-cap [nobr]
 <<timed 0s>>
   <<replace "#caption">>  
 The parks are heaven. 
 <</replace>>
 <</timed>>
 
-<<timed 2s>>
+<<timed 3s>>
   <<replace "#caption">>  
 We used to go swimming, we used to go to the park, we used to go to the zoo, see all the animals there. 
 <</replace>>
@@ -4032,7 +4035,7 @@ The kids used to love going there, cleaning the pigs out and all that,
 <</replace>>
 <</timed>>
 
-<<timed 22s>>
+<<timed 22.5s>>
   <<replace "#caption">>  
 then we went and bought eggs and butter and cheese and things like that, 
 <</replace>>
@@ -4050,7 +4053,7 @@ where they've had lots of bacons on sale when they've lost the animals,
 <</replace>>
 <</timed>>
 
-<<timed 37s>>
+<<timed 37.5s>>
   <<replace "#caption">>  
 instead of wasting it, we bought it cheaper there, but we used to love it. 
 <</replace>>
@@ -4062,7 +4065,7 @@ The boys, three boys and my husband, I used to take them up to Lee Valley fishin
 <</replace>>
 <</timed>>
 
-<<timed 49s>>
+<<timed 49.5s>>
   <<replace "#caption">>  
 Used to take them up there about 4 o'clock in the morning. 
 <</replace>>
@@ -4074,7 +4077,7 @@ He got fed up with people moaning about him fishing.
 <</replace>>
 <</timed>>
 
-<<timed 58s>>
+<<timed 58.5s>>
   <<replace "#caption">>  
 He started collecting the fish out of there that are trapped with all the nettings and all that, 
 <</replace>>
@@ -4104,7 +4107,7 @@ I've known so many times going up there with great big drums of water with the f
 <</replace>>
 <</timed>>
 
-<<timed 95s>>
+<<timed 95.5s>>
   <<replace "#caption">>  
 taking them to put them in the lakes, 
 <</replace>>
@@ -4126,11 +4129,11 @@ yeah, in the 70s, because that's when I had the kids.
 :: Dancing_in_Finsbury_Park-cap [nobr]
 <<timed 0s>>
   <<replace "#caption">>  
-Yeah, so I used to go out, I've been.. 
+Yeah, so I used to go out, I mean.. 
 <</replace>>
 <</timed>>
 
-<<timed 1s>>
+<<timed 2s>>
   <<replace "#caption">>  
 we used to go out every Saturday night, guarantee you, 
 <</replace>>
@@ -4150,11 +4153,11 @@ We used to go quite a lot, and they used to have a lot of shows up there.
 
 <<timed 14s>>
   <<replace "#caption">>  
-Well, I used to wear a mini skirt and a top and high heel shoes, three inch shoe, and that was me, 
+Well, I used to wear a mini skirt and a top and high heeled shoes, three inch shoe, and that was me, 
 <</replace>>
 <</timed>>
 
-<<timed 21s>>
+<<timed 22s>>
   <<replace "#caption">>  
 but we was up dancing all night, that's the only thing we ever done, 
 <</replace>>
@@ -4184,13 +4187,13 @@ saw the Rolling Stones at Hyde Park
 <</replace>>
 <</timed>>
 
-<<timed 39s>>
+<<timed 39.5s>>
   <<replace "#caption">>  
 before we ever had to pay for it, 
 <</replace>>
 <</timed>>
 
-<<timed 43s>>
+<<timed 43.5s>>
   <<replace "#caption">>  
 we used to sit in the Hyde Park and sit in the grass 
 <</replace>>
@@ -4208,13 +4211,13 @@ I took my oldest son there one weekend when we knew they was up there.
 <</replace>>
 <</timed>>
 
-<<timed 52s>>
+<<timed 56s>>
   <<replace "#caption">>  
 We saw Madness down at Finsbury Park. 
 <</replace>>
 <</timed>>
 
-<<timed 60s>>
+<<timed 62s>>
   <<replace "#caption">>  
 He used to always be down there. He still goes down there quite a few times. 
 <</replace>>
@@ -4226,25 +4229,25 @@ T Rex, they're the sort of music I liked.
 <</replace>>
 <</timed>>
 
-<<timed 70s>>
+<<timed 71s>>
   <<replace "#caption">>  
 Oh, down Finsbury Park, all them sort of things... 
 <</replace>>
 <</timed>>
 
-<<timed 73s>>
+<<timed 74s>>
   <<replace "#caption">>  
-we used to go quite a few times if there was music, we used to say, 'Mum', 
+we used to go quite a few times if there was music, we used to say, 'Mum, have Michael' and
 <</replace>>
 <</timed>>
 
-<<timed 81s>>
+<<timed 82s>>
   <<replace "#caption">>  
 and we used to go out, come home. 
 <</replace>>
 <</timed>>
 
-<<timed 84s>>
+<<timed 84.5s>>
   <<replace "#caption">>  
 We had a good time.
 <</replace>>
@@ -4259,13 +4262,13 @@ Arsenal stadium, you cannot miss it,
 <</replace>>
 <</timed>>
 
-<<timed 2s>>
+<<timed 3s>>
   <<replace "#caption">>  
 especially if it's, let's say, a Premier League. 
 <</replace>>
 <</timed>>
 
-<<timed 5s>>
+<<timed 5.5s>>
   <<replace "#caption">>  
 Any time of league time, you'll always see someone, at least 20 people minimum, with an Arsenal jersey. 
 <</replace>>
@@ -4277,7 +4280,7 @@ I'm one of them as well.
 <</replace>>
 <</timed>>
 
-<<timed 13s>>
+<<timed 13.5s>>
   <<replace "#caption">>  
 You can always hear it as well. I can hear it from my house. 
 <</replace>>
@@ -4289,7 +4292,7 @@ So, Arsenal Stadium, it's just.. I would say that's the main event,
 <</replace>>
 <</timed>>
 
-<<timed 21s>>
+<<timed 22s>>
   <<replace "#caption">>  
 even though the food is amazing. 
 <</replace>>
@@ -4301,7 +4304,7 @@ Sports anywhere in the UK, especially in London, especially in Islington,
 <</replace>>
 <</timed>>
 
-<<timed 28s>>
+<<timed 28.5s>>
   <<replace "#caption">>  
 you just have to be an Arsenal fan, and you're just attracted to it, and the community's just lovely. 
 <</replace>>
@@ -4319,13 +4322,13 @@ They haven't won in 22 years.
 <</replace>>
 <</timed>>
 
-<<timed 42s>>
+<<timed 42.5s>>
   <<replace "#caption">>  
 It's finally time, and there was a parade. 
 <</replace>>
 <</timed>>
 
-<<timed 46s>>
+<<timed 46.5s>>
   <<replace "#caption">>  
 Boy, that was.. I can't even put that into words. 
 <</replace>>
@@ -4339,7 +4342,7 @@ It was packed, so many people crowded some places, especially Holloway Road.
 
 <<timed 55s>>
   <<replace "#caption">>  
-You could not even move, but a community... 
+You could not even move, but the community... 
 <</replace>>
 <</timed>>
 
@@ -4361,9 +4364,9 @@ Everyone's chanting, holding red smoke cans, and it was just such an amazing exp
 <</replace>>
 <</timed>>
 
-<<timed 77s>>
+<<timed 77.5s>>
   <<replace "#caption">>  
-And I hope it happens again. Please Arsenal, do not be last again.
+And I hope it happens again. Please Arsenal, do not fail us again.
 <</replace>>
 <</timed>>
 
@@ -5830,12 +5833,313 @@ I personally, I think that was one of the biggest times where I was kind of worr
 <</timed>>
 
 
+
 :: Singing_in_an_orchard-cap [nobr]
-CAPTIONS TBC
+
+<<timed 0s>>
+  <<replace "#caption">>  
+I was working in an orchard, in Meadow Orchard in Hornsey, which is a bit further north from here.
+<</replace>>
+<</timed>>
+
+<<timed 8s>>
+  <<replace "#caption">>  
+I wanted to write something that was positive and cheerful
+<</replace>>
+<</timed>>
+
+<<timed 25s>>
+  <<replace "#caption">>  
+Well I’m sitting in an orchard where the apple trees grow. Or I’m listening to a band at a music show. 
+<</replace>>
+<</timed>>
+
+<<timed 37s>>
+  <<replace "#caption">>  
+Or I’m looking at the pictures in a gallery. 
+<</replace>>
+<</timed>>
+
+<<timed 45s>>
+  <<replace "#caption">>  
+When you pass by. When you pass by.
+<</replace>>
+<</timed>>
+
+<<timed 51s>>
+  <<replace "#caption">>  
+I look up and catch your eye.
+<</replace>>
+<</timed>>
+
+<<timed 58s>>
+  <<replace "#caption">>  
+And you flash that million dollar smile.
+<</replace>>
+<</timed>>
+
+<<timed 71s>>
+  <<replace "#caption">>  
+When I’m walking on the pavement. People going to and fro.
+<</replace>>
+<</timed>>
+
+<<timed 79s>>
+  <<replace "#caption">>  
+Or I’m riding in a car with somebody I know. 
+<</replace>>
+<</timed>>
+
+<<timed 84s>>
+  <<replace "#caption">>  
+Or I’m lying on the beach with the radio on.
+<</replace>>
+<</timed>>
+
+<<timed 92s>>
+  <<replace "#caption">>  
+When you pass by. When you pass by.
+<</replace>>
+<</timed>>
+
+<<timed 97s>>
+  <<replace "#caption">>  
+I look up and catch your eye.
+<</replace>>
+<</timed>>
+
+<<timed 105s>>
+  <<replace "#caption">>  
+ And you flash that million dollar smile. 
+<</replace>>
+<</timed>>
+
+<<timed 110s>>
+  <<replace "#caption">>  
+Oh, you made my night. 
+<</replace>>
+<</timed>>
+
+<<timed 119s>>
+  <<replace "#caption">>  
+Oh, you made my day.
+<</replace>>
+<</timed>>
+
+<<timed 123s>>
+  <<replace "#caption">>  
+ If the sun refused to shine. That’s okay. That’s okay. 
+<</replace>>
+<</timed>>
+
+<<timed 149s>>
+  <<replace "#caption">>  
+When I'm singing. And I'm listening. And I'm looking. 
+<</replace>>
+<</timed>>
+
+<<timed 169s>>
+  <<replace "#caption">>  
+When you pass by, when you pass by
+<</replace>>
+<</timed>>
+
+<<timed 176s>>
+  <<replace "#caption">>  
+I look up and catch your eye. And you flash that million dollar smile. 
+<</replace>>
+<</timed>>
+
+<<timed 188s>>
+  <<replace "#caption">>  
+Oh you make my night. Oh you make my day. 
+<</replace>>
+<</timed>>
+
+<<timed 201s>>
+  <<replace "#caption">>  
+ If the sun refuses to shine. That’s okay. That’s okay.
+<</replace>>
+<</timed>>
+
+
 
 
 :: Meeting_the_Sotheby_Singers-cap [nobr]
-CAPTIONS TBC
+
+<<timed 0s>>
+  <<replace "#caption">>  
+Do you want to sing along? 
+<</replace>>
+<</timed>>
+
+<<timed 2s>>
+  <<replace "#caption">>  
+This is called Carry Me Through the Night. 
+<</replace>>
+<</timed>>
+
+<<timed 8s>>
+  <<replace "#caption">>  
+Carry me through the night, 
+<</replace>>
+<</timed>>
+
+<<timed 11.5s>>
+  <<replace "#caption">>  
+You and me through the night.  
+<</replace>>
+<</timed>>
+
+<<timed 15s>>
+  <<replace "#caption">>  
+Carry me through the night, 
+<</replace>>
+<</timed>>
+
+<<timed 19s>>
+  <<replace "#caption">>  
+You and me through the night.  
+<</replace>>
+<</timed>>
+
+<<timed 24s>>
+  <<replace "#caption">>  
+carry me in your arms, 
+<</replace>>
+<</timed>>
+
+<<timed 27s>>
+  <<replace "#caption">>  
+wake me up with your smile, kiss my cheek, hold me tight, 
+<</replace>>
+<</timed>>
+
+<<timed 35s>>
+  <<replace "#caption">>  
+then I know you'll be there, 
+<</replace>>
+<</timed>>
+
+<<timed 39s>>
+  <<replace "#caption">>  
+carry me through the night 
+<</replace>>
+<</timed>>
+
+<<timed 43s>>
+  <<replace "#caption">>  
+you and me through the night 
+<</replace>>
+<</timed>>
+
+<<timed 46s>>
+  <<replace "#caption">>  
+carry me through the night 
+<</replace>>
+<</timed>>
+
+<<timed 50s>>
+  <<replace "#caption">>  
+you and me through the night 
+<</replace>>
+<</timed>>
+
+<<timed 54s>>
+  <<replace "#caption">>  
+let my pain turn to joy 
+<</replace>>
+<</timed>>
+
+<<timed 58s>>
+  <<replace "#caption">>  
+let my eyes see your love 
+<</replace>>
+<</timed>>
+
+<<timed 62s>>
+  <<replace "#caption">>  
+let me know deep inside, 
+<</replace>>
+<</timed>>
+
+<<timed 66s>>
+  <<replace "#caption">>  
+so the child can revive. 
+<</replace>>
+<</timed>>
+
+<<timed 70s>>
+  <<replace "#caption">>  
+Carry me through the night, 
+<</replace>>
+<</timed>>
+
+<<timed 73s>>
+  <<replace "#caption">>  
+you and me through the night, 
+<</replace>>
+<</timed>>
+
+<<timed 77s>>
+  <<replace "#caption">>  
+carry me through the night, 
+<</replace>>
+<</timed>>
+
+<<timed 82s>>
+  <<replace "#caption">>  
+you and me through the night, 
+<</replace>>
+<</timed>>
+
+<<timed 86s>>
+  <<replace "#caption">>  
+walk with me to a place where I feel I was left.
+<</replace>>
+<</timed>>
+
+<<timed 93s>>
+  <<replace "#caption">>  
+It is dark, it is sad. I am locked from inside. 
+<</replace>>
+<</timed>>
+
+<<timed 100s>>
+  <<replace "#caption">>  
+Carry me through the night. You and me through the night.
+<</replace>>
+<</timed>>
+
+<<timed 108s>>
+  <<replace "#caption">>  
+Carry me through the night. You and me through the night.
+<</replace>>
+<</timed>>
+
+<<timed 106s>>
+  <<replace "#caption">>  
+“Open up”, it is I calling you, only love, is my name,
+<</replace>>
+<</timed>>
+
+<<timed 130s>>
+  <<replace "#caption">>  
+“open up”, welcome me as I am, a little child, here in your arms! 
+<</replace>>
+<</timed>>
+
+<<timed 146s>>
+  <<replace "#caption">>  
+Carry me through the night
+<</replace>>
+<</timed>>
+
+<<timed 150s>>
+  <<replace "#caption">>  
+you and me through the night...
+<</replace>>
+<</timed>>
 
 
 :: Welcoming_communities-cap [nobr]
@@ -5846,13 +6150,13 @@ I like that small park over there where I live by Newington Green.
 <</replace>>
 <</timed>>
 
-<<timed 4s>>
+<<timed 5s>>
   <<replace "#caption">>  
-If it's not very big and it's kind of busy in the daytime, 
+It's not very big and it's kind of busy in the daytime, 
 <</replace>>
 <</timed>>
 
-<<timed 8s>>
+<<timed 9s>>
   <<replace "#caption">>  
 I like it because it's cozy, you know. 
 <</replace>>
@@ -5876,13 +6180,13 @@ and somebody right away came to bring me up from there, because I couldn't stand
 <</replace>>
 <</timed>>
 
-<<timed 35s>>
+<<timed 35.5s>>
   <<replace "#caption">>  
 Islington is a little bit different than other boroughs. 
 <</replace>>
 <</timed>>
 
-<<timed 38s>>
+<<timed 39s>>
   <<replace "#caption">>  
 Let's say the community from here is like more welcoming than others, more peaceful than others.
 <</replace>>
@@ -5909,19 +6213,19 @@ He was extremely interested in Islington, has written books on the Mildmay area 
 <</replace>>
 <</timed>>
 
-<<timed 19s>>
+<<timed 20s>>
   <<replace "#caption">>  
 He's now deceased, but he was one of the characters that to me was Islington. 
 <</replace>>
 <</timed>>
 
-<<timed 25s>>
+<<timed 26s>>
   <<replace "#caption">>  
 He was a politician without politics, almost. 
 <</replace>>
 <</timed>>
 
-<<timed 29s>>
+<<timed 30s>>
   <<replace "#caption">>  
 He just liked us to do things locally for the local people.
 <</replace>>
@@ -5935,7 +6239,7 @@ Yeah, I used to celebrate Halloween.
 <</replace>>
 <</timed>>
 
-<<timed 2s>>
+<<timed 3s>>
   <<replace "#caption">>  
 I still do, but when I was younger, I would go around with my family and some friends, 
 <</replace>>
@@ -5961,7 +6265,7 @@ There was a street near me that was, like won like best decorated or something, 
 
 <<timed 31s>>
   <<replace "#caption">>  
-Every year they'd be like they'd have really good decorations. 
+Every year they'd be like... they'd have really good decorations. 
 <</replace>>
 <</timed>>
 
@@ -5971,13 +6275,13 @@ They... one year they had this like huge spider outside that was really realisti
 <</replace>>
 <</timed>>
 
-<<timed 42s>>
+<<timed 4.5s>>
   <<replace "#caption">>  
 They had lights that like flashed purple, 
 <</replace>>
 <</timed>>
 
-<<timed 46s>>
+<<timed 46.5s>>
   <<replace "#caption">>  
 and then outside on like the road they put skeletons that would like move and speak, 
 <</replace>>
@@ -5997,13 +6301,13 @@ Culture, I'm Greek, so I cook loads of Greek food,
 <</replace>>
 <</timed>>
 
-<<timed 5s>>
+<<timed 6s>>
   <<replace "#caption">>  
 and I make it for charities for fun, 
 <</replace>>
 <</timed>>
 
-<<timed 8s>>
+<<timed 8.5s>>
   <<replace "#caption">>  
 a charity that looks after children that I used to be a part of, and helped years ago, 
 <</replace>>
@@ -6035,7 +6339,7 @@ I used to love going into the churches.
 
 <<timed 39s>>
   <<replace "#caption">>  
-I used to kiss all the saints and me being special needs, I used to be with George Michael, running around George Michael and me run around in the church with same age, 
+I used to kiss all the saints and me being special needs, I used to be with George Michael running around. George Michael and me run around in the church, we're the same age, 
 <</replace>>
 <</timed>>
 
@@ -6051,7 +6355,7 @@ and no one knew about ADHD then, no one knew about autism spectrum.
 <</replace>>
 <</timed>>
 
-<<timed 61s>>
+<<timed 62s>>
   <<replace "#caption">>  
 No one knew about sensory impairedness. 
 <</replace>>
@@ -6063,7 +6367,7 @@ No one knew about dyslexia, dyspraxia.
 <</replace>>
 <</timed>>
 
-<<timed 67s>>
+<<timed 68s>>
   <<replace "#caption">>  
 You know, we were just simple children getting on with life.
 <</replace>>
