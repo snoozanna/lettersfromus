@@ -106,60 +106,60 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 	</div>
 	<!-- UUID://098A9A34-0130-42E5-B092-4723D3D8D7C1// --><tw-storydata name="Letters from Us" startnode="7" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="098A9A34-0130-42E5-B092-4723D3D8D7C1" zoom="0.6" format="SugarCube" format-version="2.37.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url("styles/generics.css");
 @import url("styles/removetwinestyles.css");
-@import url("styles/main.css");</style><script role="script" id="twine-user-script" type="text/twine-javascript">// $(document).one(':storyready', function () {
-//     $('#ui-bar').remove();
-//     $('#style-ui-bar').remove();
-// });
+@import url("styles/main.css");</style><script role="script" id="twine-user-script" type="text/twine-javascript">$(document).one(':storyready', function () {
+    $('#ui-bar').remove();
+    $('#style-ui-bar').remove();
+});
 
-// setup.chooseStoryAudio = () => {
+setup.chooseStoryAudio = () => {
 
-//   const audio = document.getElementById("audioPlayer");
+  const audio = document.getElementById("audioPlayer");
 
-//   if (!audio) {
-//     console.error("Audio element not found.");
-//     return;
-//   }
+  if (!audio) {
+    console.error("Audio element not found.");
+    return;
+  }
 
-//   const data = State.variables.currentAudio;
+  const data = State.variables.currentAudio;
 
-//   if (!data) {
-//     console.warn("No currentAudio set.");
-//     return;
-//   }
+  if (!data) {
+    console.warn("No currentAudio set.");
+    return;
+  }
 
-//   // Reset audio
-//   audio.pause();
-//   audio.currentTime = 0;
+  // Reset audio
+  audio.pause();
+  audio.currentTime = 0;
 
-//   // ✅ Make this an ARRAY (even for one file)
-//   const audioFiles = [
-//     `assets/audio/${data.theme}/${data.audioSrc}.mp3`
-//   ];
+  // ✅ Make this an ARRAY (even for one file)
+  const audioFiles = [
+    `assets/audio/${data.theme}/${data.audioSrc}.mp3`
+  ];
 
-//   console.log("audioFiles", audioFiles);
+  console.log("audioFiles", audioFiles);
 
-//   let currentTrack = 0;
+  let currentTrack = 0;
 
-//   function playNext() {
-//     if (currentTrack < audioFiles.length) {
-//       audio.src = audioFiles[currentTrack];
-//       console.log("playing audio", audio.src);
+  function playNext() {
+    if (currentTrack < audioFiles.length) {
+      audio.src = audioFiles[currentTrack];
+      console.log("playing audio", audio.src);
 
-//       audio.play().catch(err => {
-//         console.error("Audio play failed:", err);
-//       });
+      audio.play().catch(err => {
+        console.error("Audio play failed:", err);
+      });
 
-//       currentTrack++;
-//     }
-//   }
+      currentTrack++;
+    }
+  }
 
-//   // ✅ Prevent stacking
-//   audio.onended = playNext;
+  // ✅ Prevent stacking
+  audio.onended = playNext;
 
-//   if (audioFiles.length > 0) {
-//     playNext();
-//   }
-// };</script><tw-passagedata pid="1" name="StoryInit" tags="" position="100,100" size="100,100">&lt;&lt;set $theme to &quot;&quot;&gt;&gt;
+  if (audioFiles.length > 0) {
+    playNext();
+  }
+};</script><tw-passagedata pid="1" name="StoryInit" tags="" position="100,100" size="100,100">&lt;&lt;set $theme to &quot;&quot;&gt;&gt;
 &lt;&lt;set $audiodata to [ 
 /* COMMUNITY  */
   {
