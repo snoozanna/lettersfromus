@@ -106,8 +106,10 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 	</div>
 	<!-- UUID://098A9A34-0130-42E5-B092-4723D3D8D7C1// --><tw-storydata name="Letters from Us" startnode="9" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="098A9A34-0130-42E5-B092-4723D3D8D7C1" zoom="0.6" format="SugarCube" format-version="2.37.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url("styles/generics.css");
 @import url("styles/removetwinestyles.css");
-@import url("styles/main.css");</style><script role="script" id="twine-user-script" type="text/twine-javascript">$('#ui-bar').remove();
-$(document.head).find('#style-ui-bar').remove();
+@import url("styles/main.css");</style><script role="script" id="twine-user-script" type="text/twine-javascript">$(document).one(':storyready', function () {
+    $('#ui-bar').remove();
+    $('#style-ui-bar').remove();
+});
 
 setup.chooseStoryAudio = () => {
 

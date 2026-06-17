@@ -21,8 +21,10 @@ Letters from Us
 
 
 :: Story JavaScript [script]
-$('#ui-bar').remove();
-$(document.head).find('#style-ui-bar').remove();
+$(document).one(':storyready', function () {
+    $('#ui-bar').remove();
+    $('#style-ui-bar').remove();
+});
 
 setup.chooseStoryAudio = () => {
 
