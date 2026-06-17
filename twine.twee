@@ -619,20 +619,20 @@ setup.chooseStoryAudio = () => {
 <div class="img-wrapper">
 
     <!-- Base map -->
-    <img class="bg-map" src="../assets/img/map/isborough.png">
-    <img class="base-map" src="../assets/img/map/b_w_small.png">
+    <img class="bg-map" src="assets/img/map/isborough.png">
+    <img class="base-map" src="assets/img/map/b_w_small.png">
 
     <!-- COLOUR OVERLAYS -->
-    <img id="community" class="overlay" src="../assets/img/map/community.png">
-    <img id="history" class="overlay" src="../assets/img/map/history.png">
-    <img id="joy" class="overlay" src="../assets/img/map/joy.png">
-    <img id="people" class="overlay" src="../assets/img/map/people.png">
-    <img id="places" class="overlay" src="../assets/img/map/places.png">
-    <img id="rage" class="overlay" src="../assets/img/map/rage.png">
+    <img id="community" class="overlay" src="assets/img/map/community.png">
+    <img id="history" class="overlay" src="assets/img/map/history.png">
+    <img id="joy" class="overlay" src="assets/img/map/joy.png">
+    <img id="people" class="overlay" src="assets/img/map/people.png">
+    <img id="places" class="overlay" src="assets/img/map/places.png">
+    <img id="rage" class="overlay" src="assets/img/map/rage.png">
 
     <!-- TEXT -->
 
-     <img class="text-layer" src="../assets/img/map/text.png">
+     <img class="text-layer" src="assets/img/map/text.png">
 
     <!-- CLICKABLE HOTSPOTS -->
     
@@ -928,7 +928,7 @@ setup.chooseStoryAudio = () => {
 :: headerlisten [nobr]
 <header class="listen player" >
 
-<div class="logo-container"><img src="../assets/img/title.png"/></div>
+<div class="logo-container"><img src="assets/img/title.png"/></div>
 
 </header>
 
