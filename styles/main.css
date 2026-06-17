@@ -633,7 +633,7 @@ h3.subtitle.category {
   width: 100%;
   height: auto;
   position: absolute;
-  z-index: -1;
+  z-index: 0;
 }
 
 /* Base image */
@@ -641,6 +641,8 @@ h3.subtitle.category {
   width: 100%;
   height: auto;
   display: block;
+  position: relative;
+  z-index: 1;
 }
 
 /* Text */
