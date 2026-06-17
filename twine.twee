@@ -5724,10 +5724,7 @@ That was my really, really first experience of direct racism. <</replace>>
 You can't come in here because you are black. <</replace>>
 <</timed>>
 
-<<timed 68.5s>>
-<<replace "#caption">>
-It was like it was called Riley's, I remember. I know it's off Holloway Road somewhere. <</replace>>
-<</timed>>
+
 
 
 
@@ -6495,17 +6492,17 @@ I didn't see the situation, homeless people, nowhere what's happened in the worl
 
 <<timed 124s>>
   <<replace "#caption">>  
-I don't know why the government doesn't care. And for my knowledge, I help 56 people to enter inside. 
+I don't know why the government doesn't care. And for my knowledge, I help 56 people. 
 <</replace>>
 <</timed>>
 
-<<timed 131s>>
+<<timed 130s>>
   <<replace "#caption">>  
 How I help them, I give them where to go to get help, different charities. 
 <</replace>>
 <</timed>>
 
-<<timed 136.5s>>
+<<timed 136s>>
   <<replace "#caption">>  
 I try to help them, but with food, with clothes, with advice, it's at least 1200 people in this six years, and this is just a drop in the ocean.
 <</replace>>
