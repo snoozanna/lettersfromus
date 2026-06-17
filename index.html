@@ -104,62 +104,62 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<!-- UUID://098A9A34-0130-42E5-B092-4723D3D8D7C1// --><tw-storydata name="Letters from Us" startnode="9" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="098A9A34-0130-42E5-B092-4723D3D8D7C1" zoom="0.6" format="SugarCube" format-version="2.37.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url("styles/generics.css");
+	<!-- UUID://098A9A34-0130-42E5-B092-4723D3D8D7C1// --><tw-storydata name="Letters from Us" startnode="7" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="098A9A34-0130-42E5-B092-4723D3D8D7C1" zoom="0.6" format="SugarCube" format-version="2.37.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url("styles/generics.css");
 @import url("styles/removetwinestyles.css");
-@import url("styles/main.css");</style><script role="script" id="twine-user-script" type="text/twine-javascript">$(document).one(':storyready', function () {
-    $('#ui-bar').remove();
-    $('#style-ui-bar').remove();
-});
+@import url("styles/main.css");</style><script role="script" id="twine-user-script" type="text/twine-javascript">// $(document).one(':storyready', function () {
+//     $('#ui-bar').remove();
+//     $('#style-ui-bar').remove();
+// });
 
-setup.chooseStoryAudio = () => {
+// setup.chooseStoryAudio = () => {
 
-  const audio = document.getElementById("audioPlayer");
+//   const audio = document.getElementById("audioPlayer");
 
-  if (!audio) {
-    console.error("Audio element not found.");
-    return;
-  }
+//   if (!audio) {
+//     console.error("Audio element not found.");
+//     return;
+//   }
 
-  const data = State.variables.currentAudio;
+//   const data = State.variables.currentAudio;
 
-  if (!data) {
-    console.warn("No currentAudio set.");
-    return;
-  }
+//   if (!data) {
+//     console.warn("No currentAudio set.");
+//     return;
+//   }
 
-  // Reset audio
-  audio.pause();
-  audio.currentTime = 0;
+//   // Reset audio
+//   audio.pause();
+//   audio.currentTime = 0;
 
-  // ✅ Make this an ARRAY (even for one file)
-  const audioFiles = [
-    `assets/audio/${data.theme}/${data.audioSrc}.mp3`
-  ];
+//   // ✅ Make this an ARRAY (even for one file)
+//   const audioFiles = [
+//     `assets/audio/${data.theme}/${data.audioSrc}.mp3`
+//   ];
 
-  console.log("audioFiles", audioFiles);
+//   console.log("audioFiles", audioFiles);
 
-  let currentTrack = 0;
+//   let currentTrack = 0;
 
-  function playNext() {
-    if (currentTrack < audioFiles.length) {
-      audio.src = audioFiles[currentTrack];
-      console.log("playing audio", audio.src);
+//   function playNext() {
+//     if (currentTrack < audioFiles.length) {
+//       audio.src = audioFiles[currentTrack];
+//       console.log("playing audio", audio.src);
 
-      audio.play().catch(err => {
-        console.error("Audio play failed:", err);
-      });
+//       audio.play().catch(err => {
+//         console.error("Audio play failed:", err);
+//       });
 
-      currentTrack++;
-    }
-  }
+//       currentTrack++;
+//     }
+//   }
 
-  // ✅ Prevent stacking
-  audio.onended = playNext;
+//   // ✅ Prevent stacking
+//   audio.onended = playNext;
 
-  if (audioFiles.length > 0) {
-    playNext();
-  }
-};</script><tw-passagedata pid="1" name="StoryInit" tags="" position="100,100" size="100,100">&lt;&lt;set $theme to &quot;&quot;&gt;&gt;
+//   if (audioFiles.length > 0) {
+//     playNext();
+//   }
+// };</script><tw-passagedata pid="1" name="StoryInit" tags="" position="100,100" size="100,100">&lt;&lt;set $theme to &quot;&quot;&gt;&gt;
 &lt;&lt;set $audiodata to [ 
 /* COMMUNITY  */
   {
@@ -499,56 +499,7 @@ setup.chooseStoryAudio = () => {
     theme: &quot;rage&quot;
     /* checked */
   }
-]&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="header" tags="nobr" position="225,100" size="100,100">&lt;header class=&quot;general&quot; &gt;
-&lt;&lt;if $showLogo is true&gt;&gt;
-&lt;div class=&quot;logo-container&quot;&gt;&lt;img src=&quot;../assets/img/1884components-23.png&quot;/&gt;&lt;/div&gt;
- &lt;div class=&quot;nav-item&quot;&gt;
- &lt;/div&gt;
-  &lt;&lt;/if&gt;&gt;
-&lt;&lt;if $showMenu is true&gt;&gt;
-  &lt;div class=&quot;nav-wrapper&quot;&gt;
-    &lt;div class=&quot;nav-item&quot;&gt;
-        &lt;&lt;link [img[../assets/img/menu.png]]&gt;&gt;
-          &lt;&lt;if $menuOpen is false &gt;&gt;
-
-            &lt;&lt;set $menuOpen to true&gt;&gt;
-            &lt;&lt;append &quot;#main&quot;&gt;&gt;
-               &lt;&lt;include &quot;menu&quot;&gt;&gt;
-              &lt;&lt;/append&gt;&gt;
-           
-          &lt;&lt;elseif $menuOpen is true&gt;&gt;
-             &lt;&lt;set $menuOpen to false&gt;&gt;
-               &lt;&lt;remove &quot;#menu&quot;&gt;&gt;
-          &lt;&lt;/if&gt;&gt;
-            
-          &lt;&lt;/link&gt;&gt;
-
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;&lt;/if&gt;&gt;
-&lt;/header&gt;</tw-passagedata><tw-passagedata pid="3" name="headerrest" tags="nobr" position="350,100" size="100,100">&lt;header class=&quot;general&quot; &gt;
-&lt;&lt;if $showMenu is true&gt;&gt;
-  &lt;div class=&quot;nav-wrapper&quot;&gt;
-    &lt;div class=&quot;nav-item&quot;&gt;
-        &lt;&lt;link [img[../assets/img/menu.png]]&gt;&gt;
-          &lt;&lt;if $menuOpen is false &gt;&gt;
-
-            &lt;&lt;set $menuOpen to true&gt;&gt;
-            &lt;&lt;append &quot;#main&quot;&gt;&gt;
-               &lt;&lt;include &quot;menu&quot;&gt;&gt;
-              &lt;&lt;/append&gt;&gt;
-           
-          &lt;&lt;elseif $menuOpen is true&gt;&gt;
-             &lt;&lt;set $menuOpen to false&gt;&gt;
-               &lt;&lt;remove &quot;#menu&quot;&gt;&gt;
-          &lt;&lt;/if&gt;&gt;
-            
-          &lt;&lt;/link&gt;&gt;
-
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;&lt;/if&gt;&gt;
-&lt;/header&gt;</tw-passagedata><tw-passagedata pid="4" name="footer" tags="nobr" position="100,375" size="100,100">&lt;footer&gt;
+]&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="footer" tags="nobr" position="100,375" size="100,100">&lt;footer&gt;
 
   &lt;div class=&quot;nav-wrapper&quot;&gt;
     &lt;div class=&quot;nav-item&quot;&gt;
@@ -557,11 +508,7 @@ setup.chooseStoryAudio = () => {
   &lt;&lt;/button&gt;&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-
-
-
-  
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="5" name="footerback" tags="nobr" position="100,375" size="100,100">&lt;footer&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="3" name="footerback" tags="nobr" position="100,375" size="100,100">&lt;footer&gt;
 
   &lt;div class=&quot;nav-wrapper&quot;&gt;
     &lt;div class=&quot;nav-item&quot;&gt;
@@ -578,7 +525,7 @@ setup.chooseStoryAudio = () => {
  
   &lt;/div&gt;
   
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="6" name="footertheme" tags="nobr" position="100,375" size="100,100">&lt;footer&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="4" name="footertheme" tags="nobr" position="100,375" size="100,100">&lt;footer&gt;
 
   &lt;div class=&quot;nav-wrapper&quot;&gt;
     &lt;div class=&quot;nav-item&quot;&gt;
@@ -588,7 +535,7 @@ setup.chooseStoryAudio = () => {
     &lt;/div&gt;
   &lt;/div&gt;
 
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="7" name="footermap" tags="nobr" position="100,375" size="100,100">&lt;footer&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="5" name="footermap" tags="nobr" position="100,375" size="100,100">&lt;footer&gt;
 
  &lt;div class=&quot;nav-wrapper&quot;&gt;
     &lt;div class=&quot;nav-item&quot;&gt;
@@ -617,7 +564,7 @@ setup.chooseStoryAudio = () => {
 
 
   
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="8" name="footerend" tags="nobr" position="100,375" size="100,100">&lt;footer&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="6" name="footerend" tags="nobr" position="100,375" size="100,100">&lt;footer&gt;
 
    &lt;div class=&quot;nav-wrapper&quot;&gt;
     &lt;div class=&quot;nav-item&quot;&gt;
@@ -632,7 +579,7 @@ setup.chooseStoryAudio = () => {
     &lt;/div&gt;
   &lt;/div&gt;
 
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="9" name="landing" tags="nobr" position="1100,100" size="100,100">&lt;&lt;set $prevpass to &quot;landing&quot;&gt;&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="7" name="landing" tags="nobr" position="850,100" size="100,100">&lt;&lt;set $prevpass to &quot;landing&quot;&gt;&gt;
 &lt;&lt;set $passage to &quot;landing&quot;&gt;&gt;
 &lt;&lt;set $nextpass to &quot;intro&quot;&gt;&gt;
 &lt;&lt;set $sound to true&gt;&gt;
@@ -673,7 +620,7 @@ setup.chooseStoryAudio = () => {
 
   &lt;/div&gt;
 
-&lt;/main&gt;</tw-passagedata><tw-passagedata pid="10" name="intro" tags="nobr" position="1225,100" size="100,100">&lt;&lt;set $prevpass to &quot;landing&quot;&gt;&gt;
+&lt;/main&gt;</tw-passagedata><tw-passagedata pid="8" name="intro" tags="nobr" position="975,100" size="100,100">&lt;&lt;set $prevpass to &quot;landing&quot;&gt;&gt;
 &lt;&lt;set $passage to &quot;intro&quot;&gt;&gt;
 &lt;&lt;set $nextpass to &quot;map&quot;&gt;&gt;
 &lt;&lt;set $showLogo to false&gt;&gt;
@@ -682,7 +629,6 @@ setup.chooseStoryAudio = () => {
 &lt;audio id=&quot;audio&quot; autoplay&gt;&lt;/audio&gt;
 
 
-  &lt;&lt;include &quot;header&quot;&gt;&gt;
 &lt;main id=&quot;main&quot; class=&quot;about&quot;&gt; 
 
  &lt;h1 class=&quot;title&quot;&gt;Letters from us&lt;/h1&gt;
@@ -699,12 +645,12 @@ setup.chooseStoryAudio = () => {
    
 
 &lt;/main&gt;
-&lt;&lt;include &quot;footer&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="11" name="loading" tags="nobr t8n.typewriter.4" position="100,225" size="100,100">&lt;main id=&quot;main&quot; class=&quot;main-section loading&quot;&gt;
+&lt;&lt;include &quot;footer&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="9" name="loading" tags="nobr t8n.typewriter.4" position="1100,100" size="100,100">&lt;main id=&quot;main&quot; class=&quot;main-section loading&quot;&gt;
 &lt;&lt;type 200ms&gt;&gt;&lt;h3 class=&quot;loading&quot;&gt;Loading...&lt;/h3&gt;&lt;&lt;/type&gt;&gt;
 &lt;&lt;timed 6s&gt;&gt;
 &lt;&lt;goto $nextpass&gt;&gt;
 &lt;&lt;/timed&gt;&gt;
-&lt;/main&gt;</tw-passagedata><tw-passagedata pid="12" name="map" tags="nobr" position="225,225" size="100,100">&lt;&lt;set $prevpass to &quot;intro&quot;&gt;&gt;
+&lt;/main&gt;</tw-passagedata><tw-passagedata pid="10" name="map" tags="nobr" position="1225,100" size="100,100">&lt;&lt;set $prevpass to &quot;intro&quot;&gt;&gt;
 &lt;&lt;set $passage to &quot;map&quot;&gt;&gt;
 &lt;&lt;set $nextpass to &quot;&quot;&gt;&gt;
 
@@ -804,7 +750,7 @@ setup.chooseStoryAudio = () => {
 
 &lt;/main&gt;
 
-&lt;&lt;include &quot;footermap&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="13" name="listaudio" tags="nobr" position="350,225" size="100,100">&lt;&lt;set _list to $audiodata.filter(a =&gt; a &amp;&amp; a.theme === $theme)&gt;&gt;
+&lt;&lt;include &quot;footermap&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="11" name="listaudio" tags="nobr" position="100,225" size="100,100">&lt;&lt;set _list to $audiodata.filter(a =&gt; a &amp;&amp; a.theme === $theme)&gt;&gt;
 
 &lt;div class=&quot;audio-btn-container&quot;&gt;
 
@@ -823,7 +769,7 @@ setup.chooseStoryAudio = () => {
   &lt;&lt;/capture&gt;&gt;
 &lt;&lt;/for&gt;&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="14" name="places" tags="nobr" position="475,225" size="100,100">&lt;&lt;set $prevpass to &quot;map&quot;&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="12" name="places" tags="nobr" position="225,225" size="100,100">&lt;&lt;set $prevpass to &quot;map&quot;&gt;&gt;
 &lt;&lt;set $passage to &quot;places&quot;&gt;&gt;
 &lt;&lt;set $nextpass to &quot;&quot;&gt;&gt;
 &lt;&lt;set $theme to &quot;places&quot;&gt;&gt;
@@ -848,7 +794,7 @@ setup.chooseStoryAudio = () => {
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;/main&gt;
-&lt;&lt;include &quot;footertheme&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="15" name="people" tags="nobr" position="600,225" size="100,100">&lt;&lt;set $prevpass to &quot;map&quot;&gt;&gt;
+&lt;&lt;include &quot;footertheme&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="13" name="people" tags="nobr" position="350,225" size="100,100">&lt;&lt;set $prevpass to &quot;map&quot;&gt;&gt;
 &lt;&lt;set $passage to &quot;people&quot;&gt;&gt;
 &lt;&lt;set $nextpass to &quot;&quot;&gt;&gt;
 &lt;&lt;set $theme to &quot;people&quot;&gt;&gt;
@@ -872,7 +818,7 @@ setup.chooseStoryAudio = () => {
 &lt;/div&gt;
 
 &lt;/main&gt;
-&lt;&lt;include &quot;footertheme&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="community" tags="nobr" position="725,225" size="100,100">&lt;&lt;set $prevpass to &quot;map&quot;&gt;&gt;
+&lt;&lt;include &quot;footertheme&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="14" name="community" tags="nobr" position="475,225" size="100,100">&lt;&lt;set $prevpass to &quot;map&quot;&gt;&gt;
 &lt;&lt;set $passage to &quot;community&quot;&gt;&gt;
 &lt;&lt;set $nextpass to &quot;&quot;&gt;&gt;
 &lt;&lt;set $theme to &quot;community&quot;&gt;&gt;
@@ -897,7 +843,7 @@ setup.chooseStoryAudio = () => {
   &lt;/div&gt;
   &lt;/div&gt;
 &lt;/main&gt;
-&lt;&lt;include &quot;footertheme&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="17" name="joy" tags="nobr" position="850,225" size="100,100">&lt;&lt;set $prevpass to &quot;map&quot;&gt;&gt;
+&lt;&lt;include &quot;footertheme&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="15" name="joy" tags="nobr" position="600,225" size="100,100">&lt;&lt;set $prevpass to &quot;map&quot;&gt;&gt;
 &lt;&lt;set $passage to &quot;joy&quot;&gt;&gt;
 &lt;&lt;set $nextpass to &quot;&quot;&gt;&gt;
 &lt;&lt;set $theme to &quot;joy&quot;&gt;&gt;
@@ -920,7 +866,7 @@ setup.chooseStoryAudio = () => {
   &lt;/div&gt;
   &lt;/div&gt;
 &lt;/main&gt;
-&lt;&lt;include &quot;footertheme&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="18" name="rage" tags="nobr" position="975,225" size="100,100">&lt;&lt;set $prevpass to &quot;map&quot;&gt;&gt;
+&lt;&lt;include &quot;footertheme&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="rage" tags="nobr" position="725,225" size="100,100">&lt;&lt;set $prevpass to &quot;map&quot;&gt;&gt;
 &lt;&lt;set $passage to &quot;rage&quot;&gt;&gt;
 &lt;&lt;set $nextpass to &quot;&quot;&gt;&gt;
 &lt;&lt;set $theme to &quot;rage&quot;&gt;&gt;
@@ -943,7 +889,7 @@ setup.chooseStoryAudio = () => {
   &lt;/div&gt;
   &lt;/div&gt;
 &lt;/main&gt;
-&lt;&lt;include &quot;footertheme&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="history" tags="nobr" position="1100,225" size="100,100">&lt;&lt;set $prevpass to &quot;map&quot;&gt;&gt;
+&lt;&lt;include &quot;footertheme&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="17" name="history" tags="nobr" position="850,225" size="100,100">&lt;&lt;set $prevpass to &quot;map&quot;&gt;&gt;
 &lt;&lt;set $passage to &quot;history&quot;&gt;&gt;
 &lt;&lt;set $nextpass to &quot;&quot;&gt;&gt;
 &lt;&lt;set $theme to &quot;history&quot;&gt;&gt;
@@ -966,7 +912,7 @@ setup.chooseStoryAudio = () => {
   &lt;/div&gt;
   &lt;/div&gt;
 &lt;/main&gt;
-&lt;&lt;include &quot;footertheme&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="20" name="about" tags="nobr" position="1225,225" size="100,100">&lt;main class=&quot;about&quot;&gt;
+&lt;&lt;include &quot;footertheme&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="18" name="about" tags="nobr" position="975,225" size="100,100">&lt;main class=&quot;about&quot;&gt;
 &lt;h1&gt;About&lt;/h1&gt;
 &lt;p&gt;Letters from us is a community storytelling project that invites people in Islington to tell the story of their area, in their own words. Inspired by the long-running BBC radio show &lt;a href=&quot;https://www.bbc.co.uk/programmes/b00f6hbp&quot; rel=&quot;noreferrer&quot; target=&quot;_blank&quot; class=&quot;highlighted&quot;&gt;Letter from America&lt;/a&gt;, the project invites residents from different ages and backgrounds to share their stories and reflect on how they see their community.&lt;/p&gt;
  
@@ -984,11 +930,11 @@ setup.chooseStoryAudio = () => {
 &lt;&lt;button &quot;Back to Map&quot;&gt;&gt;
   &lt;&lt;goto &quot;map&quot;&gt;&gt;
   &lt;&lt;/button&gt;&gt;
-&lt;/main&gt;</tw-passagedata><tw-passagedata pid="21" name="headerlisten" tags="nobr" position="100,350" size="100,100">&lt;header class=&quot;listen player&quot; &gt;
+&lt;/main&gt;</tw-passagedata><tw-passagedata pid="19" name="headerlisten" tags="nobr" position="1100,225" size="100,100">&lt;header class=&quot;listen player&quot; &gt;
 
 &lt;div class=&quot;logo-container&quot;&gt;&lt;img src=&quot;../assets/img/title.png&quot;/&gt;&lt;/div&gt;
 
-&lt;/header&gt;</tw-passagedata><tw-passagedata pid="22" name="listen" tags="nobr t8n.typewriter.4 t8n-dissolve" position="225,350" size="100,100">/* might need to put this in prev pass
+&lt;/header&gt;</tw-passagedata><tw-passagedata pid="20" name="listen" tags="nobr t8n.typewriter.4 t8n-dissolve" position="1225,225" size="100,100">/* might need to put this in prev pass
 &lt;&lt;set $captions to false&gt;&gt;
 &lt;&lt;set $sound to true&gt;&gt;
 &lt;&lt;set $showMenu to true&gt;&gt;
@@ -1032,7 +978,7 @@ setup.chooseStoryAudio = () => {
 &lt;&lt;set $a to setup.chooseStoryAudio()&gt;&gt;
   &lt;&lt;/if&gt;&gt;
   &lt;&lt;/timed&gt;&gt;
-  &lt;&lt;/done&gt;&gt;</tw-passagedata><tw-passagedata pid="23" name="footerlisten" tags="nobr" position="350,350" size="100,100">&lt;footer&gt;
+  &lt;&lt;/done&gt;&gt;</tw-passagedata><tw-passagedata pid="21" name="footerlisten" tags="nobr" position="100,350" size="100,100">&lt;footer&gt;
 &lt;div class=&quot;nav-container&quot;&gt;
   &lt;&lt;if $showBackwards is true&gt;&gt;
     &lt;div class=&quot;nav-wrapper&quot;&gt;
@@ -1099,7 +1045,7 @@ setup.chooseStoryAudio = () => {
   &lt;&lt;if $sound is true&gt;&gt;
    &lt;&lt;addclass &quot;#audioContainer&quot; &quot;activeIcon&quot;&gt;&gt;
   &lt;&lt;/if&gt;&gt;
-&lt;&lt;/done&gt;&gt;</tw-passagedata><tw-passagedata pid="24" name="prerecord" tags="nobr" position="475,350" size="100,100">&lt;&lt;set $prevpass to &quot;map&quot;&gt;&gt;
+&lt;&lt;/done&gt;&gt;</tw-passagedata><tw-passagedata pid="22" name="prerecord" tags="nobr" position="225,350" size="100,100">&lt;&lt;set $prevpass to &quot;map&quot;&gt;&gt;
 &lt;&lt;set $passage to &quot;prerecord&quot;&gt;&gt;
 &lt;&lt;set $nextpass to &quot;record&quot;&gt;&gt;
 
@@ -1112,7 +1058,7 @@ setup.chooseStoryAudio = () => {
 
 &lt;/main&gt;
 
-&lt;&lt;include &quot;footer&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="25" name="record" tags="nobr" position="600,350" size="100,100">&lt;&lt;set $prevpass to &quot;prerecord&quot;&gt;&gt;
+&lt;&lt;include &quot;footer&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="23" name="record" tags="nobr" position="350,350" size="100,100">&lt;&lt;set $prevpass to &quot;prerecord&quot;&gt;&gt;
 &lt;&lt;set $passage to &quot;record&quot;&gt;&gt;
 
 &lt;main class=&quot;about&quot;&gt;
@@ -1125,7 +1071,7 @@ setup.chooseStoryAudio = () => {
   &lt;&lt;/button&gt;&gt;
 
 &lt;/main&gt;
-&lt;&lt;include &quot;footer&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="26" name="Christmas_with_the_Mayor-cap" tags="nobr" position="725,350" size="100,100">&lt;&lt;timed 00s&gt;&gt;
+&lt;&lt;include &quot;footer&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="24" name="Christmas_with_the_Mayor-cap" tags="nobr" position="475,350" size="100,100">&lt;&lt;timed 00s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 Yes, we used to have the Mayor&#39;s Christmas party, that was his chosen charity. 
 &lt;&lt;/replace&gt;&gt;
@@ -1252,7 +1198,7 @@ but I had children and
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;
 I don&#39;t drink, so no point me going to the pub...
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="27" name="Islington_traditions-cap" tags="nobr" position="850,350" size="100,100">&lt;&lt;timed 00s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="25" name="Islington_traditions-cap" tags="nobr" position="600,350" size="100,100">&lt;&lt;timed 00s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 One of the traditions that they have in Islington, 
 &lt;&lt;/replace&gt;&gt;
@@ -1346,7 +1292,7 @@ and just coming out and patting kids on the head
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 like people used to do.
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="28" name="Out_every_day-cap" tags="nobr" position="975,350" size="100,100">&lt;&lt;timed 00s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="26" name="Out_every_day-cap" tags="nobr" position="725,350" size="100,100">&lt;&lt;timed 00s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 Islington actually offers a lot for somebody in my position to do. 
 &lt;&lt;/replace&gt;&gt;
@@ -1470,7 +1416,7 @@ So there&#39;s plenty of things to do in Islington at various venues.
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 Yeah, it&#39;s quite a nice place to be in that respect.
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="29" name="Talking_to_strangers-cap" tags="nobr" position="1100,350" size="100,100">&lt;&lt;timed 00s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="27" name="Talking_to_strangers-cap" tags="nobr" position="850,350" size="100,100">&lt;&lt;timed 00s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 I mean, I live in Mildmay Park now, and I don&#39;t even know the people next door. 
 &lt;&lt;/replace&gt;&gt;
@@ -1618,7 +1564,7 @@ It isn&#39;t. Whether it&#39;s the same everywhere or not, I don&#39;t know,
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 but it&#39;s just not the same here now.
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="30" name="Working_class_spirit-cap" tags="nobr" position="1225,350" size="100,100">&lt;&lt;timed 00s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="28" name="Working_class_spirit-cap" tags="nobr" position="975,350" size="100,100">&lt;&lt;timed 00s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 Usually I attend a coffee morning every Monday at the Walter Sickert Community Centre, 
 &lt;&lt;/replace&gt;&gt;
@@ -1706,7 +1652,7 @@ that I know from Walter Sickert as well, so yeah, it&#39;s
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 despite the gentrification, like the, kind of the working class spirit is there.
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="31" name="Pools_and_lakes-cap" tags="nobr" position="100,475" size="100,100">&lt;&lt;timed 00s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="29" name="Pools_and_lakes-cap" tags="nobr" position="1100,350" size="100,100">&lt;&lt;timed 00s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 Clissold, I mean, when my kids was little, we used to, there was loads of kids up there. 
 &lt;&lt;/replace&gt;&gt;
@@ -1788,7 +1734,7 @@ you know, and all these sorts of things, it&#39;s all silly things now, but kids
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 that don&#39;t happen now, does it?
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="32" name="Camden_passage-cap" tags="nobr" position="225,475" size="100,100">&lt;&lt;timed 00s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="30" name="Camden_passage-cap" tags="nobr" position="1225,350" size="100,100">&lt;&lt;timed 00s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 Angel is special, but it&#39;s very changed these days, you know. 
 &lt;&lt;/replace&gt;&gt;
@@ -1906,7 +1852,7 @@ Pauline Quirke, that included Pauline Quirke and Raymond.
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 Quite a few people I knew from the area were scooped up for Tomorrow&#39;s People.
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="33" name="The_Library-cap" tags="nobr" position="350,475" size="100,100">&lt;&lt;timed 0s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="31" name="The_Library-cap" tags="nobr" position="100,475" size="100,100">&lt;&lt;timed 0s&gt;&gt;
 &lt;&lt;replace &quot;#caption&quot;&gt;&gt;
 Well, I used to love to play at the Library Pub, &lt;&lt;/replace&gt;&gt;
 &lt;&lt;/timed&gt;&gt;
@@ -1989,7 +1935,7 @@ and I was there for most of that time, &lt;&lt;/replace&gt;&gt;
 &lt;&lt;timed 82.5s&gt;&gt;
 &lt;&lt;replace &quot;#caption&quot;&gt;&gt;
 met some really interesting people and talented people. &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="34" name="Gillespie_Park-cap" tags="nobr" position="475,475" size="100,100">&lt;&lt;timed 00s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="32" name="Gillespie_Park-cap" tags="nobr" position="225,475" size="100,100">&lt;&lt;timed 00s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 Gillespie Nature Park. 
 &lt;&lt;/replace&gt;&gt;
@@ -2071,7 +2017,7 @@ When we had a dog, we could take the dog there, and she loved it.
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 The same on Parkland Walk, it&#39;s secluded, and the sky looks very big when you&#39;re there.
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="35" name="Memory_Gardens-cap" tags="nobr" position="600,475" size="100,100">&lt;&lt;timed 00s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="33" name="Memory_Gardens-cap" tags="nobr" position="350,475" size="100,100">&lt;&lt;timed 00s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 I think actually the place that comes to mind, 
 &lt;&lt;/replace&gt;&gt;
@@ -2147,7 +2093,7 @@ So I was sad when they started to construct all these buildings,
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 but yeah, that was a very special place.
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="36" name="Walking_down_the_market-cap" tags="nobr" position="725,475" size="100,100">&lt;&lt;timed 00s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="34" name="Walking_down_the_market-cap" tags="nobr" position="475,475" size="100,100">&lt;&lt;timed 00s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 I love the sort of mix of the community here, 
 &lt;&lt;/replace&gt;&gt;
@@ -2175,7 +2121,7 @@ my son does, but I like to just walk down the market and feel at home.
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 That&#39;s what Islington is.
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="37" name="Barbara-cap" tags="nobr" position="850,475" size="100,100">&lt;&lt;timed 00s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="35" name="Barbara-cap" tags="nobr" position="600,475" size="100,100">&lt;&lt;timed 00s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 So my name&#39;s Barbara. 
 &lt;&lt;/replace&gt;&gt;
@@ -2407,7 +2353,7 @@ I get around okay, I do okay. I think I&#39;m sort of coping reasonably well,
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 but yeah, the things that, the way I&#39;d planned my retirement hasn&#39;t turned out the way I wanted it to be.
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="38" name="Chris-cap" tags="nobr" position="975,475" size="100,100">&lt;&lt;timed 00s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="36" name="Chris-cap" tags="nobr" position="725,475" size="100,100">&lt;&lt;timed 00s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 Hi my name is Chris. 
 &lt;&lt;/replace&gt;&gt;
@@ -2705,7 +2651,7 @@ It&#39;s now a house for two old age pensioners, and
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 we are too comfortable to be moved.
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="39" name="David-cap" tags="nobr" position="1100,475" size="100,100">&lt;&lt;timed 00s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="37" name="David-cap" tags="nobr" position="850,475" size="100,100">&lt;&lt;timed 00s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 My name is David Walter, 52 years of age. 
 &lt;&lt;/replace&gt;&gt;
@@ -2787,7 +2733,7 @@ also like early 20th century literature, as well.
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 I&#39;m into the history of East Asia, and also British colonial history, as well.
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="40" name="Eloina-cap" tags="nobr" position="1225,475" size="100,100">&lt;&lt;timed 00s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="38" name="Eloina-cap" tags="nobr" position="975,475" size="100,100">&lt;&lt;timed 00s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 My name is Eloina, and I am Spanish. 
 &lt;&lt;/replace&gt;&gt;
@@ -2935,7 +2881,7 @@ to be able to be where I am at the moment.
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 I&#39;m just happy to be here in Islington.
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="41" name="Frank-cap" tags="nobr" position="100,600" size="100,100">&lt;&lt;timed 00s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="39" name="Frank-cap" tags="nobr" position="1100,475" size="100,100">&lt;&lt;timed 00s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 I am Frank David. 
 &lt;&lt;/replace&gt;&gt;
@@ -3079,7 +3025,7 @@ even different kinds of... Food banks, that sort of thing.
 
 
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="42" name="Linda-cap" tags="nobr" position="225,600" size="100,100">&lt;&lt;timed 00s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="40" name="Linda-cap" tags="nobr" position="1225,475" size="100,100">&lt;&lt;timed 00s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 I&#39;m Linda Brown. 
 &lt;&lt;/replace&gt;&gt;
@@ -3185,7 +3131,7 @@ Got married in Islington in Upper Street, you know.
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 So, yeah, it&#39;s all been Islington.
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="43" name="Muriel-cap" tags="nobr" position="350,600" size="100,100">&lt;&lt;timed 00s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="41" name="Muriel-cap" tags="nobr" position="100,600" size="100,100">&lt;&lt;timed 00s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 I am Muriel Reza, and I am a Haringey resident, 
 &lt;&lt;/replace&gt;&gt;
@@ -3279,7 +3225,7 @@ That was just fantastic. I thoroughly enjoyed my time last year, joining all the
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 Islington is quite busy, the health generation, they have so many events, and I&#39;m quite happy to be part of it.
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="44" name="King_Henry_s_Allotments-cap" tags="nobr" position="475,600" size="100,100">&lt;&lt;timed 0s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="42" name="King_Henry_s_Allotments-cap" tags="nobr" position="225,600" size="100,100">&lt;&lt;timed 0s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 Islington, it still has a lot of nature reserves and stuff, 
 &lt;&lt;/replace&gt;&gt;
@@ -3325,7 +3271,7 @@ I&#39;d like to go there, I&#39;d like to go back, but usually in the seasons, l
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 they do like little events there as well.
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="45" name="Affording_Islington-cap" tags="nobr" position="600,600" size="100,100">&lt;&lt;timed 0s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="43" name="Affording_Islington-cap" tags="nobr" position="350,600" size="100,100">&lt;&lt;timed 0s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 If you&#39;re a young person coming to Islington, it might be difficult because you might not quite know how to fit in. 
 &lt;&lt;/replace&gt;&gt;
@@ -3425,7 +3371,7 @@ They are aware of the problems, and they know that unless you can get people to 
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 it will tend to die away.
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="46" name="Destroying_a_village-cap" tags="nobr" position="725,600" size="100,100">&lt;&lt;timed 0s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="44" name="Destroying_a_village-cap" tags="nobr" position="475,600" size="100,100">&lt;&lt;timed 0s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 I live at by Islington Green, and 
 &lt;&lt;/replace&gt;&gt;
@@ -3519,7 +3465,7 @@ but it&#39;s the way has Islington changed,
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 but I certainly, he didn&#39;t put me on the committee, sort of suggesting that it was an improvement.
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="47" name="Kids_in_the_streets-cap" tags="nobr" position="850,600" size="100,100">&lt;&lt;timed 0s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="45" name="Kids_in_the_streets-cap" tags="nobr" position="600,600" size="100,100">&lt;&lt;timed 0s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 I think it&#39;s changed big time. 
 &lt;&lt;/replace&gt;&gt;
@@ -3625,7 +3571,7 @@ I don&#39;t feel kids today have got the lives that my kids had,
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 and I just think these kids are missing out a bit now, you know.
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="48" name="Protests-and-parties-cap" tags="nobr" position="975,600" size="100,100">&lt;&lt;timed 0s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="46" name="Protests-and-parties-cap" tags="nobr" position="725,600" size="100,100">&lt;&lt;timed 0s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 So my niece was in a, 
 &lt;&lt;/replace&gt;&gt;
@@ -3797,7 +3743,7 @@ As I said, we did... Something that we all had, and obviously we didn&#39;t real
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 It&#39;s not there anymore.
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="49" name="Highbury-Fields-youth-cap" tags="nobr" position="1100,600" size="100,100">&lt;&lt;timed 0s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="47" name="Highbury-Fields-youth-cap" tags="nobr" position="850,600" size="100,100">&lt;&lt;timed 0s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 Probably Highbury Fields, 
 &lt;&lt;/replace&gt;&gt;
@@ -3891,7 +3837,7 @@ So, if you like, are looking, if you want to meet new people
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 who may be in the same year as you, Highbury Fields is a good place to start, I think.
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="50" name="Paradise_Park-cap" tags="nobr" position="1225,600" size="100,100">&lt;&lt;timed 0s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="48" name="Paradise_Park-cap" tags="nobr" position="975,600" size="100,100">&lt;&lt;timed 0s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 The parks are heaven. 
 &lt;&lt;/replace&gt;&gt;
@@ -4003,7 +3949,7 @@ and we used to do that three, four times a year,
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 yeah, in the 70s, because that&#39;s when I had the kids.
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="51" name="Dancing_in_Finsbury_Park-cap" tags="nobr" position="100,725" size="100,100">&lt;&lt;timed 0s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="49" name="Dancing_in_Finsbury_Park-cap" tags="nobr" position="1100,600" size="100,100">&lt;&lt;timed 0s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 Yeah, so I used to go out, I mean.. 
 &lt;&lt;/replace&gt;&gt;
@@ -4127,7 +4073,7 @@ and we used to go out, come home.
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 We had a good time.
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="52" name="Celebrating_Arsenal-cap" tags="nobr" position="225,725" size="100,100">&lt;&lt;timed 0s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="50" name="Celebrating_Arsenal-cap" tags="nobr" position="1225,600" size="100,100">&lt;&lt;timed 0s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 Arsenal stadium, you cannot miss it, 
 &lt;&lt;/replace&gt;&gt;
@@ -4239,7 +4185,7 @@ Everyone&#39;s chanting, holding red smoke cans, and it was just such an amazing
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 And I hope it happens again. Please Arsenal, do not fail us again.
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="53" name="Bryan-cap" tags="nobr" position="350,725" size="100,100">&lt;&lt;timed 0s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="51" name="Bryan-cap" tags="nobr" position="100,725" size="100,100">&lt;&lt;timed 0s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 My name is Bryan Morrison. 
 &lt;&lt;/replace&gt;&gt;
@@ -4477,7 +4423,7 @@ which I had for a long time.
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 Yeah, that was 2010. Long time ago.
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="54" name="Caroline-cap" tags="nobr" position="475,725" size="100,100">&lt;&lt;timed 0s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="52" name="Caroline-cap" tags="nobr" position="225,725" size="100,100">&lt;&lt;timed 0s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 It my name is Caroline McIntyre. 
 &lt;&lt;/replace&gt;&gt;
@@ -4601,7 +4547,7 @@ Here you can walk out the door into something in Islington, but there you can&#3
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 You&#39;ve got to walk miles, so that&#39;s where we&#39;re lucky.
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="55" name="Emily-cap" tags="nobr" position="600,725" size="100,100">&lt;&lt;timed 0s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="53" name="Emily-cap" tags="nobr" position="350,725" size="100,100">&lt;&lt;timed 0s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 My name is Emily. I&#39;m 15.
 &lt;&lt;/replace&gt;&gt;
@@ -4707,7 +4653,7 @@ and I think this is still quite a culturally diverse place.
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 I just don&#39;t think it is as much, and I think we&#39;re kind of missing out there.
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="56" name="Laurette-cap" tags="nobr" position="725,725" size="100,100">&lt;&lt;timed 0s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="54" name="Laurette-cap" tags="nobr" position="475,725" size="100,100">&lt;&lt;timed 0s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 My name is Laurette Josiah, 
 &lt;&lt;/replace&gt;&gt;
@@ -4981,7 +4927,7 @@ And it&#39;s a lovely place to bring your children. I, yeah, brought my kids up 
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 I would probably go on holiday in my house and go on holiday.
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="57" name="Rick-cap" tags="nobr" position="850,725" size="100,100">&lt;&lt;timed 0s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="55" name="Rick-cap" tags="nobr" position="600,725" size="100,100">&lt;&lt;timed 0s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 I&#39;ve worked in Islington for 26 years, doing music, working with different projects and different people. 
 &lt;&lt;/replace&gt;&gt;
@@ -5171,7 +5117,7 @@ you don&#39;t need to take the tablets just as soon as you hear that applause, y
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 you want to do the music, can you, you know, it helps you to get your life going, you know, get on your feet.
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="58" name="Zara-cap" tags="nobr" position="975,725" size="100,100">&lt;&lt;timed 0s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="56" name="Zara-cap" tags="nobr" position="725,725" size="100,100">&lt;&lt;timed 0s&gt;&gt;
  &lt;&lt;replace &quot;#caption&quot;&gt;&gt; My name is Zara. I am 14 years old. &lt;&lt;/replace&gt;&gt; 
  &lt;&lt;/timed&gt;&gt;
 
@@ -5225,7 +5171,7 @@ you want to do the music, can you, you know, it helps you to get your life going
 
 &lt;&lt;timed 68s&gt;&gt;
  &lt;&lt;replace &quot;#caption&quot;&gt;&gt; I think there&#39;s always something happening in Islington. &lt;&lt;/replace&gt;&gt; 
- &lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="59" name="Lebanese_after_school_club-cap" tags="nobr" position="1100,725" size="100,100">&lt;&lt;timed 0s&gt;&gt;
+ &lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="57" name="Lebanese_after_school_club-cap" tags="nobr" position="850,725" size="100,100">&lt;&lt;timed 0s&gt;&gt;
 &lt;&lt;replace &quot;#caption&quot;&gt;&gt;
 There&#39;s this very underrated place to get food. &lt;&lt;/replace&gt;&gt;
 &lt;&lt;/timed&gt;&gt;
@@ -5263,7 +5209,7 @@ because you&#39;ll always have like around 30 kids in there, &lt;&lt;/replace&gt
 &lt;&lt;timed 40s&gt;&gt;
 &lt;&lt;replace &quot;#caption&quot;&gt;&gt;
 and so it&#39;s just has got a really nice like atmosphere. &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="60" name="Musical_pubs_and_chapels-cap" tags="nobr" position="1225,725" size="100,100">&lt;&lt;timed 0s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="58" name="Musical_pubs_and_chapels-cap" tags="nobr" position="975,725" size="100,100">&lt;&lt;timed 0s&gt;&gt;
 &lt;&lt;replace &quot;#caption&quot;&gt;&gt;
 Well, I do like the Union Chapel. &lt;&lt;/replace&gt;&gt;
 &lt;&lt;/timed&gt;&gt;
@@ -5351,7 +5297,7 @@ It&#39;s very enjoyable. &lt;&lt;/replace&gt;&gt;
 &lt;&lt;timed 92s&gt;&gt;
 &lt;&lt;replace &quot;#caption&quot;&gt;&gt;
 More people should come to the Brewhouse and Kitchen! &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="61" name="Olden_Garden-cap" tags="nobr" position="100,850" size="100,100">&lt;&lt;timed 0s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="59" name="Olden_Garden-cap" tags="nobr" position="1100,725" size="100,100">&lt;&lt;timed 0s&gt;&gt;
 &lt;&lt;replace &quot;#caption&quot;&gt;&gt;
 So that&#39;s a special place, it&#39;s called Olden Gardens. &lt;&lt;/replace&gt;&gt;
 &lt;&lt;/timed&gt;&gt;
@@ -5389,7 +5335,7 @@ We played there on Sunday, and the Arsenal fans were walking by with, you know, 
 &lt;&lt;timed 42.5s&gt;&gt;
 &lt;&lt;replace &quot;#caption&quot;&gt;&gt;
 I think all the special places that I&#39;ve got are probably you know, from the music. &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="62" name="Where_everyone_is-cap" tags="nobr" position="225,850" size="100,100">&lt;&lt;timed 0s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="60" name="Where_everyone_is-cap" tags="nobr" position="1225,725" size="100,100">&lt;&lt;timed 0s&gt;&gt;
 &lt;&lt;replace &quot;#caption&quot;&gt;&gt;
 Maybe Angel, for some reason, just people my age are so attracted to it. &lt;&lt;/replace&gt;&gt;
 &lt;&lt;/timed&gt;&gt;
@@ -5432,7 +5378,7 @@ It&#39;s just there if you want to just hang with people your age, so that&#39;s
 &lt;&lt;timed 34s&gt;&gt;
 &lt;&lt;replace &quot;#caption&quot;&gt;&gt;
 So you can basically do anything there, but it&#39;s mostly, I would say, sports and games. &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="63" name="Carrying_a_coffin-cap" tags="nobr" position="350,850" size="100,100">&lt;&lt;timed 00s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="61" name="Carrying_a_coffin-cap" tags="nobr" position="100,850" size="100,100">&lt;&lt;timed 00s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 I think that in Islington, there is a tradition of demonstrations, really, 
 &lt;&lt;/replace&gt;&gt;
@@ -5460,7 +5406,7 @@ and we carried a coffin through the streets of Islington
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 with... it was still anti experiments on animals, you know.
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="64" name="Clubbing_and_racism-cap" tags="nobr" position="475,850" size="100,100">&lt;&lt;timed 0s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="62" name="Clubbing_and_racism-cap" tags="nobr" position="225,850" size="100,100">&lt;&lt;timed 0s&gt;&gt;
 &lt;&lt;replace &quot;#caption&quot;&gt;&gt;
 When I got older, I used to go to the club scenes. &lt;&lt;/replace&gt;&gt;
 &lt;&lt;/timed&gt;&gt;
@@ -5523,7 +5469,7 @@ That was my really, really first experience of direct racism. &lt;&lt;/replace&g
 &lt;&lt;timed 66s&gt;&gt;
 &lt;&lt;replace &quot;#caption&quot;&gt;&gt;
 You can&#39;t come in here because you are black. &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="65" name="Fuelling_division-cap" tags="nobr" position="600,850" size="100,100">&lt;&lt;timed 0s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="63" name="Fuelling_division-cap" tags="nobr" position="350,850" size="100,100">&lt;&lt;timed 0s&gt;&gt;
 &lt;&lt;replace &quot;#caption&quot;&gt;&gt;
 What I find challenging in Islington, &lt;&lt;/replace&gt;&gt;
 &lt;&lt;/timed&gt;&gt;
@@ -5631,7 +5577,7 @@ So, I felt like 2021 Euros, I was a time where I... &lt;&lt;/replace&gt;&gt;
 &lt;&lt;timed 151s&gt;&gt;
 &lt;&lt;replace &quot;#caption&quot;&gt;&gt;
 I personally, I think that was one of the biggest times where I was kind of worried about stuff like that. &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="66" name="Singing_in_an_orchard-cap" tags="nobr" position="725,850" size="100,100">&lt;&lt;timed 0s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="64" name="Singing_in_an_orchard-cap" tags="nobr" position="475,850" size="100,100">&lt;&lt;timed 0s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 I was working in an orchard, in Meadow Orchard in Hornsey, which is a bit further north from here.
 &lt;&lt;/replace&gt;&gt;
@@ -5755,7 +5701,7 @@ Oh you make my night. Oh you make my day.
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
  If the sun refuses to shine. That’s okay. That’s okay.
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="67" name="Meeting_the_Sotheby_Singers-cap" tags="nobr" position="850,850" size="100,100">&lt;&lt;timed 0s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="65" name="Meeting_the_Sotheby_Singers-cap" tags="nobr" position="600,850" size="100,100">&lt;&lt;timed 0s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 Do you want to sing along? 
 &lt;&lt;/replace&gt;&gt;
@@ -5927,7 +5873,7 @@ Carry me through the night
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 you and me through the night...
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="68" name="Welcoming_communities-cap" tags="nobr" position="975,850" size="100,100">&lt;&lt;timed 0s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="66" name="Welcoming_communities-cap" tags="nobr" position="725,850" size="100,100">&lt;&lt;timed 0s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 I like that small park over there where I live by Newington Green.
 &lt;&lt;/replace&gt;&gt;
@@ -5973,7 +5919,7 @@ Islington is a little bit different than other boroughs.
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 Let&#39;s say the community from here is like more welcoming than others, more peaceful than others.
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="69" name="Politician_without_politics-cap" tags="nobr" position="1100,850" size="100,100">&lt;&lt;timed 0s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="67" name="Politician_without_politics-cap" tags="nobr" position="850,850" size="100,100">&lt;&lt;timed 0s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 Pat Haynes was the local councillor here for a long time. 
 &lt;&lt;/replace&gt;&gt;
@@ -6007,7 +5953,7 @@ He was a politician without politics, almost.
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 He just liked us to do things locally for the local people.
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="70" name="Halloween_houses-cap" tags="nobr" position="1225,850" size="100,100">&lt;&lt;timed 0s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="68" name="Halloween_houses-cap" tags="nobr" position="975,850" size="100,100">&lt;&lt;timed 0s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 Yeah, I used to celebrate Halloween. 
 &lt;&lt;/replace&gt;&gt;
@@ -6065,7 +6011,7 @@ and then outside on like the road they put skeletons that would like move and sp
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 and that was even some smoke that they would put to add to that feeling of Halloween.
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="71" name="Running_in_a_church-cap" tags="nobr" position="100,975" size="100,100">&lt;&lt;timed 0s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="69" name="Running_in_a_church-cap" tags="nobr" position="1100,850" size="100,100">&lt;&lt;timed 0s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 Culture, I&#39;m Greek, so I cook loads of Greek food, 
 &lt;&lt;/replace&gt;&gt;
@@ -6141,7 +6087,7 @@ No one knew about dyslexia, dyspraxia.
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 You know, we were just simple children getting on with life.
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="72" name="Adi-cap" tags="nobr" position="225,975" size="100,100">&lt;&lt;timed 0s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="70" name="Adi-cap" tags="nobr" position="1225,850" size="100,100">&lt;&lt;timed 0s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 All my friends call me Adi, I was born in Romania. 
 &lt;&lt;/replace&gt;&gt;
@@ -6265,7 +6211,7 @@ How I help them, I give them where to go to get help, different charities.
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 I try to help them, but with food, with clothes, with advice, it&#39;s at least 1200 people in this six years, and this is just a drop in the ocean.
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="73" name="Emma-cap" tags="nobr" position="350,975" size="100,100">&lt;&lt;timed 0s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="71" name="Emma-cap" tags="nobr" position="100,975" size="100,100">&lt;&lt;timed 0s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 I&#39;m 15 years old, and I&#39;m called Emma. 
 &lt;&lt;/replace&gt;&gt;
@@ -6317,7 +6263,7 @@ but also as most of the rest of London, it can be quite unsafe,
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 as a lot of people means more tension, so more aggression.
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="74" name="Heran-cap" tags="nobr" position="475,975" size="100,100">&lt;&lt;timed 0s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="72" name="Heran-cap" tags="nobr" position="225,975" size="100,100">&lt;&lt;timed 0s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 My name is Heran, and I live in Canonbury. 
 &lt;&lt;/replace&gt;&gt;
@@ -6399,7 +6345,7 @@ and just inviting them to come over, and they&#39;d all bring something in,
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 and aside from that, our neighbors would usually give us like Christmas gifts and cards and envelopes for birthdays and celebrations.
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="75" name="Maria-cap" tags="nobr" position="600,975" size="100,100">&lt;&lt;timed 0s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="73" name="Maria-cap" tags="nobr" position="350,975" size="100,100">&lt;&lt;timed 0s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 My name is Maria, and I&#39;ve been living in Islington since I&#39;ve been a baby. 
 &lt;&lt;/replace&gt;&gt;
@@ -6523,7 +6469,7 @@ So, when I&#39;m out, I&#39;ll get helped.
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 There&#39;s always someone there to help me. It&#39;s been... it&#39;s really great.
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="76" name="Angel_passage-cap" tags="nobr" position="725,975" size="100,100">&lt;&lt;timed 0s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="74" name="Angel_passage-cap" tags="nobr" position="475,975" size="100,100">&lt;&lt;timed 0s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 One of my favorite areas in Islington, it&#39;s Angel. 
 &lt;&lt;/replace&gt;&gt;
@@ -6593,7 +6539,7 @@ if I met a councillor, but I will ask them to change an Angel Passage, not Camde
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 because otherwise, you know, people, they will be confused.
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="77" name="Mildmay_Centre-cap" tags="nobr" position="850,975" size="100,100">&lt;&lt;timed 0s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="75" name="Mildmay_Centre-cap" tags="nobr" position="600,975" size="100,100">&lt;&lt;timed 0s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 The Mildmay Community Centre. I used to work here when I had my breakdown, and it was the start of me getting better. 
 &lt;&lt;/replace&gt;&gt;
@@ -6675,7 +6621,7 @@ and it&#39;s like, Mildmay is their life, and they just.. it&#39;s like a big fa
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 All of us are family, and you know, we all try and support each other. It&#39;s beautiful.
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="78" name="Going_through_the_archives-cap" tags="nobr" position="975,975" size="100,100">&lt;&lt;timed 0s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="76" name="Going_through_the_archives-cap" tags="nobr" position="725,975" size="100,100">&lt;&lt;timed 0s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 I think the British Library is a place that many, like tourists, have heard of, 
 &lt;&lt;/replace&gt;&gt;
@@ -6745,7 +6691,7 @@ which my dad was around at the time, and he was living there, and he just rememb
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 and he just like told me how it felt like back then to see his country just retaliating for freedom.
 &lt;&lt;/replace&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="79" name="School_stabbings-cap" tags="nobr" position="1100,975" size="100,100">&lt;&lt;timed 0s&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="77" name="School_stabbings-cap" tags="nobr" position="850,975" size="100,100">&lt;&lt;timed 0s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 Well, I think some challenges we face is that there&#39;s sometimes like a lot of crime and violence in Islington, 
 &lt;&lt;/replace&gt;&gt;

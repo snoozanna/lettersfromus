@@ -21,60 +21,60 @@ Letters from Us
 
 
 :: Story JavaScript [script]
-$(document).one(':storyready', function () {
-    $('#ui-bar').remove();
-    $('#style-ui-bar').remove();
-});
+// $(document).one(':storyready', function () {
+//     $('#ui-bar').remove();
+//     $('#style-ui-bar').remove();
+// });
 
-setup.chooseStoryAudio = () => {
+// setup.chooseStoryAudio = () => {
 
-  const audio = document.getElementById("audioPlayer");
+//   const audio = document.getElementById("audioPlayer");
 
-  if (!audio) {
-    console.error("Audio element not found.");
-    return;
-  }
+//   if (!audio) {
+//     console.error("Audio element not found.");
+//     return;
+//   }
 
-  const data = State.variables.currentAudio;
+//   const data = State.variables.currentAudio;
 
-  if (!data) {
-    console.warn("No currentAudio set.");
-    return;
-  }
+//   if (!data) {
+//     console.warn("No currentAudio set.");
+//     return;
+//   }
 
-  // Reset audio
-  audio.pause();
-  audio.currentTime = 0;
+//   // Reset audio
+//   audio.pause();
+//   audio.currentTime = 0;
 
-  // ✅ Make this an ARRAY (even for one file)
-  const audioFiles = [
-    `assets/audio/${data.theme}/${data.audioSrc}.mp3`
-  ];
+//   // ✅ Make this an ARRAY (even for one file)
+//   const audioFiles = [
+//     `assets/audio/${data.theme}/${data.audioSrc}.mp3`
+//   ];
 
-  console.log("audioFiles", audioFiles);
+//   console.log("audioFiles", audioFiles);
 
-  let currentTrack = 0;
+//   let currentTrack = 0;
 
-  function playNext() {
-    if (currentTrack < audioFiles.length) {
-      audio.src = audioFiles[currentTrack];
-      console.log("playing audio", audio.src);
+//   function playNext() {
+//     if (currentTrack < audioFiles.length) {
+//       audio.src = audioFiles[currentTrack];
+//       console.log("playing audio", audio.src);
 
-      audio.play().catch(err => {
-        console.error("Audio play failed:", err);
-      });
+//       audio.play().catch(err => {
+//         console.error("Audio play failed:", err);
+//       });
 
-      currentTrack++;
-    }
-  }
+//       currentTrack++;
+//     }
+//   }
 
-  // ✅ Prevent stacking
-  audio.onended = playNext;
+//   // ✅ Prevent stacking
+//   audio.onended = playNext;
 
-  if (audioFiles.length > 0) {
-    playNext();
-  }
-};
+//   if (audioFiles.length > 0) {
+//     playNext();
+//   }
+// };
 
 
 
@@ -423,63 +423,6 @@ setup.chooseStoryAudio = () => {
 ]>>
 
 
-:: header [nobr]
-<header class="general" >
-<<if $showLogo is true>>
-<div class="logo-container"><img src="../assets/img/1884components-23.png"/></div>
- <div class="nav-item">
- </div>
-  <</if>>
-<<if $showMenu is true>>
-  <div class="nav-wrapper">
-    <div class="nav-item">
-        <<link [img[../assets/img/menu.png]]>>
-          <<if $menuOpen is false >>
-
-            <<set $menuOpen to true>>
-            <<append "#main">>
-               <<include "menu">>
-              <</append>>
-           
-          <<elseif $menuOpen is true>>
-             <<set $menuOpen to false>>
-               <<remove "#menu">>
-          <</if>>
-            
-          <</link>>
-
-    </div>
-  </div>
-  <</if>>
-</header>
-
-
-
-
-:: headerrest [nobr]
-<header class="general" >
-<<if $showMenu is true>>
-  <div class="nav-wrapper">
-    <div class="nav-item">
-        <<link [img[../assets/img/menu.png]]>>
-          <<if $menuOpen is false >>
-
-            <<set $menuOpen to true>>
-            <<append "#main">>
-               <<include "menu">>
-              <</append>>
-           
-          <<elseif $menuOpen is true>>
-             <<set $menuOpen to false>>
-               <<remove "#menu">>
-          <</if>>
-            
-          <</link>>
-
-    </div>
-  </div>
-  <</if>>
-</header>
 
 
 :: footer [nobr]{"position":"100,375","size":"100,100"}
@@ -492,10 +435,6 @@ setup.chooseStoryAudio = () => {
   <</button>>
     </div>
   </div>
-
-
-
-  
 </footer>
 
 :: footerback [nobr]{"position":"100,375","size":"100,100"}
@@ -637,7 +576,6 @@ setup.chooseStoryAudio = () => {
 <audio id="audio" autoplay></audio>
 
 
-  <<include "header">>
 <main id="main" class="about"> 
 
  <h1 class="title">Letters from us</h1>
