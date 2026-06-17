@@ -903,7 +903,7 @@ header.listen {
 
 main.listen {
   max-width: inherit;
-  background-image: url("../../assets/img/greensoundwave.gif");
+  background-image: url("../assets/img/greensoundwave.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
