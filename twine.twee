@@ -634,11 +634,7 @@ setup.chooseStoryAudio = () => {
 <<set $menuOpen to false>>
 <audio id="audio" autoplay></audio>
 
-<<if $sound is true>>
-  <<timed 0.1s>>
-    <<replace "#audio">><source  src="../assets/sound/DJIntro.mp3"><</replace>> 
-  <</timed>>
-  <</if>>
+
   <<include "header">>
 <main id="main" class="about"> 
 
