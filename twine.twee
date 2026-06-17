@@ -640,10 +640,10 @@ setup.chooseStoryAudio = () => {
   <</timed>>
   <</if>>
   <<include "header">>
-<main id="main"> 
- <div class="main-container text">
+<main id="main" class="about"> 
+
  <h1 class="title">Letters from us</h1>
-   <div id="textMount"></div>
+
   <p> <span class="project">Letters from Us</span> is an interactive audio archive celebrating the everyday stories of the people of Islington. </p>
 
 <p>It was created by <a href="https://www.koro.org.uk/" rel="noreferrer" target="_blank" class="highlighted">Koro</a>, in partnership with City St George’s, University of London, Highbury Roundhouse, Mildmay Community Centre and St Mary Magdalene Academy. </p>
@@ -654,7 +654,7 @@ setup.chooseStoryAudio = () => {
    
  
    
- </div>
+
 </main>
 <<include "footer">>
 
@@ -808,11 +808,13 @@ setup.chooseStoryAudio = () => {
 <img src="assets/img/characters/characters-10.png">
 </div>
 <div class="content-container">
-<h1>Places</h1>
+<div class="upper-content-container">
+  <h1>Places</h1>
+  
+  <p>What places in Islington are special to you?</p>
+  <<include "listaudio">>
+</div>
 
-<p>What places in Islington are special to you?</p>
-<<include "listaudio">>
-<br/><br/>
 <div class="btn-container secondary">
 <<button "Share a place">>
   <<goto "prerecord">>
@@ -834,10 +836,11 @@ setup.chooseStoryAudio = () => {
 <img src="assets/img/characters/characters-21.png">
 </div>
 <div class="content-container">
+<div class="upper-content-container">
   <h1>People</h1>
   <p>Meet the people of Islington</p>
   <<include "listaudio">>
-  <br/><br/>
+</div>
   <div class="btn-container secondary">
     <<button "Share your story">>
       <<goto "prerecord">>
@@ -863,11 +866,13 @@ setup.chooseStoryAudio = () => {
 <img src="assets/img/characters/characters34-36-34.png">
 </div>
 <div class="content-container">
-<h1>Community</h1>
-<p>Where do people come together in Islington?</p>
+<div class="upper-content-container">
+  <h1>Community</h1>
+  <p>Where do people come together in Islington?</p>
+  
+  <<include "listaudio">>
+</div >
 
-<<include "listaudio">>
-<br/><br/>
 <div class="btn-container secondary">
 <<button "Share a story">>
   <<goto "prerecord">>
@@ -891,10 +896,11 @@ setup.chooseStoryAudio = () => {
 <img src="assets/img/characters/characters-18.png">
 </div>
 <div class="content-container">
+<div class="upper-content-container">
 <h1>Joy</h1>
 <p>What makes you happy?</p>
 <<include "listaudio">>
-<br/><br/>
+</div>
 <div class="btn-container secondary">
 <<button "Share your joy">>
   <<goto "prerecord">>
@@ -917,10 +923,11 @@ setup.chooseStoryAudio = () => {
 <img src="assets/img/characters/characters-17.png">
 </div>
 <div class="content-container">
+<div class="upper-content-container">
 <h1>Rage</h1>
 <p>What makes you angry?</p>
 <<include "listaudio">>
-<br/><br/>
+</div>
 <div class="btn-container secondary">
 <<button "Share your rage">>
   <<goto "prerecord">>
@@ -943,10 +950,11 @@ setup.chooseStoryAudio = () => {
 <img src="assets/img/characters/characters-22.png">
 </div>
 <div class="content-container">
+<div class="upper-content-container">
 <h1>History</h1>
 <p>How has Islington changed?</p>
 <<include "listaudio">>
-<br/><br/>
+</div>
 <div class="btn-container secondary">
 <<button "Share some history">>
   <<goto "prerecord">>
@@ -1133,6 +1141,7 @@ setup.chooseStoryAudio = () => {
 <main class="about">
 <h1>Record</h1>
     <iframe src="https://www.speakpipe.com/widget/inline/2iawuy25u8ynlcssocfc003zmfcl529u" allow="microphone" width="100%" height="200" frameborder="0"></iframe>
+    <br/>
 <p>By clicking Record, you consent for your recording to be published online as part of the project. You can withdraw that consent at any time. More info can be found in our <a href="../TCs-Koro-LFU.pdf" class="highlighted" target="_blank">terms of use</a> .</p>
 <<button "Back to map">>
   <<goto "map">>
@@ -6651,125 +6660,125 @@ and aside from that, our neighbors would usually give us like Christmas gifts an
 
 <<timed 0s>>
   <<replace "#caption">>  
-My name is Maria Diane Michael, and I've been living in Islington since I've been a baby. 
+My name is Maria, and I've been living in Islington since I've been a baby. 
 <</replace>>
 <</timed>>
 
-<<timed 8.5s>>
+<<timed 7s>>
   <<replace "#caption">>  
 When I got my new flat, my mum and dad got a new flat in Highbury. It was awesome. 
 <</replace>>
 <</timed>>
 
-<<timed 15.5s>>
+<<timed 14.5s>>
   <<replace "#caption">>  
 I remember going up the road with my dad, and I was so excited, the trees and the atmosphere, the wind. I was running excitedly. 
 <</replace>>
 <</timed>>
 
-<<timed 27.5s>>
+<<timed 26.5s>>
   <<replace "#caption">>  
 It was summertime, and I went into my new home. It was awesome, and I was running into all the rooms, but everything seemed so massively big. 
 <</replace>>
 <</timed>>
 
-<<timed 37.5s>>
+<<timed 36s>>
   <<replace "#caption">>  
 It smelled so new and fresh, it smelled so lovely. 
 <</replace>>
 <</timed>>
 
-<<timed 44s>>
+<<timed 42.5s>>
   <<replace "#caption">>  
 It was so open and light, and it was a new start of our new home.
 <</replace>>
 <</timed>>
 
-<<timed 49s>>
+<<timed 48s>>
   <<replace "#caption">>  
 My mum and dad used to live in Newington Green. We used to live in Perlin Road in the basement, and then my mum 
 <</replace>>
 <</timed>>
 
-<<timed 59s>>
+<<timed 57.5s>>
   <<replace "#caption">>  
 got a move to Highbury, because my mum had more children, so she needed more room, 
 <</replace>>
 <</timed>>
 
-<<timed 66s>>
+<<timed 65s>>
   <<replace "#caption">>  
 but just before that, my mum and dad, they, they got married, but my dad's from Cyprus, my mum's from the Isle of Man, and they met in the Navy, the army, and they fell in love. 
 <</replace>>
 <</timed>>
 
-<<timed 81s>>
+<<timed 79.5s>>
   <<replace "#caption">>  
 My dad used to sing to my mum, and that's how their romance started. They were proper in love. 
 <</replace>>
 <</timed>>
 
-<<timed 86.5s>>
+<<timed 85.5s>>
   <<replace "#caption">>  
 My dad is like Prince Philip, and my mum is like the queen. 
 <</replace>>
 <</timed>>
 
-<<timed 92.5s>>
+<<timed 91s>>
   <<replace "#caption">>  
 So all my life I've had that beautiful, beautiful atmosphere that my mum was the queen and my dad was the King. 
 <</replace>>
 <</timed>>
 
-<<timed 101s>>
+<<timed 99.5s>>
   <<replace "#caption">>  
 I used to be a top governor in Highbury Grove, and I worked for Arsenal. I worked for all the communities. 
 <</replace>>
 <</timed>>
 
-<<timed 109s>>
+<<timed 108s>>
   <<replace "#caption">>  
 I'm like a free individual voluntary worker, but open doors everywhere I go, and I bring people together. 
 <</replace>>
 <</timed>>
 
-<<timed 118s>>
+<<timed 117s>>
   <<replace "#caption">>  
 But Islington, I love Islington because I'm autistic. I've got a place I do call home. Yeah, it is my home. 
 <</replace>>
 <</timed>>
 
-<<timed 126s>>
+<<timed 124.5s>>
   <<replace "#caption">>  
 The community is my home. I love the Christmas parties in the town hall with all the councillors. I love it. I go every year. 
 <</replace>>
 <</timed>>
 
-<<timed 134.5s>>
+<<timed 133s>>
   <<replace "#caption">>  
 I love being with the homeless. I love being with all the people. I just. 
 <</replace>>
 <</timed>>
 
-<<timed 140s>>
+<<timed 138.5s>>
   <<replace "#caption">>  
 I'm a people's person, so I really love being around people, talking and happy dancing. 
 <</replace>>
 <</timed>>
 
-<<timed 146s>>
+<<timed 145s>>
   <<replace "#caption">>  
 Even though I have a disability, I have a lot of joy in my community because I know everybody. 
 <</replace>>
 <</timed>>
 
-<<timed 151.5s>>
+<<timed 150.5s>>
   <<replace "#caption">>  
 So, when I'm out, I'll get helped. 
 <</replace>>
 <</timed>>
 
-<<timed 154s>>
+<<timed 152.5s>>
   <<replace "#caption">>  
 There's always someone there to help me. It's been... it's really great.
 <</replace>>

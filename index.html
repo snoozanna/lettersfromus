@@ -685,10 +685,10 @@ setup.chooseStoryAudio = () => {
   &lt;&lt;/timed&gt;&gt;
   &lt;&lt;/if&gt;&gt;
   &lt;&lt;include &quot;header&quot;&gt;&gt;
-&lt;main id=&quot;main&quot;&gt; 
- &lt;div class=&quot;main-container text&quot;&gt;
+&lt;main id=&quot;main&quot; class=&quot;about&quot;&gt; 
+
  &lt;h1 class=&quot;title&quot;&gt;Letters from us&lt;/h1&gt;
-   &lt;div id=&quot;textMount&quot;&gt;&lt;/div&gt;
+
   &lt;p&gt; &lt;span class=&quot;project&quot;&gt;Letters from Us&lt;/span&gt; is an interactive audio archive celebrating the everyday stories of the people of Islington. &lt;/p&gt;
 
 &lt;p&gt;It was created by &lt;a href=&quot;https://www.koro.org.uk/&quot; rel=&quot;noreferrer&quot; target=&quot;_blank&quot; class=&quot;highlighted&quot;&gt;Koro&lt;/a&gt;, in partnership with City St George’s, University of London, Highbury Roundhouse, Mildmay Community Centre and St Mary Magdalene Academy. &lt;/p&gt;
@@ -699,7 +699,7 @@ setup.chooseStoryAudio = () => {
    
  
    
- &lt;/div&gt;
+
 &lt;/main&gt;
 &lt;&lt;include &quot;footer&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="11" name="loading" tags="nobr t8n.typewriter.4" position="100,225" size="100,100">&lt;main id=&quot;main&quot; class=&quot;main-section loading&quot;&gt;
 &lt;&lt;type 200ms&gt;&gt;&lt;h3 class=&quot;loading&quot;&gt;Loading...&lt;/h3&gt;&lt;&lt;/type&gt;&gt;
@@ -836,11 +836,13 @@ setup.chooseStoryAudio = () => {
 &lt;img src=&quot;assets/img/characters/characters-10.png&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;content-container&quot;&gt;
-&lt;h1&gt;Places&lt;/h1&gt;
+&lt;div class=&quot;upper-content-container&quot;&gt;
+  &lt;h1&gt;Places&lt;/h1&gt;
+  
+  &lt;p&gt;What places in Islington are special to you?&lt;/p&gt;
+  &lt;&lt;include &quot;listaudio&quot;&gt;&gt;
+&lt;/div&gt;
 
-&lt;p&gt;What places in Islington are special to you?&lt;/p&gt;
-&lt;&lt;include &quot;listaudio&quot;&gt;&gt;
-&lt;br/&gt;&lt;br/&gt;
 &lt;div class=&quot;btn-container secondary&quot;&gt;
 &lt;&lt;button &quot;Share a place&quot;&gt;&gt;
   &lt;&lt;goto &quot;prerecord&quot;&gt;&gt;
@@ -859,10 +861,11 @@ setup.chooseStoryAudio = () => {
 &lt;img src=&quot;assets/img/characters/characters-21.png&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;content-container&quot;&gt;
+&lt;div class=&quot;upper-content-container&quot;&gt;
   &lt;h1&gt;People&lt;/h1&gt;
   &lt;p&gt;Meet the people of Islington&lt;/p&gt;
   &lt;&lt;include &quot;listaudio&quot;&gt;&gt;
-  &lt;br/&gt;&lt;br/&gt;
+&lt;/div&gt;
   &lt;div class=&quot;btn-container secondary&quot;&gt;
     &lt;&lt;button &quot;Share your story&quot;&gt;&gt;
       &lt;&lt;goto &quot;prerecord&quot;&gt;&gt;
@@ -882,11 +885,13 @@ setup.chooseStoryAudio = () => {
 &lt;img src=&quot;assets/img/characters/characters34-36-34.png&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;content-container&quot;&gt;
-&lt;h1&gt;Community&lt;/h1&gt;
-&lt;p&gt;Where do people come together in Islington?&lt;/p&gt;
+&lt;div class=&quot;upper-content-container&quot;&gt;
+  &lt;h1&gt;Community&lt;/h1&gt;
+  &lt;p&gt;Where do people come together in Islington?&lt;/p&gt;
+  
+  &lt;&lt;include &quot;listaudio&quot;&gt;&gt;
+&lt;/div &gt;
 
-&lt;&lt;include &quot;listaudio&quot;&gt;&gt;
-&lt;br/&gt;&lt;br/&gt;
 &lt;div class=&quot;btn-container secondary&quot;&gt;
 &lt;&lt;button &quot;Share a story&quot;&gt;&gt;
   &lt;&lt;goto &quot;prerecord&quot;&gt;&gt;
@@ -905,10 +910,11 @@ setup.chooseStoryAudio = () => {
 &lt;img src=&quot;assets/img/characters/characters-18.png&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;content-container&quot;&gt;
+&lt;div class=&quot;upper-content-container&quot;&gt;
 &lt;h1&gt;Joy&lt;/h1&gt;
 &lt;p&gt;What makes you happy?&lt;/p&gt;
 &lt;&lt;include &quot;listaudio&quot;&gt;&gt;
-&lt;br/&gt;&lt;br/&gt;
+&lt;/div&gt;
 &lt;div class=&quot;btn-container secondary&quot;&gt;
 &lt;&lt;button &quot;Share your joy&quot;&gt;&gt;
   &lt;&lt;goto &quot;prerecord&quot;&gt;&gt;
@@ -927,10 +933,11 @@ setup.chooseStoryAudio = () => {
 &lt;img src=&quot;assets/img/characters/characters-17.png&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;content-container&quot;&gt;
+&lt;div class=&quot;upper-content-container&quot;&gt;
 &lt;h1&gt;Rage&lt;/h1&gt;
 &lt;p&gt;What makes you angry?&lt;/p&gt;
 &lt;&lt;include &quot;listaudio&quot;&gt;&gt;
-&lt;br/&gt;&lt;br/&gt;
+&lt;/div&gt;
 &lt;div class=&quot;btn-container secondary&quot;&gt;
 &lt;&lt;button &quot;Share your rage&quot;&gt;&gt;
   &lt;&lt;goto &quot;prerecord&quot;&gt;&gt;
@@ -949,10 +956,11 @@ setup.chooseStoryAudio = () => {
 &lt;img src=&quot;assets/img/characters/characters-22.png&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;content-container&quot;&gt;
+&lt;div class=&quot;upper-content-container&quot;&gt;
 &lt;h1&gt;History&lt;/h1&gt;
 &lt;p&gt;How has Islington changed?&lt;/p&gt;
 &lt;&lt;include &quot;listaudio&quot;&gt;&gt;
-&lt;br/&gt;&lt;br/&gt;
+&lt;/div&gt;
 &lt;div class=&quot;btn-container secondary&quot;&gt;
 &lt;&lt;button &quot;Share some history&quot;&gt;&gt;
   &lt;&lt;goto &quot;prerecord&quot;&gt;&gt;
@@ -1112,6 +1120,7 @@ setup.chooseStoryAudio = () => {
 &lt;main class=&quot;about&quot;&gt;
 &lt;h1&gt;Record&lt;/h1&gt;
     &lt;iframe src=&quot;https://www.speakpipe.com/widget/inline/2iawuy25u8ynlcssocfc003zmfcl529u&quot; allow=&quot;microphone&quot; width=&quot;100%&quot; height=&quot;200&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+    &lt;br/&gt;
 &lt;p&gt;By clicking Record, you consent for your recording to be published online as part of the project. You can withdraw that consent at any time. More info can be found in our &lt;a href=&quot;../TCs-Koro-LFU.pdf&quot; class=&quot;highlighted&quot; target=&quot;_blank&quot;&gt;terms of use&lt;/a&gt; .&lt;/p&gt;
 &lt;&lt;button &quot;Back to map&quot;&gt;&gt;
   &lt;&lt;goto &quot;map&quot;&gt;&gt;
@@ -6399,125 +6408,125 @@ and aside from that, our neighbors would usually give us like Christmas gifts an
 &lt;&lt;/replace&gt;&gt;
 &lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="75" name="Maria-cap" tags="nobr" position="600,975" size="100,100">&lt;&lt;timed 0s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
-My name is Maria Diane Michael, and I&#39;ve been living in Islington since I&#39;ve been a baby. 
+My name is Maria, and I&#39;ve been living in Islington since I&#39;ve been a baby. 
 &lt;&lt;/replace&gt;&gt;
 &lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 8.5s&gt;&gt;
+&lt;&lt;timed 7s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 When I got my new flat, my mum and dad got a new flat in Highbury. It was awesome. 
 &lt;&lt;/replace&gt;&gt;
 &lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 15.5s&gt;&gt;
+&lt;&lt;timed 14.5s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 I remember going up the road with my dad, and I was so excited, the trees and the atmosphere, the wind. I was running excitedly. 
 &lt;&lt;/replace&gt;&gt;
 &lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 27.5s&gt;&gt;
+&lt;&lt;timed 26.5s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 It was summertime, and I went into my new home. It was awesome, and I was running into all the rooms, but everything seemed so massively big. 
 &lt;&lt;/replace&gt;&gt;
 &lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 37.5s&gt;&gt;
+&lt;&lt;timed 36s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 It smelled so new and fresh, it smelled so lovely. 
 &lt;&lt;/replace&gt;&gt;
 &lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 44s&gt;&gt;
+&lt;&lt;timed 42.5s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 It was so open and light, and it was a new start of our new home.
 &lt;&lt;/replace&gt;&gt;
 &lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 49s&gt;&gt;
+&lt;&lt;timed 48s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 My mum and dad used to live in Newington Green. We used to live in Perlin Road in the basement, and then my mum 
 &lt;&lt;/replace&gt;&gt;
 &lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 59s&gt;&gt;
+&lt;&lt;timed 57.5s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 got a move to Highbury, because my mum had more children, so she needed more room, 
 &lt;&lt;/replace&gt;&gt;
 &lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 66s&gt;&gt;
+&lt;&lt;timed 65s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 but just before that, my mum and dad, they, they got married, but my dad&#39;s from Cyprus, my mum&#39;s from the Isle of Man, and they met in the Navy, the army, and they fell in love. 
 &lt;&lt;/replace&gt;&gt;
 &lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 81s&gt;&gt;
+&lt;&lt;timed 79.5s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 My dad used to sing to my mum, and that&#39;s how their romance started. They were proper in love. 
 &lt;&lt;/replace&gt;&gt;
 &lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 86.5s&gt;&gt;
+&lt;&lt;timed 85.5s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 My dad is like Prince Philip, and my mum is like the queen. 
 &lt;&lt;/replace&gt;&gt;
 &lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 92.5s&gt;&gt;
+&lt;&lt;timed 91s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 So all my life I&#39;ve had that beautiful, beautiful atmosphere that my mum was the queen and my dad was the King. 
 &lt;&lt;/replace&gt;&gt;
 &lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 101s&gt;&gt;
+&lt;&lt;timed 99.5s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 I used to be a top governor in Highbury Grove, and I worked for Arsenal. I worked for all the communities. 
 &lt;&lt;/replace&gt;&gt;
 &lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 109s&gt;&gt;
+&lt;&lt;timed 108s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 I&#39;m like a free individual voluntary worker, but open doors everywhere I go, and I bring people together. 
 &lt;&lt;/replace&gt;&gt;
 &lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 118s&gt;&gt;
+&lt;&lt;timed 117s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 But Islington, I love Islington because I&#39;m autistic. I&#39;ve got a place I do call home. Yeah, it is my home. 
 &lt;&lt;/replace&gt;&gt;
 &lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 126s&gt;&gt;
+&lt;&lt;timed 124.5s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 The community is my home. I love the Christmas parties in the town hall with all the councillors. I love it. I go every year. 
 &lt;&lt;/replace&gt;&gt;
 &lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 134.5s&gt;&gt;
+&lt;&lt;timed 133s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 I love being with the homeless. I love being with all the people. I just. 
 &lt;&lt;/replace&gt;&gt;
 &lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 140s&gt;&gt;
+&lt;&lt;timed 138.5s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 I&#39;m a people&#39;s person, so I really love being around people, talking and happy dancing. 
 &lt;&lt;/replace&gt;&gt;
 &lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 146s&gt;&gt;
+&lt;&lt;timed 145s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 Even though I have a disability, I have a lot of joy in my community because I know everybody. 
 &lt;&lt;/replace&gt;&gt;
 &lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 151.5s&gt;&gt;
+&lt;&lt;timed 150.5s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 So, when I&#39;m out, I&#39;ll get helped. 
 &lt;&lt;/replace&gt;&gt;
 &lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 154s&gt;&gt;
+&lt;&lt;timed 152.5s&gt;&gt;
   &lt;&lt;replace &quot;#caption&quot;&gt;&gt;  
 There&#39;s always someone there to help me. It&#39;s been... it&#39;s really great.
 &lt;&lt;/replace&gt;&gt;
